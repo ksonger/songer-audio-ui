@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "paths": {
+      "@/lib/*": ["lib/*"],
+      "@/api/*": ["lib/api/*"],
+      "@/queries/*": ["queries/*"],
+      "@/components/*": ["components/*"],
+      "@/blocks/*": ["components/blocks/*"],
+      "@/dynamic/*": ["components/dynamic/*"],
+      "@/factories/*": ["components/factories/*"],
+      "@/atomics/*": ["components/atomics/*"],
+      "@/layout/*": ["components/layout/*"],
+      "@/templates/*": ["components/templates/*"],
+      "@/global/*": ["components/global/*"],
+      "@/shapes/*": ["components/shapes/*"],
+      "@/svgs/*": ["components/svgs/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/contexts/*": ["contexts/*"],
+      "@/styles/*": ["theme/styles/*"],
+      "@/helpers": ["helpers/"],
+      "@/helpers/*": ["helpers/*"],
+      "@/constants/*": ["constants/*"]
+    }
+  }
+}
