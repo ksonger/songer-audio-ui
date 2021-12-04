@@ -1,79 +1,54 @@
-import { useState, useEffect } from "react"
+import {useState, useEffect} from "react"
 import styled from "styled-components"
 import Modal from "@/atomics/Modal"
-import { MainButton } from "@/atomics/Button"
+import {MainButton} from "@/atomics/Button"
 import StandardLogo from "@/svgs/logos/StandardLogo"
 
 const SESSION_KEY = "acknowledgedContentWarning"
 const ACCENT_COLOR = "#9BC4CF"
 
 function ContentWarningModal(props) {
-  const [hidden, setHidden] = useState(true)
+    const [hidden, setHidden] = useState(true)
 
-  useEffect(() => {
-    try {
-      const item = window.sessionStorage.getItem(SESSION_KEY)
-      setHidden(!!JSON.parse(item))
-    } catch (error) {
-      console.error(error)
+    useEffect(() => {
+        try {
+            const item = window.sessionStorage.getItem(SESSION_KEY)
+            setHidden(!!JSON.parse(item))
+        } catch (error) {
+            console.error(error)
+        }
+    }, [])
+
+    function doDismiss(dialog) {
+        setHidden(true)
+        dialog.hide()
+        window.sessionStorage.setItem(SESSION_KEY, "true")
     }
-  }, [])
 
-  function doDismiss(dialog) {
-    setHidden(true)
-    dialog.hide()
-    window.sessionStorage.setItem(SESSION_KEY, "true")
-  }
+    if (hidden) return null
 
-  if (hidden) return null
-
-  return (
-    <StyledModal
-      role="alertDialog" // eslint-disable-line jsx-a11y/aria-role
-      aria-label={null}
-      aria-labelledby="warning-modal-label"
-      aria-describedby="warning-modal-desc"
-      disclosure={null}
-      closeControl={null}
-      hideOnEsc={false}
-      hideOnClickOutside={false}
-      options={{ visible: true }}
-    >
-      {(dialog) => (
-        <StyledInner>
-          <StyledLogo width={260.82} height={103.21} ruleFill={ACCENT_COLOR} />
-          <p>
-            Welcome to The American Soldier in World War II, an interactive
-            digital publication and archive, preserving and making accessible
-            the thoughts, opinions, and experiences of US service members—in
-            their own, uncensored words.
-          </p>
-          <StyledInset>
-            <StyledInsetHeading id="warning-modal-label">
-              Notice of harmful content:
-            </StyledInsetHeading>
-            <p>
-              This site contains unedited historical records related to the
-              conduct of war that may be offensive, graphic, difficult to read,
-              and for some users harmful. Certain content will be inappropriate
-              for children. Visitors who proceed assume responsibility for their
-              response to this unaltered content. Please visit our Harmful
-              Content Statement for additional information.
-            </p>
-          </StyledInset>
-          <StyledConsent id="warning-modal-desc">
-            I understand and acknowledge the warning, and am ready to proceed.{" "}
-          </StyledConsent>
-          <StyledMainButton
-            onClick={() => doDismiss(dialog)}
-            aria-controls={dialog.baseId}
-          >
-            Continue
-          </StyledMainButton>
-        </StyledInner>
-      )}
-    </StyledModal>
-  )
+    return (
+        <StyledModal
+            role="alertDialog" // eslint-disable-line jsx-a11y/aria-role
+            aria-label={null}
+            aria-labelledby="warning-modal-label"
+            aria-describedby="warning-modal-desc"
+            disclosure={null}
+            closeControl={null}
+            hideOnEsc={false}
+            hideOnClickOutside={false}
+            options={{visible: true}}
+        >
+            {(dialog) => (
+                <StyledInner>
+                    <StyledLogo width={260.82} height={103.21} ruleFill={ACCENT_COLOR}/>
+                    <p>
+                        Welcome to Songer Audio
+                    </p>
+                </StyledInner>
+            )}
+        </StyledModal>
+    )
 }
 
 const StyledModal = styled(Modal)`

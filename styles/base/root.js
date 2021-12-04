@@ -1,4 +1,4 @@
-import { fluidScale } from "@/styles/mixins"
+import {fluidScale} from "@/styles/mixins"
 
 // Root CSS variables
 // --------------------
@@ -43,12 +43,14 @@ export default `
     --color-purple-light: #abafcb;
 
     --text-color: #222222;
-    --header-color: #222222;
+    --header-text-color: rgba(255,255,255,0.6);
+    --header-menu-text-color: #83b8c9;
+    --header-menu-text-color-active: #e6cc8e;
 
     /* fonts */
-    --font-face-base: "Municipal", serif;
-    --font-face-headers: "Knockout", sans-serif;
-    --font-face-headers-compact: "Knockout Compact", sans-serif;
+    --font-face-base: "Trade Gothic", sans-erif;
+    --font-face-headers: "Trade Gothic", sans-serif;
+    --font-face-headers-compact: "Trade Gothic", sans-serif;
     --font-face-monospace: "American Typewriter", "Courier New", Courier, monospace;
     --font-size-sm: 16px;
     --font-size-xs: 14px;
@@ -61,6 +63,7 @@ export default `
     --font-size-h5: 1em;
     --font-size-h6: 1em;
     --font-weight-regular: 400;
+    --font-weight-bold: 600;
 
     /* spacing */
     --padding-button: 8px 10px;

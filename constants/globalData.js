@@ -25,28 +25,6 @@ export const GLOBAL_DATA = {
       theme: "orange",
       headerDisplay: "standard",
       role: "link",
-      subitems: [
-        {
-          label: "Education",
-          href: "/education",
-        },
-        {
-          label: "Family Research",
-          href: "/family-research",
-        },
-        {
-          label: "Citizen Historians",
-          href: "/citizen-historians",
-        },
-        {
-          label: "Scholarly Research",
-          href: "/scholarly-research",
-        },
-        {
-          label: "Media",
-          href: "/media",
-        },
-      ],
     },
     {
       label: "MEDIA",

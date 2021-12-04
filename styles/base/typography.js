@@ -1,4 +1,4 @@
-import { tMonoface } from "@/styles/mixins"
+import {tMonoface} from "@/styles/mixins"
 // Base Typography
 // --------------------
 
@@ -20,7 +20,7 @@ export default `
   h1,
   h2 {
     margin-bottom: .916em;
-    color: var(--header-color);
+    color: var(--header-text-color);
     font-family: var(--font-face-headers);
     font-weight: var(--font-weight-regular);
     text-transform: uppercase;
@@ -32,7 +32,7 @@ export default `
   h5,
   h6 {
     margin-bottom: 1em;
-    color: var(--header-color);
+    color: var(--header-text-color);
     font-family: var(--font-face-headers-compact);
     font-weight: var(--font-weight-regular);
     text-transform: uppercase;
@@ -42,7 +42,7 @@ export default `
   h1 {
     font-size: var(--font-size-h1);
     line-height: 1.5;
-    border-bottom: 2px solid var(--header-color);
+    border-bottom: 2px solid var(--header-text-color);
     width: fit-content;
   }
 

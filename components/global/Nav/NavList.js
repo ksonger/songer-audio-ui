@@ -1,54 +1,47 @@
-import { Fragment } from "react"
+import {Fragment} from "react"
 import PropTypes from "prop-types"
-import styled, { css } from "styled-components"
-import { fluidScale, respond } from "@/styles/mixins"
+import styled, {css} from "styled-components"
+import {fluidScale, respond} from "@/styles/mixins"
 import Link from "next/link"
 import TopLevelLink from "./TopLevelLink"
 import ToggleWithSubmenu from "./ToggleWithSubmenu"
 
 const NavList = ({
-  activeHref,
-  className,
-  onClick,
-  footer,
-  mobile,
-  navItems,
-  ...listProps
-}) => {
-  const navClassName = (role) => {
-    return footer && mobile ? "list-item-link" : `list-item-${role}`
-  }
-  const context = {
-    footer,
-    mobile,
-    activeHref,
-  }
+                     activeHref,
+                     className,
+                     onClick,
+                     footer,
+                     mobile,
+                     navItems,
+                     ...listProps
+                 }) => {
+    const navClassName = (role) => {
+        return footer && mobile ? "list-item-link" : `list-item-${role}`
+    }
+    const context = {
+        footer,
+        mobile,
+        activeHref,
+    }
 
-  return (
-    <StyledNavList
-      className={className}
-      footer={footer}
-      mobile={mobile}
-      {...listProps}
-      onClick={() => mobile && onClick()}
-    >
-      {footer && (
-        <span
-          className={`${navClassName("link")} ${
-            !activeHref ? "active home" : "home"
-          }`}
+    console.log(activeHref)
+
+    return (
+        <StyledNavList
+            className={className}
+            footer={footer}
+            mobile={mobile}
+            {...listProps}
+            onClick={() => mobile && onClick()}
         >
-          <Link href="/">HOME</Link>
-        </span>
-      )}
-      {navItems.map((item, i) => (
-        <Fragment key={i}>
-          <TopLevelLink context={context} {...item} />
-          <ToggleWithSubmenu context={context} {...item} />
-        </Fragment>
-      ))}
-    </StyledNavList>
-  )
+            {navItems.map((item, i) => (
+                <Fragment key={i}>
+                    <TopLevelLink context={context} {...item} />
+                    <ToggleWithSubmenu context={context} {...item} />
+                </Fragment>
+            ))}
+        </StyledNavList>
+    )
 }
 
 NavList.displayName = "Global.NavList"
@@ -59,6 +52,13 @@ const StyledNavList = styled.div`
     font-family: var(--font-face-headers-compact);
     letter-spacing: 1px;
     font-size: var(--font-size-sm);
+    color: var(--header-menu-text-color);
+    font-weight: var(--font-weight-regular);
+
+    &:hover,
+    &.active {
+      color: var(--header-menu-text-color-active);
+    }
   }
 
   // nav items with link styling
@@ -66,7 +66,7 @@ const StyledNavList = styled.div`
     &::after {
       content: "";
       display: block;
-      border-bottom: 2px solid var(--text-color);
+      border-bottom: 2px solid var(--header-menu-text-color-active);
       width: 0;
       margin: 2px auto 0;
       transition: width 0.2s ease-in;
@@ -87,13 +87,12 @@ const StyledNavList = styled.div`
     justify-content: center;
     align-items: center;
     height: 100%;
-    display: ${({ ...listProps }) => {
-      return listProps["aria-hidden"] ? "none" : "flex"
-    }};
+    display: ${({...listProps}) => {
+    return listProps["aria-hidden"] ? "none" : "flex"
+  }};
     li { margin: 26px;}
   `)}
-
-  // mobile menu in the header
+    // mobile menu in the header
   &.mobile-menu {
     position: fixed;
     top: 0;
@@ -111,34 +110,37 @@ const StyledNavList = styled.div`
       margin: 0 auto;
     }
   }
+
   &.mobile-menu[data-open="true"] {
     max-height: 100vh;
     padding: var(--menu-padding-x) var(--menu-padding-y);
+
     .list-item-link a {
       padding: 1em;
     }
   }
 
   // standard or compact, and in the header
-  ${({ footer, mobile }) =>
-    (!footer || !mobile) &&
-    css`
-      display: grid;
-      grid-auto-flow: column;
-      gap: ${fluidScale("40px", "10px")};
-      place-items: center;
-      place-content: center;
-    `}
-
-  // nav in the footer
+  ${({footer, mobile}) =>
+          (!footer || !mobile) &&
+          css`
+            display: grid;
+            grid-auto-flow: column;
+            gap: ${fluidScale("40px", "10px")};
+            place-items: center;
+            place-content: center;
+          `}
+    // nav in the footer
   .footer & {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0px;
     justify-items: start;
+
     span {
       margin: 0;
     }
+
     grid-template-areas:
       "home"
       "topics"
@@ -151,21 +153,27 @@ const StyledNavList = styled.div`
     .home {
       grid-area: home;
     }
+
     .topics {
       grid-area: topics;
     }
+
     .surveys {
       grid-area: surveys;
     }
+
     .learn {
       grid-area: learn;
     }
+
     .read {
       grid-area: read;
     }
+
     .about {
       grid-area: about;
     }
+
     .search {
       grid-area: search;
     }
@@ -184,12 +192,12 @@ const StyledNavList = styled.div`
 `
 
 NavList.propTypes = {
-  activeHref: PropTypes.string,
-  className: PropTypes.string,
-  onClick: PropTypes.func,
-  footer: PropTypes.bool,
-  mobile: PropTypes.bool,
-  navItems: PropTypes.array,
+    activeHref: PropTypes.string,
+    className: PropTypes.string,
+    onClick: PropTypes.func,
+    footer: PropTypes.bool,
+    mobile: PropTypes.bool,
+    navItems: PropTypes.array,
 }
 
 export default NavList
