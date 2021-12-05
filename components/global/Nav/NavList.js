@@ -55,6 +55,7 @@ const StyledNavList = styled.div`
     color: var(--header-menu-text-color);
     font-weight: var(--font-weight-regular);
 
+
     &:hover,
     &.active {
       color: var(--header-menu-text-color-active);
