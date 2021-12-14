@@ -1,31 +1,19 @@
-import { useState } from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import Header from "@/global/Header/Header"
-import Footer from "@/components/global/Footer"
-import { useRouter } from "next/router"
-import useGlobalContext from "@/hooks/useGlobalContext"
-import { useOnResize } from "@/hooks/listeners"
-import { getActiveNavItem } from "@/helpers/"
-import {
-  mobileBreakpoint,
-  getStandardLayout,
-  getMainColor,
-  respond,
-} from "@/styles/mixins"
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Header from "@/global/Header";
+import Footer from "@/global/Footer/Footer";
+import { useRouter } from "next/router";
+import useGlobalContext from "@/hooks/useGlobalContext";
+import { getMainColor } from "@/styles/mixins";
+import { getActiveNavItem } from "@/helpers";
 
 const ContentLayout = ({ children }) => {
-  const { asPath } = useRouter()
-  const { navItems } = useGlobalContext()
-  const [mobile, setMobile] = useState(false)
-  const standard = getStandardLayout(asPath)
-  const activeNavItem = getActiveNavItem(navItems, asPath)
-  const activeHref = activeNavItem?.href
-  const mainColor = getMainColor(navItems, asPath)
-
-  useOnResize(mobileBreakpoint, (isMobile) => {
-    setMobile(isMobile)
-  })
+  const { asPath } = useRouter();
+  const { navItems } = useGlobalContext();
+  const activeNavItem = getActiveNavItem(navItems, asPath);
+  const activeHref = activeNavItem?.href;
+  const mainColor = getMainColor(navItems, asPath);
 
   return (
     <Wrapper
@@ -35,14 +23,14 @@ const ContentLayout = ({ children }) => {
         "--color-primary-light": `var(--color-${mainColor}-light)`,
       }}
     >
-      <Header activeHref={activeHref} mobile={mobile} standard={standard} />
+      <Header activeHref={activeHref} />
       <Main>
         <Article>{children}</Article>
       </Main>
-      <Footer activeHref={activeHref} mobile={mobile} standard={standard} />
+      <Footer activeHref={activeHref} />
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   width: 100%;
@@ -50,39 +38,21 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  background-color: var(--background-cream);
-
-  > div {
-    padding-left: var(--l-content-padding);
-    padding-right: var(--l-content-padding);
-  }
-`
+  background-color: rgba(230, 204, 142, 0.1);
+`;
 const Main = styled.main`
   width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-`
+  max-width: var(--l-content-max);
+  margin: 0 auto;
+  margin-bottom: 80px;
+`;
 
-const Article = styled.article`
+const Article = styled.div`
   width: 100%;
-  padding-top: 70px;
-  padding-bottom: 180px;
   min-height: 60vh;
   margin: auto;
   top: 0;
-
-  section:not(.hero):not(.wide) {
-    width: 100%;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  section.hero {
-    width: 100%;
-  }
-  ${respond(`section:not(.hero) {max-width: 90%;}`)}
-`
+`;
 
 ContentLayout.propTypes = {
   children: PropTypes.oneOfType([
@@ -90,6 +60,6 @@ ContentLayout.propTypes = {
     PropTypes.object,
     PropTypes.array,
   ]),
-}
+};
 
-export default ContentLayout
+export default ContentLayout;

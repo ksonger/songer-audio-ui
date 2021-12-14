@@ -1,31 +1,17 @@
-import { useState } from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import Header from "@/global/Header/Header"
-import Footer from "@/components/global/Footer"
-import { useRouter } from "next/router"
-import useGlobalContext from "@/hooks/useGlobalContext"
-import { useOnResize } from "@/hooks/listeners"
-import { getActiveNavItem } from "@/helpers/"
-import {
-  mobileBreakpoint,
-  getStandardLayout,
-  getMainColor,
-  respond,
-} from "@/styles/mixins"
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Header from "@/global/Header";
+import Footer from "@/global/Footer/Footer";
+import { useRouter } from "next/router";
+import useGlobalContext from "@/hooks/useGlobalContext";
 
 const HomepageLayout = ({ children }) => {
-  const { asPath } = useRouter()
-  const { navItems } = useGlobalContext()
-  const [mobile, setMobile] = useState(false)
-  const standard = getStandardLayout(asPath)
-  const activeNavItem = getActiveNavItem(navItems, asPath)
-  const activeHref = activeNavItem?.href
-  const mainColor = getMainColor(navItems, asPath)
-
-  useOnResize(mobileBreakpoint, (isMobile) => {
-    setMobile(isMobile)
-  })
+  const { asPath } = useRouter();
+  const { navItems } = useGlobalContext();
+  const activeNavItem = getActiveNavItem(navItems, asPath);
+  const activeHref = activeNavItem?.href;
+  const mainColor = getMainColor(navItems, asPath);
 
   return (
     <Wrapper
@@ -35,14 +21,14 @@ const HomepageLayout = ({ children }) => {
         "--color-primary-light": `var(--color-${mainColor}-light)`,
       }}
     >
-      <Header activeHref={activeHref} mobile={mobile} standard={standard} />
+      <Header activeHref={activeHref} />
       <Main>
         <Article>{children}</Article>
       </Main>
-      <Footer activeHref={activeHref} mobile={mobile} standard={standard} />
+      <Footer activeHref={activeHref} />
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   width: 100%;
@@ -56,7 +42,7 @@ const Wrapper = styled.div`
     padding-left: var(--l-content-padding);
     padding-right: var(--l-content-padding);
   }
-`
+`;
 
 const Main = styled.main`
   position: relative;
@@ -70,34 +56,8 @@ const Main = styled.main`
     left: 0;
     width: 100%;
     height: calc(100vh - var(--header-height));
-    /* fallback using JPEG rather than WEBP */
-    background: linear-gradient(
-        to top,
-        var(--background-cream),
-        transparent 50%
-      ),
-      linear-gradient(to bottom, var(--color-primary-light), transparent 60%),
-      center / cover no-repeat url("/img/hp-hero-image.jpg"),
-      linear-gradient(
-        to bottom,
-        var(--color-primary-light),
-        var(--background-cream)
-      );
-    background: linear-gradient(
-        to top,
-        var(--background-cream),
-        transparent 50%
-      ),
-      linear-gradient(to bottom, var(--color-primary-light), transparent 60%),
-      center / cover no-repeat url("/img/hp-hero-image.webp"),
-      linear-gradient(
-        to bottom,
-        var(--color-primary-light),
-        var(--background-cream)
-      );
-    background-blend-mode: normal, normal, multiply, normal;
   }
-`
+`;
 
 const Article = styled.article`
   position: relative;
@@ -119,7 +79,7 @@ const Article = styled.article`
     width: 100%;
   }
   ${respond(`section:not(.hero) {max-width: 90%;}`)}
-`
+`;
 
 HomepageLayout.propTypes = {
   children: PropTypes.oneOfType([
@@ -127,6 +87,6 @@ HomepageLayout.propTypes = {
     PropTypes.object,
     PropTypes.array,
   ]),
-}
+};
 
-export default HomepageLayout
+export default HomepageLayout;

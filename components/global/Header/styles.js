@@ -1,17 +1,17 @@
-import styled, {css} from "styled-components"
-import {respond} from "@/styles/mixins";
-import Image from "@/components/atomic/Image"
+import styled, { css } from "styled-components";
+import { respond, fluidScale } from "@/styles/mixins";
 
 export const Header = styled.div`
   width: 100%;
   transition: background-color 200ms;
   background-color: #000;
-  overflow-y: hidden;
-`
+  overflow: hidden;
+  padding: 0 var(--l-content-padding);
+`;
 
 export const HeaderContent = styled.header`
   max-width: var(--l-content-max);
-  margin: auto;
+  margin: 0 auto;
   z-index: var(--z-index-header);
   transition: background-color 200ms, height 200ms;
   background-color: #000;
@@ -20,34 +20,19 @@ export const HeaderContent = styled.header`
   align-items: center;
   justify-content: center;
 
-  height: ${(p) => {
-    return p.standard
-            ? "var(--l-header-height-standard)"
-            : "var(--l-header-height-compact)"
-  }};
-  text-align: ${(p) => {
-    return p.standard
-            ? "center"
-            : "left"
-  }};
+  height: var(--l-header-height-standard);
+  text-align: center;
   display: grid;
-  grid-template-columns: ${(p) => {
-    return p.standard ? "1fr" : "1fr auto"
-  }};
+  grid-template-columns: 1fr;
 
   ${respond(
-          `
+    `
           height: var(--l-header-height-compact);
-          grid-template-columns: 200px 1fr;
+          grid-template-columns: 1fr;
           justify-content: start;
-          `,
-          '600px'
+          `
   )}
-
-
-
-
-`
+`;
 
 export const Background = styled.div`
   z-index: 0;
@@ -55,24 +40,15 @@ export const Background = styled.div`
 
   & span {
     transition: height 200ms;
-    height: ${(p) => {
-      return p.standard
-              ? "var(--l-header-height-standard) !important"
-              : "var(--l-header-height-compact) !important"
-    }};
+    height: var(--l-header-height-standard) !important;
 
-    ${respond(
-            `
-          height: var(--l-header-height-compact) !important;
-          `,
-            '600px'
-    )}
+    ${respond(`height: var(--l-header-height-compact) !important;`)}
   }
-`
+`;
 
 export const LogoNav = styled.div`
   display: grid;
-  gap: 3em;
+  gap: 4em;
   width: 100%;
   grid-auto-flow: row;
   grid-template-rows: auto auto;
@@ -80,31 +56,71 @@ export const LogoNav = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 1;
-  margin-top: 4em;
-`
+  margin-top: ${fluidScale("4em", "0em")};
+  ${respond(
+    `
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: auto;
+    gap: 0;
+    `
+  )}
+`;
 
 export const Logo = styled.div`
   position: relative;
-  width: 200px;
-  height: 99.4px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: auto;
   justify-self: center;
-
-  > span {
-    width: 100% !important;
-    height: 100% !important;
+  svg {
+    margin-left: 6px;
   }
-`
+  ${respond(
+    css`
+      justify-self: start;
+      svg {
+        margin-left: 0;
+      }
+    `
+  )}
+`;
+
+export const LogoIcon = styled.div`
+  width: 200px;
+  height: 100px;
+  ${respond(
+    `
+    width: 100px;
+    height: 50px;
+    `
+  )}
+`;
+
+export const LogoSpan = styled.span`
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: ${fluidScale("5px", "1px")};
+  font-size: 22px;
+  ${respond(`font-size: 14px;`)}
+`;
 
 export const Shadow = styled.div`
   width: 100%;
-  z-index: 100;
   position: absolute;
-  height: 90px;
-  top: 240px;
+  height: 50px;
+  top: 220px;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
-`
+  z-index: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  ${respond(`display: none;`)}
+`;
 
 export const Nav = styled.div`
-
-`
+  margin-top: ${fluidScale("0", "70px")};
+  ${respond(
+    css`
+      margin: 0 17px 0 0;
+      justify-self: end;
+    `
+  )}
+`;

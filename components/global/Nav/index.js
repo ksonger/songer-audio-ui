@@ -1,66 +1,64 @@
-import { useState, useEffect } from "react"
-import PropTypes from "prop-types"
-import { mobileBreakpoint } from "@/styles/mixins"
-import NavList from "./NavList"
-import NavMenuButton from "./NavMenuButton"
-import { useOnResize } from "@/hooks/listeners"
-import useGlobalContext from "@/hooks/useGlobalContext"
+import React from "react";
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { mobileBreakpoint } from "@/styles/mixins";
+import NavList from "./NavList";
+import { useOnResize } from "@/hooks/listeners";
+import useGlobalContext from "@/hooks/useGlobalContext";
+import * as Styled from "./styles";
 
-const Nav = ({ activeHref, className, mobile }) => {
-  const [showMobileNav, setShowMobileNav] = useState(false)
-  const [windowWidth, setWindowWidth] = useState()
-  const footerNav = className === "footer"
-  const { navItems } = useGlobalContext()
+const Nav = ({ activeHref, className }) => {
+  const [showMobileNav, setShowMobileNav] = useState(false);
+  const [windowWidth, setWindowWidth] = useState();
+  const footerNav = className === "footer";
+  const { navItems } = useGlobalContext();
 
   useEffect(() => {
-    setWindowWidth(window.innerWidth)
-    const method = showMobileNav ? "add" : "remove"
-    document.body.classList[method]("has-scroll-lock")
-  }, [showMobileNav])
+    setWindowWidth(window.innerWidth);
+    const method = showMobileNav ? "add" : "remove";
+    document.body.classList[method]("has-scroll-lock");
+  }, [showMobileNav]);
 
-  useOnResize(mobileBreakpoint, (isMobile, e) => {
-    const w = window.innerWidth
-    isMobile && windowWidth !== w && setShowMobileNav(false)
-    setWindowWidth(w)
-  })
+  useOnResize(mobileBreakpoint, (isMobile) => {
+    const w = window.innerWidth;
+    showMobileNav && windowWidth !== w && setShowMobileNav(false);
+    setWindowWidth(w);
+  });
 
   /**
    * Close the mobile nav on click
    */
   const handleClick = () => {
-    setShowMobileNav(false)
-  }
+    setShowMobileNav(false);
+  };
 
   return (
     <nav className={className}>
       <NavList
         activeHref={activeHref}
-        className={mobile && !footerNav ? "mobile-menu" : ""}
+        className="mobile-menu"
         onClick={handleClick}
         aria-hidden={!showMobileNav && !footerNav}
         data-open={showMobileNav ? "true" : "false"}
-        mobile={mobile}
         footer={footerNav}
-        navItems={navItems}
+        navItems={navItems.filter((item) => item.header === true)}
       />
-      {mobile && !footerNav && (
-        <NavMenuButton
-          open={showMobileNav}
-          onClick={() => setShowMobileNav(!showMobileNav)}
-          aria-controls="mobileMenu"
-          aria-pressed={showMobileNav ? "open" : "closed"}
-        />
-      )}
-    </nav>
-  )
-}
 
-Nav.displayName = "Global.Nav"
+      <Styled.NavButton
+        open={showMobileNav}
+        onClick={() => setShowMobileNav(!showMobileNav)}
+        aria-controls="mobileMenu"
+        aria-pressed={showMobileNav ? "open" : "closed"}
+      />
+    </nav>
+  );
+};
+
+Nav.displayName = "Global.Nav";
 
 Nav.propTypes = {
   activeHref: PropTypes.string,
   className: PropTypes.string,
-  mobile: PropTypes.bool,
-}
+};
 
-export default Nav
+export default Nav;

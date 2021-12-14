@@ -1,6 +1,7 @@
 import { useRouter } from "next/router"
 import joinURL from "url-join"
 import { surveyPaths, questionPaths } from "./paths"
+import {GLOBAL_DATA} from "@/constants/globalData";
 
 // data helpers
 export const usePathData = () => {
@@ -70,6 +71,12 @@ export const getPageFromPath = (path) => {
   const noQueryString = path.split("?")[0]
   const pageArr = noQueryString.match(/\/(\d)$/)
   return pageArr?.[1]
+}
+
+export const getPageData = (page) => {
+  return GLOBAL_DATA.navItems.filter((item) => {
+    return page === item.label.toLowerCase();
+  })[0] || null;
 }
 
 export const normalizePathData = (pathnameInput) => {

@@ -1,4 +1,4 @@
-import {fluidScale} from "@/styles/mixins"
+import { fluidScale } from "@/styles/mixins";
 
 // Root CSS variables
 // --------------------
@@ -42,10 +42,23 @@ export default `
     --color-purple-dark: #7578A6;
     --color-purple-light: #abafcb;
 
-    --text-color: #222222;
+    --text-color: #444;
+    
+    --button-color: #fff;
+    --button-hover-color: #fff;
+    --button-background-color: #28a2c7d9;
+    --button-background-hover-color: #59b7d1;
+    --button-border-radius: 5px;
+    --button-padding: 4px;
+    
     --header-text-color: rgba(255,255,255,0.6);
-    --header-menu-text-color: #83b8c9;
+    --header-menu-text-color: rgba(255,255,255,0.6);
     --header-menu-text-color-active: #e6cc8e;
+    --header-logo-color: #e6cc8e;
+    
+    --footer-background: #444;
+    --footer-logo-color: #e6cc8e;
+    --footer-social-color: #888;
 
     /* fonts */
     --font-face-base: "Trade Gothic", sans-erif;
@@ -82,9 +95,9 @@ export default `
 
     /* layout */
     --l-container-full: 100vw;
-    --l-content-max: 920px;
-    --l-content-padding: ${fluidScale("200px", "20px")};
-    --l-header-height-standard: 330px;
+    --l-content-max: 1200px;
+    --l-content-padding: ${fluidScale("120px", "20px")};
+    --l-header-height-standard: 270px;
     --l-header-height-compact: 84px;
   }
-`
+`;

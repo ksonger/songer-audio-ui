@@ -1,30 +1,18 @@
-import { useState } from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import Header from "@/global/Header/Header"
-import Footer from "@/components/global/Footer"
-import { useRouter } from "next/router"
-import useGlobalContext from "@/hooks/useGlobalContext"
-import { useOnResize } from "@/hooks/listeners"
-import { getActiveNavItem } from "@/helpers/"
-import {
-  mobileBreakpoint,
-  getStandardLayout,
-  getMainColor,
-} from "@/styles/mixins"
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Header from "@/global/Header";
+import Footer from "@/global/Footer/Footer";
+import { useRouter } from "next/router";
+import useGlobalContext from "@/hooks/useGlobalContext";
+import { getActiveNavItem } from "@/helpers/";
+import { getMainColor } from "@/styles/mixins";
 
 const DefaultLayout = ({ children }) => {
-  const { asPath } = useRouter()
-  const { navItems } = useGlobalContext()
-  const [mobile, setMobile] = useState(false)
-  const standard = getStandardLayout(asPath)
-  const activeNavItem = getActiveNavItem(navItems, asPath)
-  const activeHref = activeNavItem?.href
-  const mainColor = getMainColor(navItems, asPath)
-
-  useOnResize(mobileBreakpoint, (isMobile) => {
-    setMobile(isMobile)
-  })
+  const { asPath } = useRouter();
+  const { navItems } = useGlobalContext();
+  const activeNavItem = getActiveNavItem(navItems, asPath);
+  const activeHref = activeNavItem?.href;
+  const mainColor = getMainColor(navItems, asPath);
 
   return (
     <Wrapper
@@ -34,14 +22,14 @@ const DefaultLayout = ({ children }) => {
         "--color-primary-light": `var(--color-${mainColor}-light)`,
       }}
     >
-      <Header activeHref={activeHref} mobile={mobile} standard={standard} />
+      <Header activeHref={activeHref} />
       <Main>
         <Article>{children}</Article>
       </Main>
-      <Footer activeHref={activeHref} mobile={mobile} standard={standard} />
+      <Footer activeHref={activeHref} />
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   width: 100%;
@@ -55,13 +43,13 @@ const Wrapper = styled.div`
     padding-left: var(--l-content-padding);
     padding-right: var(--l-content-padding);
   }
-`
+`;
 
 const Main = styled.main`
   width: 100%;
-`
+`;
 
-const Article = styled.article`
+const Article = styled.div`
   width: 100%;
   padding-top: 58px;
   padding-bottom: 180px;
@@ -69,7 +57,7 @@ const Article = styled.article`
   max-width: var(--l-content-max);
   margin: auto;
   top: 0;
-`
+`;
 
 DefaultLayout.propTypes = {
   children: PropTypes.oneOfType([
@@ -77,6 +65,6 @@ DefaultLayout.propTypes = {
     PropTypes.object,
     PropTypes.array,
   ]),
-}
+};
 
-export default DefaultLayout
+export default DefaultLayout;

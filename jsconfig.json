@@ -11,6 +11,7 @@
       "@/dynamic/*": ["components/dynamic/*"],
       "@/factories/*": ["components/factories/*"],
       "@/atomics/*": ["components/atomics/*"],
+      "@/composed/*": ["components/composed/*"],
       "@/layout/*": ["components/layout/*"],
       "@/templates/*": ["components/templates/*"],
       "@/global/*": ["components/global/*"],

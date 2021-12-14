@@ -1,4 +1,4 @@
-import {tMonoface} from "@/styles/mixins"
+import { tMonoface } from "@/styles/mixins";
 // Base Typography
 // --------------------
 
@@ -74,4 +74,4 @@ export default `
   code {
     ${tMonoface}
   }
-`
+`;

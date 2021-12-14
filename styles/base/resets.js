@@ -6,7 +6,21 @@ html,
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
+
+#__next {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+    overflow-y: scroll;
+}
+
 
 a {
   color: inherit;
@@ -138,4 +152,4 @@ input {
       display: none;
     }
   }
-`
+`;
