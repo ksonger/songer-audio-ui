@@ -38,7 +38,7 @@ const themes = {
 
 export const CardWrapper = styled.div`
   ${(p) => (p.$type ? themes[p.$type]() : themes[type])};
-  padding: 0 var(--l-content-padding);
+  padding: 0;
   p {
     margin: ${fluidScale("40px", "20px")} 0;
   }

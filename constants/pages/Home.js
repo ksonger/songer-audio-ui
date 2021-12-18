@@ -16,7 +16,7 @@ const Home = {
         alt: "Onimaru Driver",
       },
       heading: `A Past and Future Design`,
-      description: `<p>The product of years of research and development, the Songer Audio 10" V2 field coil driver is hand-constructed from the finest materials, offering exceptionally lifelike musical reproduction for a variety of design applications.</p>`,
+      description: `<p>The product of years of research and development, the Songer Audio 10" V2 field coil driver is hand-constructed from the finest materials, offering exceptionally lifelike musical reproduction for a variety of design applications.</p><p>The product of years of research and development, the Songer Audio 10" V2 field coil driver is hand-constructed from the finest materials, offering exceptionally lifelike musical reproduction for a variety of design applications.</p><p>The product of years of research and development, the Songer Audio 10" V2 field coil driver is hand-constructed from the finest materials, offering exceptionally lifelike musical reproduction for a variety of design applications.</p>`,
       cta: {
         label: "Learn More",
         uri: "/technology",
@@ -34,7 +34,7 @@ const Home = {
         focalPoint: [0.5, 0],
       },
       heading: `Phase Perfect, Full-Range.`,
-      description: `<p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p>`,
+      description: `<p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p><p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p><p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p><p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p>`,
       cta: {
         label: "Learn More",
         uri: "/technology",
@@ -51,7 +51,7 @@ const Home = {
         alt: "SA Power Supply",
       },
       heading: `DC Regulated Power`,
-      description: `<p>Songer Audio's tightly regulated, low impedance, high nose rejection design removes all AC line and harmonic noise from DC regulated output.  This unique feature eliminates induced voice coil modulation, shunting it at the power supply. The result is pure DC power to the the driver, with no overlying AC audio signal.</p>`,
+      description: `<p>Songer Audio's tightly regulated, low impedance, high nose rejection design removes all AC line and harmonic noise from DC regulated output.  This unique feature eliminates induced voice coil modulation, shunting it at the power supply. The result is pure DC power to the the driver, with no overlying AC audio signal.</p><p>Songer Audio's tightly regulated, low impedance, high nose rejection design removes all AC line and harmonic noise from DC regulated output.  This unique feature eliminates induced voice coil modulation, shunting it at the power supply. The result is pure DC power to the the driver, with no overlying AC audio signal.</p>`,
       cta: {
         label: "Learn More",
         uri: "/technology",

@@ -95,7 +95,7 @@ export default `
 
     /* layout */
     --l-container-full: 100vw;
-    --l-content-max: 1200px;
+    --l-content-max: 1800px;
     --l-content-padding: ${fluidScale("120px", "20px")};
     --l-header-height-standard: 270px;
     --l-header-height-compact: 84px;
