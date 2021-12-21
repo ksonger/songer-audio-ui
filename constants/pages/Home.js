@@ -34,7 +34,7 @@ const Home = {
         focalPoint: [0.5, 0],
       },
       heading: `Phase Perfect, Full-Range.`,
-      description: `<p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p><p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p><p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p><p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p>`,
+      description: `<p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p><p>Newly updated with our V2 10" field coil driver, the Songer Audio S1 loudspeaker delivers phase perfect, full-range sound +/- 3dB from 30Hz - 17kHz.  Each pair is hand-made to order from solid hardwood, with uncompromising construction quality.</p>`,
       cta: {
         label: "Learn More",
         uri: "/technology",

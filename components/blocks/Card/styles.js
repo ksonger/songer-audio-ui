@@ -13,31 +13,7 @@ function getFlexDirection(layout, imagePosition) {
   return imagePosition === "left" ? "row-reverse" : "row";
 }
 
-const themes = {
-  default: () => {
-    return css`
-      .__heading {
-        color: rgba(68, 68, 68, 1);
-      }
-      .__description {
-        color: rgba(40, 40, 40, 0.6);
-      }
-    `;
-  },
-  blue: () => {
-    return css`
-      .__heading {
-        color: rgba(68, 68, 68, 1);
-      }
-      .__description {
-        color: rgba(40, 40, 40, 0.6);
-      }
-    `;
-  },
-};
-
-export const CardWrapper = styled.div`
-  ${(p) => (p.$type ? themes[p.$type]() : themes[type])};
+export const CardWrapper = styled.p`
   padding: 0;
   p {
     margin: ${fluidScale("40px", "20px")} 0;
@@ -49,8 +25,9 @@ export const CardMain = styled.div`
   height: 100%;
   display: flex;
   flex-direction: ${(p) => getFlexDirection(p.$layout, p.$orientation)};
-  background-color: var(--callout-bg-color, var(--bg-color));
   margin-bottom: 20px;
+  background-color: #ddd;
+  max-height: 650px;
 
   > * {
     flex-basis: 50%;
@@ -60,6 +37,7 @@ export const CardMain = styled.div`
     css`
       flex-direction: column;
       border: 1px solid rgba(131, 184, 201, 0.6);
+      max-height: 100%;
 
       > * {
         flex-basis: 100%;
@@ -71,8 +49,8 @@ export const CardMain = styled.div`
 
 export const CardImage = styled.div`
   position: relative;
-  background-color: #444;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #cdcdcd;
+  margin: 40px;
   flex-basis: ${(p) => {
     return 50 * (p.$image.width / p.$image.height) + "%";
   }};
@@ -89,15 +67,20 @@ export const CardContent = styled.div`
   z-index: 0;
   padding: ${fluidScale("50px", "25px")};
   background-color: #ddd;
-  margin: ${fluidScale("40px", "20px")};
+
+  .__heading {
+    color: rgba(68, 68, 68, 1);
+  }
+  .__description {
+    color: rgba(40, 40, 40, 0.6);
+  }
+
   margin-left: ${(p) => {
     return p.$orientation === "left" ? "0" : fluidScale("-40px", "-20px");
   }};
   margin-right: ${(p) => {
     return p.$orientation === "right" ? "0" : fluidScale("-40px", "-20px");
   }};
-  border: 1px solid rgba(131, 184, 201, 0.35);
-  box-shadow: rgba(0, 0, 0, 0.45) 0 5px 15px;
 
   ${respond(
     css`

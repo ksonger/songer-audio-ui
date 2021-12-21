@@ -6,7 +6,14 @@ export const BlockWrapper = styled.main`
   max-width: var(--l-content-max);
 
   * + * {
-    margin-top: 1.375em;
+  }
+
+  p {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background: #eee;
+    margin: 30px auto;
   }
 
   & .banner {
@@ -31,7 +38,7 @@ export const BlockWrapper = styled.main`
     }
 
     &:nth-of-type(4) {
-      --img: url(/cone_mold.png);
+      --img: url(/suspension.png);
     }
 
     &:nth-of-type(5) {
