@@ -36,7 +36,6 @@ export const CardMain = styled.div`
   ${respond(
     css`
       flex-direction: column;
-      border: 1px solid rgba(131, 184, 201, 0.6);
       max-height: 100%;
 
       > * {
@@ -69,7 +68,11 @@ export const CardContent = styled.div`
   background-color: #ddd;
 
   .__heading {
-    color: rgba(68, 68, 68, 1);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #333;
   }
   .__description {
     color: rgba(40, 40, 40, 0.6);
@@ -99,9 +102,15 @@ export const CardHeading = styled.span`
 `;
 
 export const CardDescription = styled.span`
-  font-size: ${fluidScale("18px", "13px")};
+  font-size: ${fluidScale("18px", "11px")};
   font-style: italic;
   letter-spacing: 1px;
+  ${respond(
+    css`
+      font-size: 16px;
+    `,
+    "700px"
+  )}
 `;
 
 export const CTA = styled.div`

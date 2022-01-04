@@ -18,16 +18,18 @@ const PageTemplate = ({ content, hidePageTitle = false }) => {
   const margin = (i, l) => {
     if (i === 0) {
       return `0 0 40px 0`;
+    } else if (i === l - 1) {
+      return `40px 0 0 0`;
     } else {
       return `40px 0`;
     }
   };
 
-  const HR = (i, l) => (
+  const HR = ({ i, l }) => (
     <div
       style={{
+        borderTop: "1px solid #ccc",
         margin: margin(i, l),
-        "border-top": "1px solid #ccc",
       }}
     />
   );
@@ -44,7 +46,7 @@ const PageTemplate = ({ content, hidePageTitle = false }) => {
         return (
           <div key={i}>
             <BlockFactory type={block.blockType} data={block} />
-            {i < blocks.length - 1 && <HR i={i} l={blocks.length} />}
+            <HR i={i} l={blocks.length} />
           </div>
         );
       })}

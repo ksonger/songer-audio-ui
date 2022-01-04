@@ -5,6 +5,8 @@ const BLOCK_MAP = {
   mission: Blocks.Mission,
   card: Blocks.Card,
   scrollSections: Blocks.ScrollSections,
+  newsPosts: Blocks.NewsPosts,
+  product: Blocks.Product,
 };
 
 const BlockFactory = ({ type, data, blockMap = BLOCK_MAP }) => {

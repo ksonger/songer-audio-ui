@@ -1,0 +1,81 @@
+import styled, { css } from "styled-components";
+import { respond } from "@/styles/mixins";
+
+export const Main = styled.div`
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0 20px;
+  margin-top: 70px;
+  max-width: 920px;
+`;
+
+export const List = styled.li`
+  color: rgba(40, 40, 40, 0.8);
+  list-style-type: none;
+  width: 100%;
+  h2 {
+    color: rgba(131, 184, 201, 0.85);
+  }
+`;
+
+export const ListItem = styled.ul`
+  border-bottom: 1px solid rgba(131, 184, 201, 0.35);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+  cursor: pointer;
+
+  > p {
+    margin-bottom: 12px;
+  }
+`;
+
+export const ListItemTitle = styled.span`
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 48px;
+  color: var(--button-background-color);
+`;
+
+export const ListItemDate = styled.div`
+  text-align: right;
+  font-style: italic;
+  color: rgba(140, 140, 140, 1);
+`;
+
+export const BackButton = styled.div`
+  margin-bottom: 24px;
+`;
+
+export const PostHeader = styled.div`
+  border-bottom: 1px solid rgba(131, 184, 201, 0.35);
+  padding: 0 12px 12px 0;
+  margin-bottom: 18px;
+  display: grid;
+  grid-auto-flow: column;
+  font-size: 24px;
+`;
+
+export const PostTitle = styled.div`
+  color: rgba(100, 100, 100, 1);
+`;
+
+export const PostDate = styled.div`
+  font-size: 13px;
+  text-align: right;
+  color: rgba(160, 160, 160, 1);
+`;
+
+export const PostTime = styled.div`
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.35);
+`;
+
+export const PostImages = styled.div`
+  ${respond(
+    css`
+      text-align: center;
+    `
+  )}
+`;

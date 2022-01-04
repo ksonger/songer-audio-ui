@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { fluidScale } from "@/styles/mixins";
+import styled, { css } from "styled-components";
+import { fluidScale, respond } from "@/styles/mixins";
 
 export const BlockWrapper = styled.div`
   padding: 0 var(--l-content-padding);
@@ -18,17 +18,33 @@ export const BlockMain = styled.div`
 `;
 
 export const Heading = styled.span`
-  font-size: ${fluidScale("26px", "16px")};
+  font-size: ${fluidScale("22px", "14px")};
   text-align: center;
-  color: var(--neutral60);
   font-weight: bold;
   width: 100%;
+  text-transform: uppercase;
+  padding: 30px;
+  letter-spacing: 2px;
+  color: var(--neutral60);
+  ${respond(
+    css`
+      font-size: 18px;
+    `,
+    "700px"
+  )}
 `;
 
 export const Description = styled.p`
   text-align: center;
-  color: var(--neutral50);
+  color: var(--neutral40);
   font-style: italic;
   font-size: ${fluidScale("20px", "13px")};
   line-height: 24px;
+  letter-spacing: 1px;
+  ${respond(
+    css`
+      font-size: 16px;
+    `,
+    "700px"
+  )}
 `;

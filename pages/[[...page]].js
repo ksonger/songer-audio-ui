@@ -29,7 +29,7 @@ export async function getStaticPaths() {
     { params: { page: ["products"] } },
     { params: { page: ["technology"] } },
     { params: { page: ["media"] } },
-    { params: { page: ["about"] } },
+    { params: { page: ["news"] } },
     { params: { page: ["contact"] } },
   ];
   return { paths, fallback: true };

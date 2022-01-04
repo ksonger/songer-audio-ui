@@ -1,20 +1,8 @@
-export const surveyPaths = [
-  {
-    params: {
-      pid: ["PS5", "q-0"],
-    },
-  },
-  {
-    params: {
-      pid: ["PS5", "q-0", "tab-0", "2"],
-    },
-  },
-]
-
-export const questionPaths = [
-  {
-    params: {
-      qid: ["PS5A.Q20"],
-    },
-  },
-]
+export const searchToObject = () => {
+  const searchParams = new URLSearchParams(window.location.search);
+  const result = {};
+  for (const [key, value] of searchParams.entries()) {
+    result[key] = value;
+  }
+  return result;
+};

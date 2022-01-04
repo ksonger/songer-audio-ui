@@ -26,6 +26,9 @@ const ICON_MAP = {
 
 export default function IconFactory({ icon, ...props }) {
   const Icon = ICON_MAP[icon];
+  if (!Icon) {
+    return null;
+  }
   return Icon && <Icon {...defaultProps} {...props} />;
 }
 

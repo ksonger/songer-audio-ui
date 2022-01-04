@@ -15,9 +15,6 @@ export const BaseButton = styled(ReakitButton)`
   color: var(--button-color, var(--text-color));
   background-color: var(--button-background-color, transparent);
   border-radius: var(--button-border-radius, var(--border-radius));
-  span {
-    margin-top: 3px;
-  }
 
   ${({ block }) =>
     block &&
@@ -41,7 +38,16 @@ export const BaseButton = styled(ReakitButton)`
   }
 `;
 
+export const ButtonLabel = styled.span``;
+
 export const ButtonContent = styled.div`
-  display: grid;
-  grid-template-columns: 1fr min-content;
+  padding-top: 3px;
+`;
+
+export const ButtonIcon = styled.span`
+  float: ${({ $iconAlign }) => $iconAlign};
+  transform: translateY(1px);
+  padding: ${({ $iconAlign }) => {
+    return $iconAlign === "left" ? "0 .7em 0 0" : "0 0 0 .7em";
+  }};
 `;

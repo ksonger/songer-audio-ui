@@ -20,18 +20,11 @@ const Button = ({
       {...props}
     >
       <Styled.ButtonContent>
-        {children && <span>{children}</span>}
+        {children && <Styled.ButtonLabel>{children}</Styled.ButtonLabel>}
         {icon && (
-          <span
-            className="icon"
-            style={{
-              float: iconAlign,
-              transform: "translateY(1px)",
-              paddingLeft: children ? "0.7em" : "",
-            }}
-          >
+          <Styled.ButtonIcon $iconAlign={iconAlign} className="icon">
             <IconFactory {...iconProps} icon={icon} />
-          </span>
+          </Styled.ButtonIcon>
         )}
       </Styled.ButtonContent>
     </Styled.BaseButton>

@@ -7,55 +7,70 @@ const Technology = {
         {
           heading: `Field Coils`,
           body: `
+          <p class="section">Design Philosophy and Materials</p>
+          
           <p>
-            Unlike a typical loudspeaker driver, Songer Audio uses powerful electromagnets called field coils to produce
-            a magnetic field, rather than a permanent magnet. There are some good reasons for that design decision.
+          The goal of the music lover is to connect with the work of artists.
           </p>
           <p>
-            Practically speaking, the tolerances of the magnetic gap and voice coil in our drivers is smaller than it is
-            in a typical driver. With that in mind, the ability to remove the influence of the magnetic field during
-            driver assembly is helpful for accuracy.
+          However, at each stage music passes through on its way from the artist to the listener, the intrusion of outside influences often
+          makes that expression less true to the original work, and the listener's connection to it more remote.
+          </p>
+          <p>
+          Our goal is to preserve that connection for music lovers, and in doing so leave behind as little of ourselves as possible.
+          That guiding principle can be found in every element of each product we make.
+          </p>
+          <div class="banner"></div>
+          <p class="subsection">Field Coils</p>
+          <p>
+          A powerful 1.7 Tesla electromagnetic motor is the central driving force behind our loudspeakers. It provides a constant, highly uniform gap density.  
+          It has a magnetic permeability, or stiffness, that is hundreds if not thousands of times higher than a permanent magnet.  That stiffness 
+          translates into accuracy - much higher accuracy and lower distortion than permanent magnets are capable of. 
+          <p>
+          It is adjustable. Simply increasing or decreasing the current from our variable power supply to the field coil modifies the measurements and behavior 
+          of a loudspeaker, providing the listener with freedom to tune the listening experience to his or her taste.
+          </p>
+          <p>
+          The performance of the magnet is further enhanced by the design of our power supply. It is uniquely capable of removing overlying AC signals and 
+          shunting electromagnetic back-force, which in other power supplies draws parasitically upon the electromagnetic field, causing unwanted distortion.
+          </p>  
+          <div class="banner"></div>
+          <p class="subsection">Voice Coil and Cones</p>
+          <p>
+          To fully capture the music signal operating in that strong, precise magnetic field, the voice coil and cones must be sufficiently rigid and yet 
+          vanishingly lightweight.
+          </p>
+          <p>
+          For rigidity, our moving assembly consists of all curvilinear cones.  They excellent radial strength and maximize frequency response. The shape optimizes 
+          transfer of sound into the cones from the voice coil. The depth of the cones decreases cone distortion, particularly at low frequencies. Each cone and voice 
+          coil is handmade, from specially treated washi paper.  Years of development invested in cone material and treatment have resulted in an excellent combination 
+          of transducer speed and damping. Rigorous refinement of cones size and curvature have minimized distortion and beaming, and enhanced off-axis performance.
+          <p>
+          In spite of its large 10" diameter, the entire driver moving mass, including suspension, weighs just 12.25 grams.
+          </p>
+          <div class="banner"></div>
+          <p class="subsection">Suspension</p>
+          <p>
+          To transmit that potential energy with fidelity, the lightweight mass must be left completely free to accurate, linear motion. Our patented spider design is years in 
+          the making, and perfectly suited to the task.  It holds the voice coil in an exacting degree of tension with a flexible, acoustically transparent lattice and
+          a carbon fiber composite collar.  It places trust entirely upon the field coil and the signal of the music, offering no unnecessary resistances whatsoever.
+          </p>
+          <p>
+          Paired with paper thin, reverse roll lambskin surrounds the driver is very linear, and yet achieves a remarkable free-air resonant frequency of just 17Hz.
+          </p>
+          <div class="banner"></div>
+          <p class="subsection">Cabinetry</p>
+          <p>
+          To complete this system, as little as possible must be interstitial between the signal of your music and the field coil. This is where the S1 
+          delivers absolutely everything, again by contributing almost nothing.
           </p>
           <div class="banner"></div>
           <p>
-            More importantly however, the nature and quality of an electromagnetic field is unlike that of a permanent
-            magnet, and is the better choice for sound reproduction. A permanent magnetic field has comparatively low
-            permeability and is elastic, much like a trampoline. In an electromagnet however the permeability, or
-            'stiffness' of the magnetic field is typically hundreds if not thousands of times higher. This means that
-            when the voice coil is excited by a signal in that field, it is moved very precisely in space, and returned
-            similarly precisely to a resting state. The result is incredibly accurate, low-distortion sound
-            reproduction.
+          Speaker cabinets by their nature introduce diffraction. The S1 minimally compensates for this natural diffraction, and nothing else. It is internally
+          lined, damped and well braced.  To preserve perfect phase and timing, no additional drivers are included in its design.  The signal isn't needlessly degraded, 
+          as no crossover circuitry is necessary.  The S1 simply holds the driver at ear level, where it plays free of coloration, and is port tuned for deep, accurate bass response.
           </p>
-          <div class="banner"></div>
-          <p>
-            Lastly, the uniform density of the magnetic field in an electromagnet is more constant as the voice coil
-            moves within it, such that the voice coil draws less upon the magnetic field adversely affecting flux
-            density in the gap.
-          </p>
-          <p>
-            Like a select few other field coil loudspeaker producers, Songer Audio uses treated Hosho washi paper as a
-            cone material, as well as for our voice coil formers. While it's subjective, we feel that the natural
-            lifelike sound produced by mulberry fiber paper can't be matched.
-          </p>
-          <div class="banner"></div>
-          <p>
-            Unlike others, Songer Audio hand forms curvilinear cones for our drivers instead of straight cones. This
-            allows for them to be remarkably thin and light, while maintaining excellent radial stiffness and
-            durability, and producing sound over a very broad frequency range.
-          </p>
-          <div class="banner"></div>
-          <p>
-            Leather has been used as a surround materials for decades, for it's long-lasting durability and excellent
-            sonic characteristics. We use the lightest and thinnest of lambskin leather for the surrounds of our
-            drivers.
-          </p>
-          <div class="banner"></div>
-          <p>
-            Our spider assembly is a patented, highly innovative design. Composed of thermal polyurethane matrix and a
-            light carbon fiber co-polyester composite collar, it holds the moving mass in light tension and further
-            reduces the already feather-weight 14 gram load upon the field and voice coils. The results is music with
-            extraordinary dynamics and detail.
-          </p>`,
+          `,
         },
       ],
     },

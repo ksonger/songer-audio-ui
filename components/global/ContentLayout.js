@@ -44,7 +44,7 @@ const Main = styled.main`
   width: 100%;
   max-width: var(--l-content-max);
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 `;
 
 const Article = styled.div`
