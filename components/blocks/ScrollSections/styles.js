@@ -2,16 +2,26 @@ import styled, { css } from "styled-components";
 
 export const BlockWrapper = styled.main`
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 40px 0;
   max-width: var(--l-content-max);
 
   p {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 10px 30px;
     background: #eee;
     margin: 0 auto;
     color: #666;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+
+    &.first {
+      border-top: 1px solid #bbb;
+    }
+
+    &.last {
+      border-bottom: 1px solid #bbb;
+    }
 
     &.section {
       font-weight: bold;

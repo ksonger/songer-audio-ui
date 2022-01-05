@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Header from "@/global/Header";
 import Footer from "@/global/Footer/Footer";
 import { useRouter } from "next/router";
 import useGlobalContext from "@/hooks/useGlobalContext";
 import { getActiveNavItem } from "@/helpers/";
-import { getMainColor } from "@/styles/mixins";
+import { getMainColor, respond } from "@/styles/mixins";
 
 const DefaultLayout = ({ children }) => {
   const { asPath } = useRouter();
@@ -57,6 +57,13 @@ const Article = styled.div`
   max-width: var(--l-content-max);
   margin: auto;
   top: 0;
+
+  ${respond(
+    css`
+      width: calc(100% - 17px);
+      padding: 0;
+    `
+  )}
 `;
 
 DefaultLayout.propTypes = {

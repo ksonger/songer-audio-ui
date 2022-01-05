@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Header from "@/global/Header";
 import Footer from "@/global/Footer/Footer";
 import { useRouter } from "next/router";
 import useGlobalContext from "@/hooks/useGlobalContext";
-import { getMainColor } from "@/styles/mixins";
+import { getMainColor, respond } from "@/styles/mixins";
 import { getActiveNavItem } from "@/helpers";
 
 const ContentLayout = ({ children }) => {
@@ -52,6 +52,13 @@ const Article = styled.div`
   min-height: 60vh;
   margin: auto;
   top: 0;
+
+  ${respond(
+    css`
+      width: calc(100% - 17px);
+      margin: 0;
+    `
+  )}
 `;
 
 ContentLayout.propTypes = {

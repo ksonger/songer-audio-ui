@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import Heading from "@/components/atomic/Heading";
 import HtmlHead from "@/global/HtmlHead";
 import BlockFactory from "@/factories/BlockFactory";
 import useGlobalContext from "@/hooks/useGlobalContext";

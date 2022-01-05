@@ -3,10 +3,18 @@ const Products = {
     {
       blockType: "product",
       heading: `The S1 Loudspeaker`,
-      description: `Songer Audio's first loudspeaker is a solid hardwood, hand-crafted 140 liter 
-      bass reflex design. The Enso is a singular expression of the years of research and development 
-      that resulted in the Onimaru field coil driver. It delivers true full-range sound across the 
-      frequency spectrum with breathtaking detail, phase accuracy, imaging and transients.`,
+      description: `<p>The S1 delivers absolutely everything, by adding almost nothing; its greatest strength is its 
+      well-constructed simplicity.  It is a piece of fine furniture, designed to look as equally beautiful in your
+      listening room as it sounds.</p>
+      <p>The S1 loudspeaker is a solid hardwood, hand-crafted 140 liter bass reflex design.  Each pair is hand 
+      constructed from 100% kiln-dried hardwoods, in a variety of standard options or in a hardwood of your choosing.  
+      It is well braced, internally lined and damped to eliminate unwanted cabinet resonances, and port tuned to 30Hz 
+      for full, accurate bass response. The cabinet is acoustically isolated from its base and the floor, with solid brass risers. 
+      </p><p>The S1 minimally compensates for natural baffle diffraction, however it includes no additional internal components 
+      of any kind. No additional drivers are used, preserving perfect phase presentation throughout the frequency range. 
+      Because no multi-way crossover circuitry is necessary, your music isn't needlessly filtered, degraded or attenuated. 
+      The S1 simply holds the driver perfectly still at ear level, showcasing its remarkable performance free of any 
+      coloration, or distortion.</p>`,
       specs: [
         {
           label: `System`,

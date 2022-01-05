@@ -7,6 +7,7 @@ const BLOCK_MAP = {
   scrollSections: Blocks.ScrollSections,
   newsPosts: Blocks.NewsPosts,
   product: Blocks.Product,
+  pageGallery: Blocks.PageGallery,
 };
 
 const BlockFactory = ({ type, data, blockMap = BLOCK_MAP }) => {

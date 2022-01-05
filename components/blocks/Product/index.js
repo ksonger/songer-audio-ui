@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import * as Styled from "./styles";
 import { Gallery } from "@/components/atomic/Gallery";
+import { useOnResize } from "@/hooks/listeners";
+import { mobileBreakpoint } from "@/styles/mixins";
 
 const Product = ({
   heading,
@@ -12,23 +14,39 @@ const Product = ({
   measurements,
 }) => {
   const [galleryScroll, setGalleryScroll] = useState();
+  const [containerObj, setContainerObj] = useState();
+  const [windowWidth, setWindowWidth] = useState();
+  const [hasData, setHasData] = useState(false);
 
-  useEffect(() => {
-    setGalleryScroll(document.querySelector(`#${galleryId}`));
-    console.log(galleryScroll);
+  useOnResize(mobileBreakpoint, (isMobile) => {
+    const w = window.innerWidth;
+    setWindowWidth(w);
   });
+
+  useLayoutEffect(() => {
+    setWindowWidth(window?.innerWidth);
+    setGalleryScroll(document.querySelector(`#${galleryId}`));
+    setHasData(galleryScroll !== undefined);
+    setContainerObj({
+      width: galleryScroll?.clientWidth,
+      height: 600,
+    });
+  }, [windowWidth, hasData]);
   return (
     <Styled.ProductWrapper>
       <Styled.ProductContent>
-        <Styled.ProductHeading>{heading}</Styled.ProductHeading>
-        <Styled.ProductDescription>{description}</Styled.ProductDescription>
+        <Styled.ProductHeading dangerouslySetInnerHTML={{ __html: heading }} />
+        <Styled.ProductDescription
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
       </Styled.ProductContent>
       <Styled.ProductSpecsImages>
         <Styled.Images id={galleryId}>
-          {gallery && gallery.length > 0 && (
+          {gallery.length > 0 && hasData && (
             <Gallery
               layout={3}
               scrollingEl={galleryScroll}
+              containerObj={containerObj}
               gallery={gallery}
               galleryId={galleryId}
             />

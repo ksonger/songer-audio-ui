@@ -27,10 +27,9 @@ export async function getStaticPaths() {
   const paths = [
     { params: { page: [] } },
     { params: { page: ["products"] } },
+    { params: { page: ["gallery"] } },
     { params: { page: ["technology"] } },
-    { params: { page: ["media"] } },
     { params: { page: ["news"] } },
-    { params: { page: ["contact"] } },
   ];
   return { paths, fallback: true };
 }
