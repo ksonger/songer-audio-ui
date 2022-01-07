@@ -2,7 +2,9 @@ import styled, { css } from "styled-components";
 import { fluidScale, respond } from "@/styles/mixins";
 
 export const BlockWrapper = styled.div`
-  padding: 0 var(--l-content-padding);
+  padding: 0 40px;
+  max-width: 1100px;
+  margin: 0 auto;
 `;
 
 export const BlockMain = styled.div`

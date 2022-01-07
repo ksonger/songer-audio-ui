@@ -1,10 +1,5 @@
 import styled, { css } from "styled-components";
-import {
-  fluidScale,
-  lSetAspectRatio,
-  lFullBleed,
-  respond,
-} from "@/styles/mixins";
+import { fluidScale, lSetAspectRatio, respond } from "@/styles/mixins";
 
 const type = "default";
 
@@ -14,19 +9,27 @@ function getFlexDirection(layout, imagePosition) {
 }
 
 export const CardWrapper = styled.p`
-  padding: 0;
+  padding: 0 40px;
   p {
     margin: ${fluidScale("40px", "20px")} 0;
   }
+  ${respond(
+    css`
+      padding: 0;
+    `,
+    "800px"
+  )}
 `;
 
 export const CardMain = styled.div`
   width: 100%;
+  max-width: 1100px;
+  border: 1px solid #bbb;
+  margin: 0 auto 20px auto;
   height: 100%;
   display: flex;
   flex-direction: ${(p) => getFlexDirection(p.$layout, p.$orientation)};
-  margin-bottom: 20px;
-  background-color: #ddd;
+  background-color: #eee;
   max-height: 650px;
 
   > * {
@@ -37,7 +40,8 @@ export const CardMain = styled.div`
     css`
       flex-direction: column;
       max-height: 100%;
-
+      border-left: none;
+      border-right: none;
       > * {
         flex-basis: 100%;
       }
@@ -64,8 +68,7 @@ export const CardContent = styled.div`
   flex-grow: 1;
   align-content: center;
   z-index: 0;
-  padding: ${fluidScale("50px", "25px")};
-  background-color: #ddd;
+  padding: ${fluidScale("40px", "30px")};
 
   .__heading {
     font-weight: bold;
@@ -96,13 +99,13 @@ export const CardContent = styled.div`
 `;
 
 export const CardHeading = styled.span`
-  font-size: ${fluidScale("26px", "16px")};
+  font-size: ${fluidScale("22px", "16px")};
   letter-spacing: 1px;
   font-weight: bold;
 `;
 
 export const CardDescription = styled.span`
-  font-size: ${fluidScale("18px", "11px")};
+  font-size: ${fluidScale("15px", "13px")};
   font-style: italic;
   letter-spacing: 1px;
   ${respond(

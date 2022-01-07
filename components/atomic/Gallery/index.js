@@ -13,12 +13,21 @@ export function Gallery({
   const options = {
     galleryLayout: layout,
     hoveringBehaviour: hoverBehavior,
+    clickToExpand: true,
     scrollDuration: 200,
   };
 
   // The eventsListener will notify you anytime something has happened in the gallery.
-  // const eventsListener = (eventName, eventData) =>
-  //   console.log({ eventName, eventData });
+  const eventsListener = (eventName, eventData) => {
+    switch (eventName) {
+      case "ITEM_ACTION_TRIGGERED":
+        console.log("show full image");
+        break;
+      default:
+        console.log({ eventName, eventData });
+        break;
+    }
+  };
 
   return (
     <>
@@ -27,7 +36,7 @@ export function Gallery({
         items={gallery}
         options={options}
         container={containerObj}
-        // eventsListener={eventsListener}
+        eventsListener={eventsListener}
         scrollingElement={scrollingEl}
       />
     </>

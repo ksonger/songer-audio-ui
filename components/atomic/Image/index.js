@@ -1,8 +1,7 @@
 import NextImage from "next/image";
-import styled from "styled-components";
 import imageProps from "@/shapes/image";
 
-function Image({
+const Image = ({
   image,
   priority = false,
   sizes,
@@ -11,7 +10,7 @@ function Image({
   objectFit,
   placeholder = "empty",
   className,
-}) {
+}) => {
   if (!image?.url) return null;
 
   const {
@@ -45,16 +44,12 @@ function Image({
       {...dimensionProps}
     />
   );
-}
+};
 
 Image.displayName = "Atomics.Image";
 
 Image.propTypes = imageProps;
 
-const StyledImage = styled(Image)`
-  background-color: var(--box-bg-color);
-`;
+Image.displayName = "Styled.Atomics.Image";
 
-StyledImage.displayName = "Styled.Atomics.Image";
-
-export default StyledImage;
+export default Image;

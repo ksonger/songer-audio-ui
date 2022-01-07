@@ -15,23 +15,19 @@ export const BlockWrapper = styled.div`
 `;
 
 export const BlockMain = styled.div`
-  display: flex;
-  flex-basis: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: auto;
+  gap: 1em;
   width: 100%;
   max-width: 1100px;
   margin: 40px auto;
-  height: 100%;
-
-  & img {
-    cursor: pointer;
+  align-content: center;
+  p {
+    margin-bottom: 12px;
   }
 
-  ${respond(
-    css`
-      margin: 0;
-      width: 100%;
-      border: none;
-    `,
-    "700px"
-  )}
+  a {
+    color: var(--button-background-color);
+  }
 `;

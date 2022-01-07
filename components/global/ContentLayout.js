@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import Header from "@/global/Header";
@@ -14,6 +14,12 @@ const ContentLayout = ({ children }) => {
   const activeNavItem = getActiveNavItem(navItems, asPath);
   const activeHref = activeNavItem?.href;
   const mainColor = getMainColor(navItems, asPath);
+
+  useEffect(() => {
+    setTimeout(() => {
+      document.querySelector(`#__next`).scrollTop = 0;
+    }, 0);
+  });
 
   return (
     <Wrapper
@@ -43,8 +49,7 @@ const Wrapper = styled.div`
 const Main = styled.main`
   width: 100%;
   max-width: var(--l-content-max);
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
 `;
 
 const Article = styled.div`
@@ -55,7 +60,7 @@ const Article = styled.div`
 
   ${respond(
     css`
-      width: calc(100% - 17px);
+      width: 100%;
       margin: 0;
     `
   )}

@@ -8,38 +8,30 @@ import { shuffle } from "@/helpers";
 const PageGallery = ({ images }) => {
   const [galleryScroll, setGalleryScroll] = useState();
   const [containerObj, setContainerObj] = useState();
-  const [windowWidth, setWindowWidth] = useState();
   const [hasData, setHasData] = useState(false);
 
-  useOnResize(mobileBreakpoint, (isMobile) => {
-    const w = window.innerWidth;
-    setWindowWidth(window?.innerWidth);
-    setContainerObj({
-      width: galleryScroll?.clientWidth,
-      height: galleryScroll?.clientHeight,
-    });
-  });
-
   useEffect(() => {
-    setWindowWidth(window?.innerWidth);
-    setGalleryScroll(document.querySelector(`#__next`));
-    setHasData(galleryScroll !== undefined);
+    if (!galleryScroll) setGalleryScroll(document.querySelector(`#__next`));
+    if (!hasData) setHasData(galleryScroll !== undefined);
     setContainerObj({
-      width: galleryScroll?.clientWidth,
+      width: document.querySelector(`#gallery_page`).clientWidth,
       height: galleryScroll?.clientHeight,
     });
-  }, [windowWidth, hasData]);
+  }, [hasData, galleryScroll, containerObj]);
+
   return (
-    <Styled.BlockWrapper id="gallery_page">
-      {images.length > 0 && hasData && (
-        <Gallery
-          layout={0}
-          scrollingEl={galleryScroll}
-          containerObj={containerObj}
-          gallery={shuffle(images)}
-          galleryId={`galleryPageGallery`}
-        />
-      )}
+    <Styled.BlockWrapper>
+      <Styled.BlockMain id="gallery_page">
+        {images.length > 0 && hasData && (
+          <Gallery
+            layout={0}
+            scrollingEl={galleryScroll}
+            containerObj={containerObj}
+            gallery={shuffle(images)}
+            galleryId={`galleryPageGallery`}
+          />
+        )}
+      </Styled.BlockMain>
     </Styled.BlockWrapper>
   );
 };

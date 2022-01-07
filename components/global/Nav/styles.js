@@ -27,6 +27,7 @@ export const Nav = styled.div`
     &:hover,
     &.active {
       color: var(--header-menu-text-color-active);
+      cursor: pointer;
     }
 
     ${respond(
@@ -40,6 +41,7 @@ export const Nav = styled.div`
   /* nav items with link styling */
   .list-item-link {
     &::after {
+      cursor: pointer;
       content: "";
       display: block;
       border-bottom: 1px solid var(--header-menu-text-color-active);

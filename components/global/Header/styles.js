@@ -48,7 +48,7 @@ export const Background = styled.div`
 
 export const LogoNav = styled.div`
   display: grid;
-  gap: 4em;
+  gap: 3em;
   width: 100%;
   grid-auto-flow: row;
   grid-template-rows: auto auto;

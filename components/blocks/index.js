@@ -4,3 +4,4 @@ export { default as ScrollSections } from "./ScrollSections";
 export { default as NewsPosts } from "./NewsPosts";
 export { default as Product } from "./Product";
 export { default as PageGallery } from "./Gallery";
+export { default as Banner } from "./Banner";

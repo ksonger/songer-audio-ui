@@ -1,6 +1,12 @@
 const Home = {
   home: [
     {
+      blockType: "banner",
+      message: `<p>
+        Please join us at the <a href="https://pacificaudiofest.com" target="_blank">2022 Pacific AudioFest!</a>
+        </p>`,
+    },
+    {
       blockType: "mission",
       heading: `The medium is engineering. The result is art.`,
       description: `Songer Audio field coil loudspeakers and drivers are functional works of art, of uncompromising craftsmanship. Each piece is 100% designed, made and assembled by hand. Our products express a philosophy of simplicity, excellence, and a relentless dedication to provide the purest possible experience of music.`,
@@ -47,11 +53,11 @@ const Home = {
       description: `
         <p>
         Newly updated with our latest field coil driver, the S1 loudspeaker delivers phase perfect, full-range 
-        sound +/- 3dB from 30Hz - 17kHz.  The cabinetry is furniture grade, designed and built by hand.  Constructed of 
+        sound +/- 3dB from 30Hz - 17kHz.  Constructed of 
         all solid hardwoods and brass hardware, it's meant to be as beautiful to look at as it is to listen to.
         </p>
         <p>
-        Well damped and braced to eliminate unwanted cabinet resonances, its excellent performance 
+        Its excellent performance 
         is owed to its simplicity; internally it compensates for natural cabinet diffraction and nothing else. Tuned for 
         deep, accurate bass, it is a showcase for the superb detail, clarity and imaging of our driver.
         </p>`,

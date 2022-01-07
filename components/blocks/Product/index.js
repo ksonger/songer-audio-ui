@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as Styled from "./styles";
 import { Gallery } from "@/components/atomic/Gallery";
 import { useOnResize } from "@/hooks/listeners";
@@ -23,7 +23,7 @@ const Product = ({
     setWindowWidth(w);
   });
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setWindowWidth(window?.innerWidth);
     setGalleryScroll(document.querySelector(`#${galleryId}`));
     setHasData(galleryScroll !== undefined);
@@ -34,33 +34,39 @@ const Product = ({
   }, [windowWidth, hasData]);
   return (
     <Styled.ProductWrapper>
-      <Styled.ProductContent>
-        <Styled.ProductHeading dangerouslySetInnerHTML={{ __html: heading }} />
-        <Styled.ProductDescription
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
-      </Styled.ProductContent>
-      <Styled.ProductSpecsImages>
-        <Styled.Images id={galleryId}>
-          {gallery.length > 0 && hasData && (
-            <Gallery
-              layout={3}
-              scrollingEl={galleryScroll}
-              containerObj={containerObj}
-              gallery={gallery}
-              galleryId={galleryId}
+      <Styled.ProductInner>
+        <Styled.ProductMain>
+          <Styled.ProductContent>
+            <Styled.ProductHeading
+              dangerouslySetInnerHTML={{ __html: heading }}
             />
-          )}
-        </Styled.Images>
-        <Styled.Specs>
-          {specs.map((spec, i) => (
-            <Styled.SpecRow key={`spec_${galleryId}_${i}`}>
-              <Styled.SpecLabel>{spec.label}</Styled.SpecLabel>
-              <Styled.SpecValue>{spec.value}</Styled.SpecValue>
-            </Styled.SpecRow>
-          ))}
-        </Styled.Specs>
-      </Styled.ProductSpecsImages>
+            <Styled.ProductDescription
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
+          </Styled.ProductContent>
+          <Styled.ProductSpecsImages>
+            <Styled.Images id={galleryId}>
+              {gallery.length > 0 && hasData && (
+                <Gallery
+                  layout={3}
+                  scrollingEl={galleryScroll}
+                  containerObj={containerObj}
+                  gallery={gallery}
+                  galleryId={galleryId}
+                />
+              )}
+            </Styled.Images>
+            <Styled.Specs>
+              {specs.map((spec, i) => (
+                <Styled.SpecRow key={`spec_${galleryId}_${i}`}>
+                  <Styled.SpecLabel>{spec.label}</Styled.SpecLabel>
+                  <Styled.SpecValue>{spec.value}</Styled.SpecValue>
+                </Styled.SpecRow>
+              ))}
+            </Styled.Specs>
+          </Styled.ProductSpecsImages>
+        </Styled.ProductMain>
+      </Styled.ProductInner>
     </Styled.ProductWrapper>
   );
 };

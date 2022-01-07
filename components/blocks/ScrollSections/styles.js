@@ -1,13 +1,27 @@
 import styled, { css } from "styled-components";
+import { respond } from "@/styles/mixins";
 
-export const BlockWrapper = styled.main`
+export const BlockWrapper = styled.div`
+  width: calc(100% - 80px);
   margin: 0 auto;
-  padding: 40px 0;
-  max-width: var(--l-content-max);
+
+  ${respond(
+    css`
+      margin: 40px 0;
+      width: 100%;
+    `,
+    "700px"
+  )}
+`;
+
+export const BlockMain = styled.main`
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
 
   p {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     padding: 10px 30px;
     background: #eee;
     margin: 0 auto;

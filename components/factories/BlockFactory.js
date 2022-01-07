@@ -8,6 +8,7 @@ const BLOCK_MAP = {
   newsPosts: Blocks.NewsPosts,
   product: Blocks.Product,
   pageGallery: Blocks.PageGallery,
+  banner: Blocks.Banner,
 };
 
 const BlockFactory = ({ type, data, blockMap = BLOCK_MAP }) => {

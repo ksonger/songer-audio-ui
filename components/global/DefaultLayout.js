@@ -60,7 +60,7 @@ const Article = styled.div`
 
   ${respond(
     css`
-      width: calc(100% - 17px);
+      width: 100%;
       padding: 0;
     `
   )}

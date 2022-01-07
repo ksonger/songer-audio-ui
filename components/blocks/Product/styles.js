@@ -1,15 +1,38 @@
 import styled, { css } from "styled-components";
 import { fluidScale, respond } from "@/styles/mixins";
 
-export const ProductWrapper = styled.div`
+export const ProductWrapper = styled.p`
+  width: calc(100% - 80px);
+  margin: 0 auto;
+
+  ${respond(
+    css`
+      margin: 40px 0;
+      width: 100%;
+    `,
+    "800px"
+  )}
+`;
+
+export const ProductInner = styled.div`
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
+`;
+
+export const ProductMain = styled.div`
+  width: 100%;
   padding: 30px;
   border: 1px solid #bbb;
   background: #eee;
+
   p {
     margin: ${fluidScale("20px", "10px")} 0;
+  }
+
+  a {
+    color: var(--button-background-color);
+    cursor: pointer;
   }
 
   ${respond(
@@ -27,7 +50,7 @@ export const ProductContent = styled.div`
   grid-template-rows: max-content 1fr;
   ${respond(
     css`
-      padding: 0 37px 0 20px;
+      padding: 0 30px;
     `,
     "800px"
   )}
@@ -42,7 +65,7 @@ export const ProductHeading = styled.h2`
 export const ProductDescription = styled.div`
   font-size: 14px;
   letter-spacing: 1px;
-  font-style: italic;
+
   margin-bottom: 32px;
 `;
 
@@ -96,7 +119,7 @@ export const SpecRow = styled.div`
   grid-auto-flow: row;
   border-bottom: 1px solid #bbb;
   grid-template-rows: max-content;
-  padding: 10px 17px 10px 10px;
+  padding: 10px 24px;
   align-content: center;
   gap: 0.5em;
 `;

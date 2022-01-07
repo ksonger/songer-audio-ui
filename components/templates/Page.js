@@ -14,21 +14,10 @@ const PageTemplate = ({ content, hidePageTitle = false }) => {
     featuredImage: {},
   };
 
-  const margin = (i, l) => {
-    if (i === 0) {
-      return `0 0 40px 0`;
-    } else if (i === l - 1) {
-      return `40px 0 0 0`;
-    } else {
-      return `40px 0`;
-    }
-  };
-
   const HR = ({ i, l }) => (
     <div
       style={{
         borderTop: "1px solid #ccc",
-        margin: margin(i, l),
       }}
     />
   );
@@ -45,7 +34,6 @@ const PageTemplate = ({ content, hidePageTitle = false }) => {
         return (
           <div key={i}>
             <BlockFactory type={block.blockType} data={block} />
-            <HR i={i} l={blocks.length} />
           </div>
         );
       })}

@@ -35,10 +35,179 @@ const Products = {
       gallery: [
         {
           itemId: "1",
-          mediaUrl: "./s1_front.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s1_front.png",
           metaData: {
             type: "image",
             height: 1700,
+            width: 2000,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          itemId: "2",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/sa1_front_down.png",
+          metaData: {
+            type: "image",
+            height: 2000,
+            width: 2208,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          itemId: "3",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s1_driver_close.png",
+          metaData: {
+            type: "image",
+            height: 2000,
+            width: 2442,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "4",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/S1_port.png",
+          metaData: {
+            type: "image",
+            height: 2000,
+            width: 2086,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "5",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/sa1_top_close.png",
+          metaData: {
+            type: "image",
+            height: 1000,
+            width: 1109,
+            focalPoint: [0, 0],
+          },
+        },
+      ],
+      measurements: [],
+    },
+    {
+      blockType: "product",
+      heading: `The PS1 Power Supply`,
+      description: `<p>The PS1 is a very tightly regulated, very low impedance power supply. It is specifically 
+      designed as a high nose rejection type, such that AC line noise and harmonic noise is not transferred to 
+      the DC regulated output powering the field coil.  This unique feature damps any induced motor 
+      voice coil modulated signal from the field coil, shunting this AC induced audio signal at the power supply.</p>
+      <p>The result is "locked down" pure DC power to the driver, with no overlying AC audio signal.</p>
+      <p>The supply is adjustable from 9 to 13 volts, and can deliver constant DC current up to 2 amps. This allows the
+      listener to significantly modify the "total Q" and overall character of a loudspeaker, and thereby tune it
+      to their personal listening preference.
+      </p><p>The rejection ratio of this regulated supply is over 70 dB. Input power is configurable to order, for 115 or 230 
+      volt 50/60 Hz operation. Two 6-foot XLR cables are included as standard, however they can also be configured to your needs.
+      </p><p>We are delighted that <a href="http://www.whammerdyne.com" target="_blank">Whammerdyne Heavy Industries</a> manufacturers these 
+      remarkable power supplies in a partnership with Songer Audio.</p>`,
+      specs: [
+        { label: `System`, value: `DC Regulated Power Supply` },
+        { label: `Voltage`, value: `Variably Adjustable, 9 - 13 Volts` },
+        { label: `Current`, value: `Constant DC Current up to 2 Amps` },
+        { label: `Dimensions`, value: `(W x H x D) 9 x 4 x 7.25 in` },
+        { label: `Materials`, value: `Anodized Aluminum Chassis` },
+        { label: `Weight`, value: `8.2 lbs` },
+        { label: `Connections`, value: `3-pin XLR power` },
+      ],
+      price: `$2,000 (pair)`,
+      galleryId: "ps1",
+      gallery: [
+        {
+          // Image item:
+          itemId: "6",
+          mediaUrl:
+            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_front.png",
+          metaData: {
+            type: "image",
+            height: 1000,
+            width: 978,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Another Image item:
+          itemId: "7",
+          mediaUrl:
+            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_back.png",
+          metaData: {
+            type: "image",
+            height: 1000,
+            width: 814,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Another Image item:
+          itemId: "8",
+          mediaUrl:
+            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_display.png",
+          metaData: {
+            type: "image",
+            height: 1000,
+            width: 665,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Another Image item:
+          itemId: "8",
+          mediaUrl:
+            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_ph_nov8.png",
+          metaData: {
+            type: "image",
+            height: 1000,
+            width: 761,
+            focalPoint: [0, 0],
+          },
+        },
+      ],
+      measurements: [],
+    },
+    {
+      blockType: "product",
+      heading: `In Development: The S2 Loudspeaker`,
+      description: `<p>The S2 is an open baffle concept speaker I've been working on for the past year.  When I began
+        Songer Audio, I intended to build two primary speakers.  The first, a ported single driver design, is the S1.  The 
+        second was to be something that showcases the beauty of the driver itself, likely on an open baffle.</p>
+      <p>Like the S1, the construction quality and materials of the S2 are without compromise.  The hardwood baffles are internally
+      reinforced with thick aluminum bars to prevent resonances.  To further eliminate any distortion and resonance, the field 
+      coil driver is "magnet mounted" by a large M10 bolt in the electromagnet housing. This allows it to float in space, 
+      without the driver making any contact the upper baffle. 
+      <p>The field coil driver has been modified for this design, which I am calling Type D.  Leveraging the acoustic transparency
+      of the suspension design, it adds a novel rear-firing whizzer - the first of its kind to my knowledge, and makes a big
+       contribution to the overall treble performance and balance of this dipole loudspeaker.  It isn't pictured in the images
+       below, but there are a few shots of it on the gallery page.</p>
+       <p>Also like the S1, the field coil is allowed to run wide open, with only compensation for baffle diffraction.
+      Below 200Hz, it is assisted by an Acoustic Elegance LO15-D16 woofer for extremely accurate overall bass response.  It 
+      is "port constrained", which acts similarly to slot loading.  This lowers resonant frequency and increases the forward 
+      output of the driver, while reducing back wave cancellation.  Look for more details in the coming year.</p>`,
+      specs: [
+        {
+          label: `System`,
+          value: `Dipole 1.5-way open baffle loudspeaker`,
+        },
+        { label: `Frequency Response`, value: `40Hz - 17kHz +/- 3dB` },
+        { label: `Efficiency`, value: `93 dB SPL (2.83 V/1m)` },
+        { label: `Dimensions`, value: `(W x H x D) 20 x 48 x 17 in` },
+        { label: `Materials`, value: `Hardwood, brass, and aluminum` },
+        { label: `Weight`, value: `130 lbs` },
+        {
+          label: `Connections`,
+          value: `5-way Cardas binding posts, 3-pin Cardas XLR power`,
+        },
+      ],
+      price: `TBD`,
+      galleryId: "s2",
+      gallery: [
+        {
+          itemId: "1",
+          mediaUrl: "./s2.png",
+          metaData: {
+            type: "image",
+            height: 1800,
             width: 2000,
             title: "sample-title",
             description: "sample-description",
@@ -51,11 +220,11 @@ const Products = {
         },
         {
           itemId: "2",
-          mediaUrl: "./sa1_front_down.png",
+          mediaUrl: "./s2_back_1.jpeg",
           metaData: {
             type: "image",
-            height: 2000,
-            width: 2208,
+            height: 1200,
+            width: 1600,
             title: "sample-title",
             description: "sample-description",
             focalPoint: [0, 0],
@@ -67,7 +236,8 @@ const Products = {
         },
         {
           itemId: "3",
-          mediaUrl: "./s1_driver_close.png",
+          mediaUrl:
+            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_onimaru_close_shop.png",
           metaData: {
             type: "image",
             height: 2000,
@@ -84,7 +254,8 @@ const Products = {
         {
           // Image item:
           itemId: "4",
-          mediaUrl: "/s1_port.png",
+          mediaUrl:
+            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_lo15_close_shop.png",
           metaData: {
             type: "image",
             height: 2000,
@@ -101,94 +272,12 @@ const Products = {
         {
           // Image item:
           itemId: "5",
-          mediaUrl: "/sa1_top_close.png",
+          mediaUrl:
+            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_ph_both_nov8.png",
           metaData: {
             type: "image",
             height: 1000,
             width: 1109,
-            title: "sample-title",
-            description: "sample-description",
-            focalPoint: [0, 0],
-            link: {
-              url: "http://example.com",
-              target: "_blank",
-            },
-          },
-        },
-      ],
-      measurements: [],
-    },
-    {
-      blockType: "product",
-      heading: `The PS1 Power Supply`,
-      description: `This power supply is especially designed as a high nose rejection type so AC line noise and harmonic
-      noise is not transferred to the DC regulated output that powers the field coil, it is a very tightly regulated
-      and of a very low impedance design. This unique feature damps or shunts any induced motor voice coil
-      modulated signal from the field coil or shunts this AC induced audio signal at the power supply. The
-      result is a “locked” down pure DC power to the filed coil with no overlying AC audio signal. Pure DC and
-      low impedance. The power supply is adjustable from 9 to 12.5 volts and can supply constant DC current
-      up to 2 amps. The rejection ratio of this regulated supply is over 70 dB. Its input power is selectable for
-      115/230 volt 50/60 Hz operation. (configured at time of order) Output DC is supplied though an XLR
-      connector (2 to 6-foot XLR to XLR cables are available or XLR to open wire on opposite end for user
-      connection)
-      These power supplies can be used on most other Field Coil operated speaker drivers
-      Inquire to Songer Audio for additional details (www.songeraudio.com)
-      Whammerdyne Heavy Industries (www.whammerdyne.com) is the manufacturer of these supplies for
-      Songer Audio`,
-      specs: [
-        { label: `System`, value: `DC Regulated Power Supply` },
-        { label: `Voltage`, value: `Variably Adjustable, 9 - 13 Volts` },
-        { label: `Current`, value: `Constant DC Current up to 2 Amps` },
-        { label: `Dimensions`, value: `(W x H x D) 9 x 4 x 7.25 in` },
-        { label: `Materials`, value: `Anodized Aluminum Chassis` },
-        { label: `Weight`, value: `8.2 lbs` },
-        { label: `Connections`, value: `3-pin XLR power` },
-      ],
-      price: `$2,000 (pair)`,
-      galleryId: "ps1",
-      gallery: [
-        {
-          // Image item:
-          itemId: "6",
-          mediaUrl: "/psu_front.png",
-          metaData: {
-            type: "image",
-            height: 1300,
-            width: 1272,
-            title: "sample-title",
-            description: "sample-description",
-            focalPoint: [0, 0],
-            link: {
-              url: "http://example.com",
-              target: "_blank",
-            },
-          },
-        },
-        {
-          // Another Image item:
-          itemId: "7",
-          mediaUrl: "/psu_back.png",
-          metaData: {
-            type: "image",
-            height: 1300,
-            width: 1058,
-            title: "sample-title",
-            description: "sample-description",
-            focalPoint: [0, 0],
-            link: {
-              url: "http://example.com",
-              target: "_blank",
-            },
-          },
-        },
-        {
-          // Another Image item:
-          itemId: "8",
-          mediaUrl: "/psu_display.png",
-          metaData: {
-            type: "image",
-            height: 1500,
-            width: 997,
             title: "sample-title",
             description: "sample-description",
             focalPoint: [0, 0],

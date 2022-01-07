@@ -1,5 +1,10 @@
 import styled, { css } from "styled-components";
-import { respond } from "@/styles/mixins";
+import { respond, fluidScale } from "@/styles/mixins";
+
+export const NewsWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 1100px;
+`;
 
 export const Main = styled.div`
   color: rgba(255, 255, 255, 0.85);
@@ -18,8 +23,9 @@ export const List = styled.li`
 `;
 
 export const ListItem = styled.ul`
-  border-bottom: 1px solid rgba(131, 184, 201, 0.35);
-  padding-bottom: 16px;
+  border: 1px solid #bbb;
+  background: #eee;
+  padding: 30px;
   margin-bottom: 24px;
   width: 100%;
   cursor: pointer;
@@ -30,10 +36,10 @@ export const ListItem = styled.ul`
 `;
 
 export const ListItemTitle = styled.span`
-  font-size: 18px;
+  font-size: ${fluidScale("20px", "16px")};
+  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 48px;
   color: var(--button-background-color);
 `;
@@ -42,6 +48,12 @@ export const ListItemDate = styled.div`
   text-align: right;
   font-style: italic;
   color: rgba(140, 140, 140, 1);
+`;
+
+export const Post = styled.div`
+  border: 1px solid #bbb;
+  background: #eee;
+  padding: 30px;
 `;
 
 export const BackButton = styled.div`
@@ -73,6 +85,10 @@ export const PostTime = styled.div`
 `;
 
 export const PostImages = styled.div`
+  & img {
+    border: 2px solid rgba(230, 204, 142, 0.85);
+    cursor: pointer;
+  }
   ${respond(
     css`
       text-align: center;
