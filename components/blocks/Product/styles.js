@@ -57,7 +57,8 @@ export const ProductContent = styled.div`
 `;
 
 export const ProductHeading = styled.h2`
-  color: #444;
+  color: #333;
+  font-weight: bold;
   text-align: center;
   font-size: 18px;
 `;

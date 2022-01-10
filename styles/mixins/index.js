@@ -65,10 +65,6 @@ export const focusDefault = `
   .js-focus-visible &:focus:not(.focus-visible) {
     outline: none;
   }
-
-  &.focus-visible {
-    outline: solid 2px currentColor;
-  }
 `;
 
 // Fluid Elements

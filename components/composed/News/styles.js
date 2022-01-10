@@ -25,7 +25,7 @@ export const List = styled.li`
 export const ListItem = styled.ul`
   border: 1px solid #bbb;
   background: #eee;
-  padding: 30px;
+  padding: 24px;
   margin-bottom: 24px;
   width: 100%;
   cursor: pointer;
@@ -36,7 +36,7 @@ export const ListItem = styled.ul`
 `;
 
 export const ListItemTitle = styled.span`
-  font-size: ${fluidScale("20px", "16px")};
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;

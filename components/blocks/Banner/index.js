@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "@/components/atomic/Button";
+import Modal from "@/components/atomic/Modal";
+import ModalForm from "@/composed/Form";
 import * as Styled from "./styles";
 
 const Banner = ({ message }) => {
@@ -11,11 +13,29 @@ const Banner = ({ message }) => {
       <Styled.BannerMain>
         <Styled.Banner>
           <Styled.Subscribe>
-            <Button onClick={() => subscribe()}>Subscribe</Button>
+            <Modal
+              disclosureContent={<Button>Subscribe</Button>}
+              content={
+                <ModalForm
+                  title="Subscribe for Updates"
+                  type="subscribe"
+                  onClose={subscribe}
+                />
+              }
+            />
           </Styled.Subscribe>
           <Styled.Message dangerouslySetInnerHTML={{ __html: message }} />
           <Styled.Contact>
-            <Button onClick={() => subscribe()}>Contact</Button>
+            <Modal
+              disclosureContent={<Button>Contact</Button>}
+              content={
+                <ModalForm
+                  title="Contact Us"
+                  type="contact"
+                  onClose={subscribe}
+                />
+              }
+            />
           </Styled.Contact>
         </Styled.Banner>
       </Styled.BannerMain>

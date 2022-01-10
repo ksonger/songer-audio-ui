@@ -6,34 +6,28 @@ export const BannerWrapper = styled.div``;
 export const BannerMain = styled.div``;
 
 export const Banner = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: max-content 1fr max-content;
-  padding: 12px 16px;
-  background: rgba(81, 175, 205, 1);
-  justify-content: center;
-  justify-items: center;
-
-  & button {
-    background-color: #fff;
-    span {
-      color: var(--button-background-color);
-    }
-  }
+  display: flex;
+  flex-flow: row;
+  padding: 14px 16px;
+  background: #eee;
+  align-items: center;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  box-shadow: 0 15px 100px rgba(0, 0, 0, 0.3);
 `;
 
 export const Subscribe = styled.div``;
 
 export const Message = styled.div`
+  flex-grow: 1;
   text-align: center;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 8px;
 
   a {
-    color: #fff;
+    color: var(--button-background-color);
     cursor: pointer;
     margin: 0 4px;
   }

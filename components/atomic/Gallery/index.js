@@ -1,5 +1,9 @@
 import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
+import Modal from "@/components/atomic/Modal";
+import React, { useState } from "react";
+import * as Styled from "./styles";
+import { useRouter } from "next/router";
 
 export function Gallery({
   gallery,
@@ -17,20 +21,43 @@ export function Gallery({
     scrollDuration: 200,
   };
 
+  const router = useRouter();
+
+  const [selectedImage, setSelectedImage] = useState({});
+  const [cls, setCls] = useState("wide");
+
   // The eventsListener will notify you anytime something has happened in the gallery.
   const eventsListener = (eventName, eventData) => {
     switch (eventName) {
       case "ITEM_ACTION_TRIGGERED":
-        console.log("show full image");
+        if (router.asPath === "/gallery") {
+          setSelectedImage({ url: eventData.url });
+          setTimeout(() => {
+            if (eventData.style.maxHeight > eventData.style.maxWidth) {
+              setCls("tall");
+            } else {
+              setCls("wide");
+            }
+            document.dispatchEvent(new Event("openDialog"));
+          }, 50);
+        }
         break;
       default:
-        console.log({ eventName, eventData });
+        //console.log({ eventName, eventData });
         break;
     }
   };
 
   return (
     <>
+      <Modal
+        content={
+          <Styled.ModalImage className={cls}>
+            {/*<Image image={selectedImage} objectFit="cover" layout="fill" />*/}
+            <img src={selectedImage.url} className={cls} />
+          </Styled.ModalImage>
+        }
+      />
       <ProGallery
         domId={`gallery_${galleryId}`}
         items={gallery}

@@ -22,6 +22,7 @@ const ICON_MAP = {
   instagram: Icons.Instagram,
   linkedin: Icons.LinkedIn,
   youtube: Icons.YouTube,
+  loader: Icons.Loader,
 };
 
 export default function IconFactory({ icon, ...props }) {

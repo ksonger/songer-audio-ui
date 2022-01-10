@@ -5,22 +5,27 @@ const Products = {
       heading: `The S1 Loudspeaker`,
       description: `<p>The S1 delivers absolutely everything, by adding almost nothing; its greatest strength is its 
       well-constructed simplicity.  It is a piece of fine furniture, designed to look as equally beautiful in your
-      listening room as it sounds.</p>
-      <p>The S1 loudspeaker is a solid hardwood, hand-crafted 140 liter bass reflex design.  Each pair is hand 
+      listening room as it sounds.
+      </p>
+      <p>
+      The S1 loudspeaker is a solid hardwood, hand-crafted 140 liter bass reflex design.  Each pair is hand 
       constructed from 100% kiln-dried hardwoods, in a variety of standard options or in a hardwood of your choosing.  
       It is well braced, internally lined and damped to eliminate unwanted cabinet resonances, and port tuned to 30Hz 
       for full, accurate bass response. The cabinet is acoustically isolated from its base and the floor, with solid brass risers. 
-      </p><p>The S1 minimally compensates for natural baffle diffraction, however it includes no additional internal components 
+      </p>
+      <p>
+      The S1 minimally compensates for natural baffle diffraction, however it includes no additional internal components 
       of any kind. No additional drivers are used, preserving perfect phase presentation throughout the frequency range. 
       Because no multi-way crossover circuitry is necessary, your music isn't needlessly filtered, degraded or attenuated. 
       The S1 simply holds the driver perfectly still at ear level, showcasing its remarkable performance free of any 
-      coloration, or distortion.</p>`,
+      coloration, or distortion.
+      </p>`,
       specs: [
         {
           label: `System`,
           value: `Point source full-range ported loudspeaker`,
         },
-        { label: `Frequency Response`, value: `30Hz - 17kHz +/- 3dB` },
+        { label: `Frequency Response`, value: `25Hz - 17kHz +/- 6dB` },
         { label: `Efficiency`, value: `93 dB SPL (2.83 V/1m)` },
         { label: `Dimensions`, value: `(W x H x D) 15 x 47 x 20 in` },
         { label: `Materials`, value: `Hardwood, brass, and leather` },
@@ -34,7 +39,7 @@ const Products = {
       galleryId: "s1",
       gallery: [
         {
-          itemId: "1",
+          itemId: "p1",
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s1_front.png",
           metaData: {
             type: "image",
@@ -44,7 +49,7 @@ const Products = {
           },
         },
         {
-          itemId: "2",
+          itemId: "p2",
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/sa1_front_down.png",
           metaData: {
             type: "image",
@@ -54,7 +59,7 @@ const Products = {
           },
         },
         {
-          itemId: "3",
+          itemId: "p3",
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s1_driver_close.png",
           metaData: {
             type: "image",
@@ -65,7 +70,7 @@ const Products = {
         },
         {
           // Image item:
-          itemId: "4",
+          itemId: "p4",
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/S1_port.png",
           metaData: {
             type: "image",
@@ -76,7 +81,7 @@ const Products = {
         },
         {
           // Image item:
-          itemId: "5",
+          itemId: "p5",
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/sa1_top_close.png",
           metaData: {
             type: "image",
@@ -117,9 +122,8 @@ const Products = {
       gallery: [
         {
           // Image item:
-          itemId: "6",
-          mediaUrl:
-            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_front.png",
+          itemId: "p6",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_front.png",
           metaData: {
             type: "image",
             height: 1000,
@@ -129,9 +133,8 @@ const Products = {
         },
         {
           // Another Image item:
-          itemId: "7",
-          mediaUrl:
-            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_back.png",
+          itemId: "p7",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_back.png",
           metaData: {
             type: "image",
             height: 1000,
@@ -141,9 +144,8 @@ const Products = {
         },
         {
           // Another Image item:
-          itemId: "8",
-          mediaUrl:
-            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_display.png",
+          itemId: "p8",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_display.png",
           metaData: {
             type: "image",
             height: 1000,
@@ -153,9 +155,8 @@ const Products = {
         },
         {
           // Another Image item:
-          itemId: "8",
-          mediaUrl:
-            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_ph_nov8.png",
+          itemId: "p9",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1_ph_nov8.png",
           metaData: {
             type: "image",
             height: 1000,
@@ -189,7 +190,7 @@ const Products = {
           label: `System`,
           value: `Dipole 1.5-way open baffle loudspeaker`,
         },
-        { label: `Frequency Response`, value: `40Hz - 17kHz +/- 3dB` },
+        { label: `Frequency Response`, value: `40Hz - 20kHz +/- 6dB` },
         { label: `Efficiency`, value: `93 dB SPL (2.83 V/1m)` },
         { label: `Dimensions`, value: `(W x H x D) 20 x 48 x 17 in` },
         { label: `Materials`, value: `Hardwood, brass, and aluminum` },
@@ -203,8 +204,8 @@ const Products = {
       galleryId: "s2",
       gallery: [
         {
-          itemId: "1",
-          mediaUrl: "./s2.png",
+          itemId: "p10",
+          url: "./s2.png",
           metaData: {
             type: "image",
             height: 1800,
@@ -219,8 +220,8 @@ const Products = {
           },
         },
         {
-          itemId: "2",
-          mediaUrl: "./s2_back_1.jpeg",
+          itemId: "p11",
+          url: "./s2_back_1.jpeg",
           metaData: {
             type: "image",
             height: 1200,
@@ -235,9 +236,8 @@ const Products = {
           },
         },
         {
-          itemId: "3",
-          mediaUrl:
-            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_onimaru_close_shop.png",
+          itemId: "p12",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_onimaru_close_shop.png",
           metaData: {
             type: "image",
             height: 2000,
@@ -253,9 +253,8 @@ const Products = {
         },
         {
           // Image item:
-          itemId: "4",
-          mediaUrl:
-            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_lo15_close_shop.png",
+          itemId: "p13",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_lo15_close_shop.png",
           metaData: {
             type: "image",
             height: 2000,
@@ -271,9 +270,8 @@ const Products = {
         },
         {
           // Image item:
-          itemId: "5",
-          mediaUrl:
-            "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_ph_both_nov8.png",
+          itemId: "p14",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_ph_both_nov8.png",
           metaData: {
             type: "image",
             height: 1000,

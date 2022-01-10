@@ -11,6 +11,7 @@ const Image = ({
   placeholder = "empty",
   className,
 }) => {
+  console.log(image.url);
   if (!image?.url) return null;
 
   const {

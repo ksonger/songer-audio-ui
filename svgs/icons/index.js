@@ -1,4 +1,4 @@
-export {default as SALogo} from "./sa_logo"
+export { default as SALogo } from "./sa_logo";
 export { default as CaretDown } from "./CaretDown";
 export { default as CaretLeft } from "./CaretLeft";
 export { default as CaretRight } from "./CaretRight";
@@ -17,3 +17,4 @@ export { default as Instagram } from "./social/Instagram";
 export { default as LinkedIn } from "./social/LinkedIn";
 export { default as Twitter } from "./social/Twitter";
 export { default as YouTube } from "./social/YouTube";
+export { default as Loader } from "./unique/Loader";

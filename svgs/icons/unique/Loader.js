@@ -1,5 +1,5 @@
-import PropTypes from "prop-types"
-import styled from "styled-components"
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
 export default function Loader({
   className,
@@ -15,7 +15,7 @@ export default function Loader({
     height: size,
     fill,
     className,
-  }
+  };
 
   return (
     <Wrapper>
@@ -41,33 +41,33 @@ export default function Loader({
         </g>
       </StyledLoader>
     </Wrapper>
-  )
+  );
 }
 
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
   place-content: center;
-`
+`;
 
 const StyledLoader = styled.svg`
   .st0 {
     fill: none;
-    stroke: var(--color-primary, #609c7d);
+    stroke: #e6cc8e;
     stroke-width: 2;
     stroke-opacity: 0.5;
   }
   .st1 {
     fill: none;
-    stroke: var(--color-primary, #609c7d);
+    stroke: #e6cc8e;
     stroke-width: 2;
   }
-`
+`;
 
-Loader.displayName = "SVG.Loader"
+Loader.displayName = "SVG.Loader";
 
 Loader.propTypes = {
   className: PropTypes.string,
   fill: PropTypes.string,
   size: PropTypes.number,
-}
+};

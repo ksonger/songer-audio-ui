@@ -3,7 +3,7 @@ const Home = {
     {
       blockType: "banner",
       message: `<p>
-        Please join us at the <a href="https://pacificaudiofest.com" target="_blank">2022 Pacific AudioFest!</a>
+        Join us at the <a href="https://pacificaudiofest.com" target="_blank">2022 Pacific AudioFest!</a>
         </p>`,
     },
     {
@@ -25,11 +25,11 @@ const Home = {
       description: `
         <p>
         The product of years of research and development, the Songer Audio 10" V2 electromagnetic speaker 
-        is entirely hand made by an individual craftsman from the finest materials.  It offers exceptionally 
+        is entirely hand made, by an individual craftsman from the finest materials.  It offers exceptionally 
         lifelike musical reproduction for a variety of design applications.
         </p>
         <p>
-        Built upon field coil technology that is nearly 150 years old, it begins with the best of the old and 
+        Built upon field coil technology that is nearly 150 years old, it captures the best of the old and 
         combines it with modern refinement, innovative design, and meticulous construction. The result is an 
         artistic expression, dedicated solely to connecting others as closely as possible to the beauty of music.
         </p>`,
@@ -63,7 +63,7 @@ const Home = {
         </p>`,
       cta: {
         label: "Learn More",
-        uri: "/technology",
+        uri: "/products",
       },
     },
     {
@@ -90,7 +90,7 @@ const Home = {
         </p>`,
       cta: {
         label: "Learn More",
-        uri: "/technology",
+        uri: "/products",
       },
     },
   ],
