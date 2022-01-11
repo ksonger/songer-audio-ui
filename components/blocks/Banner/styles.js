@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { fluidScale, lSetAspectRatio, respond } from "@/styles/mixins";
+import { respond } from "@/styles/mixins";
 
 export const BannerWrapper = styled.div``;
 
@@ -16,7 +16,12 @@ export const Banner = styled.div`
   box-shadow: 0 15px 100px rgba(0, 0, 0, 0.3);
 `;
 
-export const Subscribe = styled.div``;
+export const Subscribe = styled.div`
+  ${respond(css`
+    width: 0;
+    display: none;
+  `)}
+`;
 
 export const Message = styled.div`
   flex-grow: 1;
@@ -35,4 +40,8 @@ export const Message = styled.div`
 
 export const Contact = styled.div`
   color: #fff;
+  ${respond(css`
+    width: 0;
+    display: none;
+  `)}
 `;

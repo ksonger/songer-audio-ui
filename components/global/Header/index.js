@@ -4,9 +4,14 @@ import Image from "@/components/atomic/Image";
 import * as Styled from "./styles";
 import IconFactory from "@/factories/IconFactory";
 import useGlobalContext from "@/hooks/useGlobalContext";
+import { useRouter } from "next/router";
 
 const Header = ({ activeHref }) => {
   const { headerContent } = useGlobalContext();
+  const router = useRouter();
+  const goHome = () => {
+    router.push("/");
+  };
   return (
     <Styled.Header>
       <Styled.Background>
@@ -20,7 +25,7 @@ const Header = ({ activeHref }) => {
       </Styled.Background>
       <Styled.HeaderContent role="banner">
         <Styled.LogoNav>
-          <Styled.Logo>
+          <Styled.Logo onClick={goHome}>
             <Styled.LogoIcon>
               <IconFactory
                 color="var(--header-logo-color)"

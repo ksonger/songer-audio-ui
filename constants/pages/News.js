@@ -43,6 +43,7 @@ const News = {
               width: 1196,
               height: 2174,
               focalPoint: [0, 0],
+              "aria-label": "post image",
             },
             {
               url: "/wireframe2.png",

@@ -5,8 +5,6 @@ import moment from "moment";
 import Button from "@/components/atomic/Button";
 import * as Styled from "./styles";
 import { Gallery } from "@/components/atomic/Gallery";
-import { useOnResize } from "@/hooks/listeners";
-import { mobileBreakpoint } from "@/styles/mixins";
 
 const Post = ({ id, newsPost, navHandler }) => {
   const renderProgress = () => {
@@ -19,22 +17,30 @@ const Post = ({ id, newsPost, navHandler }) => {
   };
 
   const [containerObj, setContainerObj] = useState();
-  const [windowWidth, setWindowWidth] = useState();
   const [hasData, setHasData] = useState(false);
+  let wInt = null;
 
-  useOnResize(mobileBreakpoint, (isMobile) => {
-    const w = window.innerWidth;
-    setWindowWidth(w);
-  });
+  const onResize = () => {
+    if (document.querySelector(`#post_${id}`)) {
+      setContainerObj({
+        width: document.querySelector(`#post_${id}`).clientWidth - 60,
+        height: window.innerHeight,
+      });
+    }
+  };
 
   useEffect(() => {
-    setWindowWidth(window?.innerWidth);
-    setHasData(true);
+    wInt = wInt || window.addEventListener("resize", onResize);
+    if (!hasData)
+      setHasData(document.querySelector(`#post_${id}`) !== undefined);
     setContainerObj({
       width: document.querySelector(`#post_${id}`).clientWidth - 60,
       height: window.innerHeight,
     });
-  }, [windowWidth, hasData]);
+    return function cleanup() {
+      window.removeEventListener("resize", wInt);
+    };
+  }, [hasData]);
 
   const renderPost = () => {
     const { title, createdAt, content, images } = newsPost;
@@ -64,7 +70,7 @@ const Post = ({ id, newsPost, navHandler }) => {
         </Styled.PostHeader>
         <div>{content && ReactHtmlParser(content)}</div>
         <Styled.PostImages>
-          {images && images.length > 0 && (
+          {images && images.length > 0 && hasData && (
             <Gallery layout={1} containerObj={containerObj} gallery={images} />
           )}
         </Styled.PostImages>

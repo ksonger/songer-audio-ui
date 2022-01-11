@@ -73,6 +73,7 @@ export const Logo = styled.div`
   grid-auto-flow: row;
   grid-template-rows: auto;
   justify-self: center;
+  cursor: pointer;
   svg {
     margin-left: 6px;
   }

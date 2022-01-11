@@ -7,7 +7,7 @@ const PageGallery = ({ images }) => {
   const [galleryScroll, setGalleryScroll] = useState();
   const [containerObj, setContainerObj] = useState();
   const [hasData, setHasData] = useState(false);
-  let wInt = {};
+  let wInt = null;
 
   const onResize = () => {
     if (document.querySelector(`#gallery_page`)) {

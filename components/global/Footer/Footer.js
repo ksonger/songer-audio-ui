@@ -6,6 +6,8 @@ import IconFactory from "@/factories/IconFactory";
 import Social from "./Social";
 import * as Styled from "@/global/Footer/styles";
 import { useRouter } from "next/router";
+import ModalForm from "@/composed/Form";
+import Modal from "@/components/atomic/Modal";
 
 const Footer = () => {
   const {
@@ -42,13 +44,10 @@ const Footer = () => {
               <p>503.709.3865</p>
             </Styled.Address>
             <Styled.ContactButton>
-              <Button
-                onClick={() => {
-                  clickHandler("/contact");
-                }}
-              >
-                Contact Us
-              </Button>
+              <Modal
+                disclosureContent={<Button>Contact</Button>}
+                content={<ModalForm title="Contact Us" type="contact" />}
+              />
             </Styled.ContactButton>
           </Styled.Contact>
           <Styled.Description>

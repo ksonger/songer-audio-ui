@@ -37,7 +37,7 @@ const PostList = ({ isLoading = true, newsPosts }) => {
 
   const selectList = () => {
     setView("list");
-    router.push("/news/");
+    router.push("/news");
   };
 
   return (

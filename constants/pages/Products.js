@@ -40,7 +40,7 @@ const Products = {
       gallery: [
         {
           itemId: "p1",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s1_front.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s1.png",
           metaData: {
             type: "image",
             height: 1700,

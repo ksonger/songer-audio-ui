@@ -31,7 +31,7 @@ export const ListItem = styled.ul`
   cursor: pointer;
 
   > p {
-    margin-bottom: 12px;
+    margin: 30px 0 12px 0;
   }
 `;
 
@@ -40,7 +40,6 @@ export const ListItemTitle = styled.span`
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  line-height: 48px;
   color: var(--button-background-color);
 `;
 

@@ -54,7 +54,11 @@ export function Gallery({
         content={
           <Styled.ModalImage className={cls}>
             {/*<Image image={selectedImage} objectFit="cover" layout="fill" />*/}
-            <img src={selectedImage.url} className={cls} />
+            <img
+              aria-label="gallery image"
+              src={selectedImage.url}
+              className={cls}
+            />
           </Styled.ModalImage>
         }
       />
@@ -65,6 +69,7 @@ export function Gallery({
         container={containerObj}
         eventsListener={eventsListener}
         scrollingElement={scrollingEl}
+        proGalleryRole="application"
       />
     </>
   );

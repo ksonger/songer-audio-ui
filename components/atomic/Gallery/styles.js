@@ -8,7 +8,6 @@ export const ModalImage = styled.div`
   }
 
   &.tall {
-    height: 100%;
     max-width: 500px;
     margin: 0 auto;
   }
@@ -20,7 +19,6 @@ export const ModalImage = styled.div`
       height: auto;
     }
     &.tall {
-      height: 100%;
       max-height: 100%;
     }
   }

@@ -5,9 +5,6 @@ import ModalForm from "@/composed/Form";
 import * as Styled from "./styles";
 
 const Banner = ({ message }) => {
-  const subscribe = () => {
-    console.log("subscribe");
-  };
   return (
     <Styled.BannerWrapper>
       <Styled.BannerMain>
@@ -16,11 +13,7 @@ const Banner = ({ message }) => {
             <Modal
               disclosureContent={<Button>Subscribe</Button>}
               content={
-                <ModalForm
-                  title="Subscribe for Updates"
-                  type="subscribe"
-                  onClose={subscribe}
-                />
+                <ModalForm title="Subscribe for Updates" type="subscribe" />
               }
             />
           </Styled.Subscribe>
@@ -28,13 +21,7 @@ const Banner = ({ message }) => {
           <Styled.Contact>
             <Modal
               disclosureContent={<Button>Contact</Button>}
-              content={
-                <ModalForm
-                  title="Contact Us"
-                  type="contact"
-                  onClose={subscribe}
-                />
-              }
+              content={<ModalForm title="Contact Us" type="contact" />}
             />
           </Styled.Contact>
         </Styled.Banner>
