@@ -18,7 +18,7 @@ const Post = ({ id, newsPost, navHandler }) => {
 
   const [containerObj, setContainerObj] = useState();
   const [hasData, setHasData] = useState(false);
-  let wInt = null;
+  let wInt;
 
   const onResize = () => {
     if (document.querySelector(`#post_${id}`)) {

@@ -7,7 +7,8 @@ const PageGallery = ({ images }) => {
   const [galleryScroll, setGalleryScroll] = useState();
   const [containerObj, setContainerObj] = useState();
   const [hasData, setHasData] = useState(false);
-  let wInt = null;
+
+  let wInt;
 
   const onResize = () => {
     if (document.querySelector(`#gallery_page`)) {
@@ -19,7 +20,7 @@ const PageGallery = ({ images }) => {
   };
 
   useEffect(() => {
-    wInt = window.addEventListener("resize", onResize);
+    wInt = wInt || window.addEventListener("resize", onResize);
     if (!galleryScroll) setGalleryScroll(document.querySelector(`#__next`));
     if (!hasData) setHasData(galleryScroll !== undefined);
     setContainerObj({

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "@/components/atomic/Image";
+import AtomicImage from "@/components/atomic/Image";
 import * as Styled from "./styles";
 import Button from "@/components/atomic/Button";
 import { useRouter } from "next/router";
@@ -20,7 +20,8 @@ const Card = ({
       <Styled.CardMain $type={type} $orientation={orientation}>
         {image && (
           <Styled.CardImage $type={type} $image={image}>
-            <Image
+            <AtomicImage
+              alt="Product Image"
               className="__image"
               image={image}
               layout="fill"

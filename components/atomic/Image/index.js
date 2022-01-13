@@ -1,7 +1,7 @@
-import NextImage from "next/image";
+import Image from "next/image";
 import imageProps from "@/shapes/image";
 
-const Image = ({
+const AtomicImage = ({
   image,
   priority = false,
   sizes,
@@ -11,7 +11,6 @@ const Image = ({
   placeholder = "empty",
   className,
 }) => {
-  console.log(image.url);
   if (!image?.url) return null;
 
   const {
@@ -30,10 +29,17 @@ const Image = ({
   const placeholderProps =
     placeholder !== "blur" ? {} : { placeholder, blurDataURL };
 
+  const customLoader = ({ src, width, quality }) => {
+    return `https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/${src}?w=${width}&q=${
+      quality || 75
+    }`;
+  };
+
   return (
-    <NextImage
+    <Image
       src={url}
       alt={altText || ""}
+      loader={customLoader}
       priority={priority}
       sizes={sizes}
       layout={layout}
@@ -47,10 +53,10 @@ const Image = ({
   );
 };
 
-Image.displayName = "Atomics.Image";
+AtomicImage.displayName = "Atomics.Image";
 
-Image.propTypes = imageProps;
+AtomicImage.propTypes = imageProps;
 
-Image.displayName = "Styled.Atomics.Image";
+AtomicImage.displayName = "Styled.Atomics.Image";
 
-export default Image;
+export default AtomicImage;

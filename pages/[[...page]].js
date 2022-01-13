@@ -31,7 +31,7 @@ export async function getStaticPaths() {
     { params: { page: ["technology"] } },
     { params: { page: ["news"] } },
   ];
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {

@@ -4,6 +4,7 @@ import Modal from "@/components/atomic/Modal";
 import React, { useState } from "react";
 import * as Styled from "./styles";
 import { useRouter } from "next/router";
+import { useDialogState } from "reakit/Dialog";
 
 export function Gallery({
   gallery,
@@ -39,7 +40,7 @@ export function Gallery({
               setCls("wide");
             }
             document.dispatchEvent(new Event("openDialog"));
-          }, 50);
+          }, 0);
         }
         break;
       default:
@@ -51,9 +52,9 @@ export function Gallery({
   return (
     <>
       <Modal
+        type="gallery"
         content={
           <Styled.ModalImage className={cls}>
-            {/*<Image image={selectedImage} objectFit="cover" layout="fill" />*/}
             <img
               aria-label="gallery image"
               src={selectedImage.url}

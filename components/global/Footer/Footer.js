@@ -55,7 +55,7 @@ const Footer = () => {
             <Styled.AboutButton>
               <a
                 onClick={() => {
-                  clickHandler("/about");
+                  clickHandler("/");
                 }}
               >
                 About Us

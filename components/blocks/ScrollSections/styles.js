@@ -65,23 +65,23 @@ export const BlockMain = styled.main`
     margin: 60px 0 60px calc(50% - 50vw);
 
     &:nth-of-type(1) {
-      --img: url(/cone_and_vc.png);
+      --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/cone_and_vc_sepia.png);
     }
 
     &:nth-of-type(2) {
-      --img: url(/polished_motors.png);
+      --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/polished_motors_sepia.png);
     }
 
     &:nth-of-type(3) {
-      --img: url(/voice_coils_and_surrounds.png);
+      --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/voice_coils_and_surrounds_sepia.png);
     }
 
     &:nth-of-type(4) {
-      --img: url(/suspension.png);
+      --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/suspension_sepia.png);
     }
 
     &:nth-of-type(5) {
-      --img: url(/s1_port_sepia.png);
+      --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s1_port_sepia.png);
     }
   }
 `;

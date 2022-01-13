@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
-import Button, { QuietButton, StyledArrowButton } from "./Button";
+import Button from "./Button";
 
 // Regular beige button
 export const MainButton = styled(Button)`
@@ -58,5 +58,4 @@ export const UpDownButton = styled(Button)`
   }
 `;
 
-export { QuietButton, StyledArrowButton };
 export default Button;

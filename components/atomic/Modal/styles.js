@@ -29,7 +29,9 @@ export const ModalDialog = styled(Dialog)`
   padding: 0;
   border: none;
   z-index: 1000;
-  border-radius: 8px;
+  border-radius: ${(p) => {
+    return p.$type === "gallery" ? "0;" : "8px;";
+  }};
 
   ${respond(
     css`
@@ -48,7 +50,7 @@ export const Close = styled.button`
   right: 0;
   width: 20px;
   height: 20px;
-  margin: 20px;
+  margin: 15px;
   cursor: pointer;
   z-index: 2000;
 
@@ -65,8 +67,12 @@ export const FooterClose = styled.button`
 `;
 
 export const DialogContent = styled.div`
-  padding: 30px;
+  padding: ${(p) => {
+    return p.$type === "gallery" ? "0;" : "30px;";
+  }};
   background: #fff;
-  border-radius: 8px;
+  border-radius: ${(p) => {
+    return p.$type === "gallery" ? "0;" : "8px;";
+  }};
   height: 100%;
 `;

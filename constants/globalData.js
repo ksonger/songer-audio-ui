@@ -3,7 +3,7 @@ import Pages from "@/constants/pageData";
 export const GLOBAL_DATA = {
   headerContent: {
     backgroundImage: {
-      url: "/home_background_v2.png",
+      url: "home_background_v2.png",
       width: 2000,
       height: 1491,
       alt: "Onimaru",

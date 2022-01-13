@@ -9,6 +9,7 @@ const Modal = ({
   ariaLabel,
   type,
   content,
+  dialogState,
   footerCloseContent,
   disclosureContent,
   showCloseIcon = true,
@@ -18,6 +19,7 @@ const Modal = ({
   ...props
 }) => {
   const dialog = useDialogState({ ...options });
+  const color = type === "gallery" ? "#e6cc8e" : "#333";
 
   const doDismiss = () => {
     dialog.hide();
@@ -37,7 +39,7 @@ const Modal = ({
     document.addEventListener("openDialog", () => {
       doShow();
     });
-  });
+  }, []);
 
   return (
     <>
@@ -66,7 +68,14 @@ const Modal = ({
                 aria-label="close"
                 aria-controls={dialog.baseId}
               >
-                <IconFactory width={17} height={17} icon="closeMenu" />
+                <IconFactory
+                  width={17}
+                  height={17}
+                  icon="closeMenu"
+                  style={{
+                    color: color,
+                  }}
+                />
               </Styled.Close>
             )}
             <Styled.DialogContent $type={type}>

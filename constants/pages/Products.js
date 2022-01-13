@@ -205,7 +205,7 @@ const Products = {
       gallery: [
         {
           itemId: "p10",
-          url: "./s2.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2.png",
           metaData: {
             type: "image",
             height: 1800,
@@ -221,7 +221,7 @@ const Products = {
         },
         {
           itemId: "p11",
-          url: "./s2_back_1.jpeg",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_back_1.jpeg",
           metaData: {
             type: "image",
             height: 1200,

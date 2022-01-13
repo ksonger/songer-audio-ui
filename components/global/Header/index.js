@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import Nav from "../Nav";
-import Image from "@/components/atomic/Image";
+import AtomicImage from "@/components/atomic/Image";
 import * as Styled from "./styles";
 import IconFactory from "@/factories/IconFactory";
 import useGlobalContext from "@/hooks/useGlobalContext";
@@ -15,7 +15,8 @@ const Header = ({ activeHref }) => {
   return (
     <Styled.Header>
       <Styled.Background>
-        <Image
+        <AtomicImage
+          alt="S1 Driver"
           image={headerContent.backgroundImage}
           layout="fill"
           objectFit="cover"

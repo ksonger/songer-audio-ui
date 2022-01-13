@@ -10,6 +10,7 @@ export const NavButton = styled(NavMenuButton)`
     top: 27px;
     right: calc(17px + var(--l-content-padding));
     display: flex;
+    z-index: 2001;
   }
 
   ${respond(`display: inline-block;`)}
@@ -74,6 +75,7 @@ export const Nav = styled.div`
   `)}
   /* mobile menu in the header */
   &.mobile-menu {
+    z-index: 2000;
     ${respond(
       css`
         position: fixed;
