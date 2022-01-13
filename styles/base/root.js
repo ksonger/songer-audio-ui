@@ -82,7 +82,7 @@ export default `
     --padding-button: 8px 10px;
 
     /* z-stack */
-    --z-index-header: 20;
+    --z-index-header: 2000;
     --z-index-footer: 19;
 
     /* borders */
