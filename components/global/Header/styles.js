@@ -5,8 +5,8 @@ export const Header = styled.div`
   width: 100%;
   transition: background-color 200ms;
   background-color: #000;
-  overflow: hidden;
   padding: 0 var(--l-content-padding);
+  z-index: var(--z-index-header);
 `;
 
 export const HeaderContent = styled.header`
