@@ -41,7 +41,7 @@ const Technology = {
           vanishingly lightweight.
           </p>
           <p>
-          For rigidity, our moving assembly consists of all curvilinear cones.  They excellent radial strength and maximize frequency response. The shape optimizes 
+          For rigidity, our moving assembly consists of all curvilinear cones.  They exhibit excellent radial strength, and maximize frequency response. The shape optimizes 
           transfer of sound into the cones from the voice coil. The depth of the cones decreases cone distortion, particularly at low frequencies. Each cone and voice 
           coil is handmade, from specially treated washi paper.  Years of development invested in cone material and treatment have resulted in an excellent combination 
           of transducer speed and damping. Rigorous refinement of cones size and curvature have minimized distortion and beaming, and enhanced off-axis performance.

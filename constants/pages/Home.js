@@ -85,8 +85,7 @@ const Home = {
         overlying AC audio signal.
         </p>
         <p>
-        The supply is able to provide constant current up to 2 amps.  Adjustable from 9 to 12.5 volts and 
-        able to, listeners have the freedom to tune the performance of the speaker to their personal listening taste.
+        The supply is able to provide constant current up to 2 amps.  Adjustable from 9 to 12.5 volts, listeners have the freedom to tune the performance of the speaker to their personal listening taste.
         </p>`,
       cta: {
         label: "Learn More",
