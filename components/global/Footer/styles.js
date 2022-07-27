@@ -112,6 +112,8 @@ export const ContactButton = styled.div`
 
 export const AboutButton = styled.div`
   margin-top: 0.5em;
+  cursor: pointer;
+  display: inline-block;
   > button {
     background-color: #999;
   }

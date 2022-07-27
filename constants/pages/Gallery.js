@@ -671,6 +671,96 @@ const Gallery = {
             focalPoint: [0, 0],
           },
         },
+        {
+          // Image item:
+          itemId: "64",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_prod/onimaru_type_d.png",
+          metaData: {
+            type: "image",
+            width: 1500,
+            height: 2000,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "65",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_prod/s1_s2.png",
+          metaData: {
+            type: "image",
+            width: 1500,
+            height: 2000,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "66",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_prod/s2_connections.png",
+          metaData: {
+            type: "image",
+            width: 2000,
+            height: 1500,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "67",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_prod/s2_first_listen.png",
+          metaData: {
+            type: "image",
+            width: 2000,
+            height: 1500,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "68",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_prod/s2_front_top.png",
+          metaData: {
+            type: "image",
+            width: 1500,
+            height: 2000,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "69",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_prod/s2_pair_back.png",
+          metaData: {
+            type: "image",
+            width: 1500,
+            height: 2000,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "70",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_prod/s2_type_d.png",
+          metaData: {
+            type: "image",
+            width: 2000,
+            height: 1500,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Video item:
+          itemId: "71",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/battle_between_s2.mov",
+          metaData: {
+            type: "video",
+            width: 1920,
+            height: 1080,
+            poster:
+              "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/calypso_minor_poster.png",
+            focalPoint: [0, 0],
+          },
+        },
       ],
     },
   ],

@@ -10,6 +10,7 @@ export const Main = styled.div`
   color: rgba(255, 255, 255, 0.85);
   padding: 0 20px;
   margin-top: 70px;
+  width: 100%;
   max-width: 920px;
 `;
 
@@ -53,6 +54,8 @@ export const Post = styled.div`
   border: 1px solid #bbb;
   background: #eee;
   padding: 30px;
+  width: 100%;
+  max-width: 920px;
 `;
 
 export const BackButton = styled.div`
@@ -84,6 +87,7 @@ export const PostTime = styled.div`
 `;
 
 export const PostImages = styled.div`
+  margin-top: 40px;
   & img {
     border: 2px solid rgba(230, 204, 142, 0.85);
     cursor: pointer;
@@ -91,6 +95,28 @@ export const PostImages = styled.div`
   ${respond(
     css`
       text-align: center;
+    `
+  )}
+`;
+
+export const MobileImage = styled.div`
+  margin-bottom: 40px;
+`;
+
+export const PostVideos = styled.div`
+  margin-top: 40px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  & video {
+    border: 2px solid rgba(230, 204, 142, 0.85);
+    cursor: pointer;
+  }
+
+  ${respond(
+    css`
+      grid-auto-flow: row;
     `
   )}
 `;

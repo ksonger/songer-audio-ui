@@ -25,7 +25,7 @@ export const CardMain = styled.div`
   width: 100%;
   max-width: 1100px;
   border: 1px solid #bbb;
-  margin: 0 auto 20px auto;
+  margin: 30px auto;
   height: 100%;
   display: flex;
   flex-direction: ${(p) => getFlexDirection(p.$layout, p.$orientation)};
@@ -52,7 +52,7 @@ export const CardMain = styled.div`
 
 export const CardImage = styled.div`
   position: relative;
-  background-color: #cdcdcd;
+  background-color: #444;
   margin: 40px;
   flex-basis: ${(p) => {
     return 50 * (p.$image.width / p.$image.height) + "%";

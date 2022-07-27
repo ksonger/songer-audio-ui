@@ -3,6 +3,7 @@ import * as Styled from "./styles";
 import { Gallery } from "@/components/atomic/Gallery";
 import { useOnResize } from "@/hooks/listeners";
 import { mobileBreakpoint } from "@/styles/mixins";
+import { useRouter } from "next/router";
 
 const Product = ({
   heading,
@@ -10,6 +11,7 @@ const Product = ({
   specs = [],
   price,
   galleryId,
+  anchorName,
   gallery,
   measurements,
 }) => {
@@ -17,6 +19,7 @@ const Product = ({
   const [containerObj, setContainerObj] = useState();
   const [windowWidth, setWindowWidth] = useState();
   const [hasData, setHasData] = useState(false);
+  const { asPath } = useRouter();
 
   useOnResize(mobileBreakpoint, (isMobile) => {
     const w = window.innerWidth;
@@ -31,9 +34,15 @@ const Product = ({
       width: galleryScroll?.clientWidth,
       height: 600,
     });
+    setTimeout(() => {
+      if (asPath.indexOf("#") !== -1) {
+        const el = document.querySelector(`#${asPath.split("#")[1]}`);
+        el.scrollIntoView();
+      }
+    }, 0);
   }, [windowWidth, hasData]);
   return (
-    <Styled.ProductWrapper>
+    <Styled.ProductWrapper id={anchorName}>
       <Styled.ProductInner>
         <Styled.ProductMain>
           <Styled.ProductContent>
@@ -65,6 +74,7 @@ const Product = ({
               ))}
             </Styled.Specs>
           </Styled.ProductSpecsImages>
+          <Styled.Price>{price}</Styled.Price>
         </Styled.ProductMain>
       </Styled.ProductInner>
     </Styled.ProductWrapper>

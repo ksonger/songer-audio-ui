@@ -61,15 +61,23 @@ const Technology = {
           <div class="banner"></div>
           <p class="subsection first">Cabinetry</p>
           <p class="last">
-          To complete this system, as little as possible must be interstitial between the signal of your music and the field coil. This is where the S1 
+          To complete this system, as little as possible must be interstitial between the signal of your music and the field coil. This is where Songer Audio 
           delivers absolutely everything, again by contributing almost nothing.
           </p>
           <div class="banner"></div>
           <p class="first last">
+          <br/><strong>The S1 Design</strong><br/><br/>
           Speaker cabinets by their nature introduce diffraction. The S1 minimally compensates for this natural diffraction, and nothing else. It is internally
           lined, damped and well braced.  To preserve perfect phase and timing, no additional drivers are included in its design.  The signal isn't needlessly degraded, 
           as no crossover circuitry is necessary.  The S1 simply holds the driver at ear level, where it plays free of coloration, and is port tuned for deep, accurate bass response.
+          <br/><br/>
+          <strong>The S2 Design</strong><br/><br/>
+          Like the S1, the S2 is a statement of simple elegance, in both form and function.  It suspends the Type D field coil driver almost wholly in free space, attached at a single 
+          point to a layer-constrained, high mass, hardwood and glass-filled nylon mount for excellent imaging and clarity.  The Acoustic Elegance LO15 dipole woofer is "port constrained"
+          on the front side for a lower resonant frequency and higher efficiency.  The baffle is then folded into a discrete, open chamber in the back, which greatly reduces 
+          sound wave cancellations common to woofers in dipole applications.  It draws outstanding performance from the woofer, with full and yet unmistakably dipole bass response.
           </p>
+         
           `,
         },
       ],

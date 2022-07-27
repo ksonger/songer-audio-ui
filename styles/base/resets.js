@@ -19,6 +19,9 @@ body {
     left: 0;
     right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
     overflow-y: scroll;
+    @media all and (max-width:768px){
+      right: 0;
+    }
 }
 
 

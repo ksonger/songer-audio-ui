@@ -4,6 +4,7 @@ import { fluidScale, respond } from "@/styles/mixins";
 export const ProductWrapper = styled.p`
   width: calc(100% - 80px);
   margin: 0 auto;
+  padding: 15px;
 
   ${respond(
     css`
@@ -113,6 +114,11 @@ export const Images = styled.div`
       text-align: center;
     `
   )}
+`;
+
+export const Price = styled.div`
+  padding: 10px 24px;
+  color: #333;
 `;
 
 export const SpecRow = styled.div`

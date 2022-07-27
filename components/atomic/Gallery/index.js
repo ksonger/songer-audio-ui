@@ -13,10 +13,13 @@ export function Gallery({
   containerObj,
   hoverBehavior = "NEVER_SHOW",
   layout = 3,
+  minSize,
 }) {
   // The options of the gallery (from the playground current state)
   const options = {
     galleryLayout: layout,
+    minItemSize: minSize,
+    maxGroupSize: 2,
     hoveringBehaviour: hoverBehavior,
     clickToExpand: true,
     scrollDuration: 200,

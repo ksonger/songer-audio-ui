@@ -5,6 +5,8 @@ import moment from "moment";
 import Button from "@/components/atomic/Button";
 import * as Styled from "./styles";
 import { Gallery } from "@/components/atomic/Gallery";
+import { useOnResize } from "@/hooks/listeners";
+import { mobileBreakpoint } from "@/styles/mixins";
 
 const Post = ({ id, newsPost, navHandler }) => {
   const renderProgress = () => {
@@ -18,6 +20,7 @@ const Post = ({ id, newsPost, navHandler }) => {
 
   const [containerObj, setContainerObj] = useState();
   const [hasData, setHasData] = useState(false);
+  const [mobile, setMobile] = useState(false);
   let wInt;
 
   const onResize = () => {
@@ -28,6 +31,10 @@ const Post = ({ id, newsPost, navHandler }) => {
       });
     }
   };
+
+  useOnResize(mobileBreakpoint, (isMobile) => {
+    setMobile(isMobile);
+  });
 
   useEffect(() => {
     wInt = wInt || window.addEventListener("resize", onResize);
@@ -43,7 +50,7 @@ const Post = ({ id, newsPost, navHandler }) => {
   }, [hasData]);
 
   const renderPost = () => {
-    const { title, createdAt, content, images } = newsPost;
+    const { title, createdAt, content, images, videos } = newsPost;
     return (
       <Styled.Post id={`post_${id}`}>
         <Styled.BackButton>
@@ -69,11 +76,39 @@ const Post = ({ id, newsPost, navHandler }) => {
           </Styled.PostDate>
         </Styled.PostHeader>
         <div>{content && ReactHtmlParser(content)}</div>
-        <Styled.PostImages>
-          {images && images.length > 0 && hasData && (
-            <Gallery layout={1} containerObj={containerObj} gallery={images} />
-          )}
-        </Styled.PostImages>
+        {images && images.length > 0 && hasData && (
+          <Styled.PostImages>
+            {!mobile && (
+              <Gallery
+                layout={1}
+                minSize={200}
+                containerObj={containerObj}
+                gallery={images}
+              />
+            )}
+            {mobile &&
+              images.map((image, i) => {
+                return (
+                  <Styled.MobileImage key={i}>
+                    <img src={image.url} />
+                  </Styled.MobileImage>
+                );
+              })}
+          </Styled.PostImages>
+        )}
+        <Styled.PostVideos className="videos">
+          {videos &&
+            videos.length &&
+            videos.map((vid, i) => {
+              return (
+                <div key={i}>
+                  <video playsInline poster={vid.poster} width="100%" controls>
+                    <source src={vid.videoUrl} type="video/mp4" />
+                  </video>
+                </div>
+              );
+            })}
+        </Styled.PostVideos>
       </Styled.Post>
     );
   };
