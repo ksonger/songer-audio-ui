@@ -343,17 +343,6 @@ const Gallery = {
         },
         {
           // Image item:
-          itemId: "33",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ps1.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 755,
-            focalPoint: [0, 0],
-          },
-        },
-        {
-          // Image item:
           itemId: "34",
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ready_for_brass.png",
           metaData: {
@@ -745,19 +734,6 @@ const Gallery = {
             type: "image",
             width: 2000,
             height: 1500,
-            focalPoint: [0, 0],
-          },
-        },
-        {
-          // Video item:
-          itemId: "71",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/battle_between_s2.mov",
-          metaData: {
-            type: "video",
-            width: 1920,
-            height: 1080,
-            poster:
-              "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/calypso_minor_poster.png",
             focalPoint: [0, 0],
           },
         },
