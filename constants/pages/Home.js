@@ -3,7 +3,7 @@ const Home = {
     {
       blockType: "banner",
       message: `<p>
-        Join us at the <a href="https://pacificaudiofest.com" target="_blank">2022 Pacific AudioFest!</a>
+        Join us at the <a href="https://capitalaudiofest.com" target="_blank">2022 Capital AudioFest!</a>
         </p>`,
     },
     {

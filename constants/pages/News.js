@@ -6,6 +6,98 @@ const News = {
         {
           id: "4",
           slug: "decibel_event",
+          title: "Songer Audio @ 2022 Pacific Audio Fest",
+          summary:
+            "The Pacific Audio Fest was a huge success!  Thanks to Lou and all of the wonderful people who made the event possible and such a pleasure to be a part of.",
+          content:
+            "<p>The Pacific Audio Fest was a huge success!  Thanks to Lou and all of the wonderful people who made the event possible and such a pleasure to be a part of.</p><p>We're back in Portland at last, all of the gear has been unpacked, and things are slowly settling back to normal.  The response to the speakers, and to the Whammerdyne amps they were paired with in the room, was just amazing.  Thank you to everyone who attended, and for all of the wonderfully positive comments we received throughout the event.  A special thank you to Pat and the team at <a target='_blank' href='http://whammerdyne.net/'>Whammerdyne</a>.  We're so fortunate to be able to match our speakers with such beautiful looking and sounding gear at the shows.</p><p>We decided to feature the S1 in the first half of each show day, followed by the S2 in the late afternoons.  I expected that a clear favorite would eventually emerge between the two, but one never did.  There were as many who were excited by the S2 for its organic, lively room-filling sound as there were for the immediacy, presence and resolve of the S1.  It seemed to be nothing more than a matter of listener preference which is, of course, what I've hoped for.</p><p>At a first show, I can't imagine anything more valuable than reactions like the ones we received from attendees, and from other exhibitors and members of the press with decades of professional experience in the industry.  Thank you, we are so grateful.  On to the 2022 Capital Audiofest in November.  We can't wait.</p>",
+          images: [
+            {
+              // Image item:
+              itemId: "d1",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/paf_6.jpg",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d2",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/paf_2.jpg",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d3",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/paf_4.jpg",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d4",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/paf_pf.jpg",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d5",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/paf_3.jpg",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d6",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/paf_1.jpg",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d7",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/paf_5.jpg",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+          ],
+          videos: [],
+          date: "2022-06-07T19:38:12.339Z",
+          createdAt: "2022-06-07T19:38:12.339Z",
+          updatedAt: "2022-06-07T19:38:12.339Z",
+        },
+        {
+          id: "4",
+          slug: "decibel_event",
           title: "Songer Audio @ Decibel",
           summary:
             "This past Sunday, Songer Audio had the pleasure of being featured at an event for the Portland Audio Club and the Oregon Triode Society at Decibel Sound and Drink",
