@@ -4,8 +4,8 @@ const News = {
       blockType: "newsPosts",
       items: [
         {
-          id: "4",
-          slug: "decibel_event",
+          id: "5",
+          slug: "paf_event",
           title: "Songer Audio @ 2022 Pacific Audio Fest",
           summary:
             "The Pacific Audio Fest was a huge success!  Thanks to Lou and all of the wonderful people who made the event possible and such a pleasure to be a part of.",
@@ -90,10 +90,9 @@ const News = {
               },
             },
           ],
-          videos: [],
-          date: "2022-06-07T19:38:12.339Z",
-          createdAt: "2022-06-07T19:38:12.339Z",
-          updatedAt: "2022-06-07T19:38:12.339Z",
+          date: "2022-08-08T16:38:12.339Z",
+          createdAt: "2022-08-08T16:38:12.339Z",
+          updatedAt: "2022-08-08T16:38:12.339Z",
         },
         {
           id: "4",

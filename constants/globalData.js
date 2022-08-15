@@ -14,14 +14,15 @@ export const GLOBAL_DATA = {
     siteDescription: `Songer Audio produces finely crafted field coil drivers and loudspeakers, 100% hand-made in the USA in Oregon.`,
     siteCopyright: "&copy; 2021 Songer Audio",
     socialMediaLinks: [
-      { label: "Facebook", url: "https://www.facebook.com/songeraudio/" },
-      { label: "Twitter", url: "https://twitter.com/songeraudio" },
+      {
+        label: "Facebook",
+        url: "https://www.facebook.com/Songer-Audio-225994622166706",
+      },
       { label: "Instagram", url: "https://www.instagram.com/songeraudio/" },
       {
-        label: "LinkedIn",
-        url: "https://www.linkedin.com/company/songeraudio/",
+        label: "YouTube",
+        url: "https://www.youtube.com/channel/UC0bsNYHQkEIrQjHg38BLiJw",
       },
-      { label: "YouTube", url: "https://www.youtube.com/user/songeraudio" },
     ],
   },
   navItems: [

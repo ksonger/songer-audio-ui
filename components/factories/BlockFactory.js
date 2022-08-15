@@ -9,6 +9,7 @@ const BLOCK_MAP = {
   product: Blocks.Product,
   pageGallery: Blocks.PageGallery,
   banner: Blocks.Banner,
+  socials: Blocks.Socials,
 };
 
 const BlockFactory = ({ type, data, blockMap = BLOCK_MAP }) => {
