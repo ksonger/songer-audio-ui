@@ -53,7 +53,7 @@ const Home = {
       description: `
         <p>
         Newly updated with our V3 field coil driver, the S1 loudspeaker delivers phase perfect, full-range 
-        sound +/- 3dB from 34Hz - 20kHz.  Constructed of all solid hardwoods and brass hardware, it's meant 
+        sound +/- 3dB from 32Hz - 20kHz.  Constructed of all solid hardwoods and brass hardware, it's meant 
         to be as beautiful to look at as it is to listen to.
         </p>
         <p>
@@ -87,7 +87,7 @@ const Home = {
         </p>
         <p>
         Paired with the superbly musical Acoustic Elegance LO15 woofer, the S2 offers full, accurate bass performance 
-        from 32Hz to 20kHz, +/- 3dB.
+        from 34Hz to 20kHz, +/- 3dB.
         </p>`,
       cta: {
         label: "Learn More",
