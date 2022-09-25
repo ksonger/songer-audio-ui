@@ -67,7 +67,7 @@ export const PostHeader = styled.div`
   padding: 0 12px 12px 0;
   margin-bottom: 18px;
   display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
   font-size: 24px;
 `;
 
@@ -77,7 +77,7 @@ export const PostTitle = styled.div`
 
 export const PostDate = styled.div`
   font-size: 13px;
-  text-align: right;
+  text-align: left;
   color: rgba(160, 160, 160, 1);
 `;
 

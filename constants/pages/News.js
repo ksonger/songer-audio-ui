@@ -4,6 +4,31 @@ const News = {
       blockType: "newsPosts",
       items: [
         {
+          id: "6",
+          slug: "oasis_award",
+          title: "Positive Feedback 2022 Pacific Audiofest Oasis! Award",
+          summary:
+            "This past Friday was a great day for Songer Audio. The esteemed Dr. David Robinson, Editor-in-Chief of Positive Feedback, honored us with an Oasis! Award for our room at the 2022 Pacific Audiofest.",
+          content:
+            "<p>This past Friday was a great day for Songer Audio.</p><p>The esteemed Dr. David Robinson, Editor-in-Chief of Positive Feedback, honored us with an Oasis! Award for our room at the 2022 Pacific Audiofest. In his words:</p><p>&nbsp;</p><p><q><i><strong>There was a seductive and powerful musicality that exuded real presence and an organic harmonic structure that appealed to me enormously. And since I didn't know what to expect in this room, my emotional connection with the music here was one of the most potent moments at PAF 2022 for me.</p></strong></i></q><p>&nbsp;</p><p>I'm so pleased to have captivated an industry icon like Dr. Robinson, and in Songer Audio's show debut no less. What an honor.</p><p><a href='https://positive-feedback.com/.../pacific-audio-fest-2022-4/' target='_blank'>https://positive-feedback.com/.../pacific-audio-fest-2022-4/</a></p><p>Heartfelt congratulations to Patrick Hickman of Whammerdyne as well, for his sublime 2A3 and hybrid amplifier designs. We had a special synergy going in that room, Pat. I'm looking forward to repeating the magic in November, at the 2022 Capital Audiofest. Cheers, everyone.</p>",
+          images: [
+            {
+              // Image item:
+              itemId: "d1",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/sa_oasis_paf_2022.png",
+              metaData: {
+                type: "image",
+                width: 2200,
+                height: 1696,
+                focalPoint: [0, 0],
+              },
+            },
+          ],
+          date: "2022-09-25T14:59:12.339Z",
+          createdAt: "2022-09-25T14:59:12.339Z",
+          updatedAt: "2022-09-25T14:59:12.339Z",
+        },
+        {
           id: "5",
           slug: "paf_event",
           title: "Songer Audio @ 2022 Pacific Audio Fest",

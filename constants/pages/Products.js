@@ -105,15 +105,14 @@ const Products = {
       It incorporates a novel, rear-firing whizzer which contributes to superb overall tonal balance and energy.  As simply another part of the 
       point source driver, the rear whizzer does not suffer from multi-way phase or timing issues. That benefit translates into a wonderful 
       sense of live musical performance, with outstanding imaging and soundstage depth.</p>
-       <p>The Type D field coil is allowed to run full range, with only compensation for baffle diffraction.
-      Below 230Hz however, it is assisted by an Acoustic Elegance LO15 woofer for extremely accurate overall bass response.  It 
+       <p>Below 130Hz, the Type D field coil is assisted by an Acoustic Elegance LO15 woofer for extremely accurate overall bass response.  It 
       is "port constrained" in the front, and employs an open, folded baffle design in the back.  These design features lower free resonance,
       increase efficiency, and reduce wave cancellations for rich overall bass performance.  Dual binding posts offer the option to
       run bridged passively, or to bi-amp for large listening spaces.</p>`,
       specs: [
         {
           label: `System`,
-          value: `Dipole 1.5-way open baffle loudspeaker`,
+          value: `Dipole 2-way open baffle loudspeaker`,
         },
         {
           label: `Frequency Response`,

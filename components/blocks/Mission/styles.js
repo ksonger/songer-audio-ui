@@ -15,7 +15,7 @@ export const BlockMain = styled.div`
   width: 100%;
   max-width: var(--l-content-max);
   margin: 0 auto;
-  padding: ${fluidScale("60px", "30px")} 0;
+  padding: ${fluidScale("40px", "20px")} 0;
   align-content: center;
 `;
 

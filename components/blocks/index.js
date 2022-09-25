@@ -5,4 +5,5 @@ export { default as NewsPosts } from "./NewsPosts";
 export { default as Product } from "./Product";
 export { default as PageGallery } from "./Gallery";
 export { default as Banner } from "./Banner";
+export { default as Newslink } from "./NewsLink";
 export { default as Socials } from "../global/Footer/Social";

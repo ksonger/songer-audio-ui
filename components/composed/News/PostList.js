@@ -16,12 +16,25 @@ const PostList = ({ isLoading = true, newsPosts }) => {
   const router = useRouter();
 
   useEffect(() => {
-    if (router.query.page[1] && view === "list") {
+    let slug;
+    if (
+      document.location.search &&
+      document.location.search.substr(1).split("=")[0] === "post"
+    ) {
+      slug = document.location.search.substr(1).split("=")[1];
       const selected = newsPosts.filter((post) => {
-        return post.slug === router.query.page[1];
+        return post.slug === slug;
       });
-      selectPost(selected[0].slug, selected[0].id);
+      if (view === "list") {
+        selectPost(selected[0].slug, selected[0].id);
+      }
     }
+    // if (router.query.page[1] && view === "list") {
+    //   const selected = newsPosts.filter((post) => {
+    //     return post.slug === router.query.page[1];
+    //   });
+    //   selectPost(selected[0].slug, selected[0].id);
+    // }
   }, []);
 
   const selectPost = (slug, id) => {
@@ -32,7 +45,6 @@ const PostList = ({ isLoading = true, newsPosts }) => {
     });
     setPost(selected[0]);
     setView("post");
-    // router.push(`/news/${slug}`);
   };
 
   const selectList = () => {
