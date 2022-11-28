@@ -9,7 +9,7 @@ const Home = {
     {
       blockType: "newslink",
       message: `<p>
-        Winner of Positive Feedback's <a href="/news?post=oasis_award"> 2022 Pacific Audiofest Oasis! Award</a>
+        Winner of Positive Feedback's <a href="https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/" target="_blank"> 2022 Pacific Audiofest Oasis! Award</a>
         </p>`,
     },
     {

@@ -4,13 +4,85 @@ const News = {
       blockType: "newsPosts",
       items: [
         {
+          id: "7",
+          slug: "captial_audiofest",
+          title: "Songer Audio @ 2022 Capital Audiofest",
+          summary:
+            "We're back from Capital Audiofest 2022, and it was a fantastic show! We brought the S1 and S2, and alternated showing them in the first and second half of each day throughout the weekend.",
+          content:
+            "<p>We're back from Capital Audiofest 2022, and it was a fantastic show!</p><p>We brought the S1 and S2, and alternated showing them in the first and second half of each day throughout the weekend.  Attendees and industry professionals alike took time to tell us that we had one of the best rooms at the event, sharing those thoughts when both the S1 or S2 happened to be playing at the time.  Amazing.  If I had to say which was the crowd favorite, it would be the S2 by a small margin - it really shined.</p><p>I also delivered a short seminar in the Washington Theater on field coils drivers generally, and my own work specifically, which was a lot of fun as well.</p><p>I'd like to express our gratitude to everyone that stopped by to see us, and have a listen.  These hotel rooms at shows have significant acoustic challenges that exhibitors must overcome, and I'm glad that we were able to address enough of them to offer everyone a great experience while they spent time with us.  That's what this is all about.</p><p>Stereophile did a nice little write-up describing our loudspeakers and Whammerdyne's 2A3 DGA1-Ultra, and offered a lovely comment regarding the listening experience.  No turntable manufacturers have reached out yet!</p><p><a target='_blank' href='https://www.stereophile.com/content/songer-audiowhammerdyne-audio'>Songer Audio/Whammerdyne Audio</a></p><p>Another lovely review of Songer Audio at Capital Audiofest, courtesy of the folks at Audio Resurgence.</p><p><a target='_blank' href='https://www.audioresurgence.com/2022/11/songer-audio-whammerdyne-at-capital-audiofest-2022.html'>Songer Audio S1 / Whammerdyne DGA at Capital Audiofest 2022</a></p><p>The Audiophile Junkie spent a generous amount of time with us as well, and put out a great video of his visit on YouTube:</p><p><a target='_blank' href='https://www.youtube.com/watch?v=C_BsmpQinEk&t=173s'>Winner For Playing the Most Awesome Tracks - Songer Audio and Whammerdyne - Great Field Coil Drivers</a></p><p>Wonderful comments from Carlo and Craig at hometheaterhifi as well, about 40% down the page:</p><p><a target='_blank' href='https://hometheaterhifi.com/latest-reviews/show-report/capital-audiofest-rockville-maryland-november-11-13-2022-report-by-carlo-lo-raso-and-craig-chase/'>Show Report by Carlo Lo Raso and Craig Chase</a></p><p>I'm looking forward to reading the rest of the press coverage as it rolls out in the coming days and weeks, too.  One of the largest outlets has expressed interest in doing a full review of the S1.  Hopefully, that will come together in the next several months - I'll keep you posted.</p><p>I'd especially like to thank Capital Audiofest and Gary Gill for an amazing event, and the opportunity to talk a little about my work.  We loved it, and will be looking forward to another great show in 2023.</p><p>More posts about CAF coming soon.</p>",
+          images: [
+            {
+              // Image item:
+              itemId: "d1",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1_show_1.jpg",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d2",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1_show_2.jpg",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d3",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/show_s2_1.jpg",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d4",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/show_s2_2.png",
+              metaData: {
+                type: "image",
+                width: 1536,
+                height: 2048,
+                focalPoint: [0, 0],
+              },
+            },
+          ],
+          videos: [
+            {
+              videoUrl:
+                "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/mancin_caf_s1_alt.mp4",
+              poster:
+                "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/mancin_poster.png",
+            },
+            {
+              videoUrl:
+                "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/tracy_chapman_caf_s1_alt.mp4",
+              poster:
+                "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/tracy_chapman_poster.png",
+            },
+          ],
+          date: "2022-11-27T14:59:12.339Z",
+          createdAt: "2022-11-27T14:59:12.339Z",
+          updatedAt: "2022-11-27T14:59:12.339Z",
+        },
+        {
           id: "6",
           slug: "oasis_award",
           title: "Positive Feedback 2022 Pacific Audiofest Oasis! Award",
           summary:
             "This past Friday was a great day for Songer Audio. The esteemed Dr. David Robinson, Editor-in-Chief of Positive Feedback, honored us with an Oasis! Award for our room at the 2022 Pacific Audiofest.",
           content:
-            "<p>This past Friday was a great day for Songer Audio.</p><p>The esteemed Dr. David Robinson, Editor-in-Chief of Positive Feedback, honored us with an Oasis! Award for our room at the 2022 Pacific Audiofest. In his words:</p><p>&nbsp;</p><p><q><i><strong>There was a seductive and powerful musicality that exuded real presence and an organic harmonic structure that appealed to me enormously. And since I didn't know what to expect in this room, my emotional connection with the music here was one of the most potent moments at PAF 2022 for me.</p></strong></i></q><p>&nbsp;</p><p>I'm so pleased to have captivated an industry icon like Dr. Robinson, and in Songer Audio's show debut no less. What an honor.</p><p><a href='https://positive-feedback.com/.../pacific-audio-fest-2022-4/' target='_blank'>https://positive-feedback.com/.../pacific-audio-fest-2022-4/</a></p><p>Heartfelt congratulations to Patrick Hickman of Whammerdyne as well, for his sublime 2A3 and hybrid amplifier designs. We had a special synergy going in that room, Pat. I'm looking forward to repeating the magic in November, at the 2022 Capital Audiofest. Cheers, everyone.</p>",
+            "<p>This past Friday was a great day for Songer Audio.</p><p>The esteemed Dr. David Robinson, Editor-in-Chief of Positive Feedback, honored us with an Oasis! Award for our room at the 2022 Pacific Audiofest. In his words:</p><p>&nbsp;</p><p><q><i><strong>There was a seductive and powerful musicality that exuded real presence and an organic harmonic structure that appealed to me enormously. And since I didn't know what to expect in this room, my emotional connection with the music here was one of the most potent moments at PAF 2022 for me.</p></strong></i></q><p>&nbsp;</p><p>I'm so pleased to have captivated an industry icon like Dr. Robinson, and in Songer Audio's show debut no less. What an honor.</p><p><a href='https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/' target='_blank'>https://positive-feedback.com/.../pacific-audio-fest-2022-4/</a></p><p>Heartfelt congratulations to Patrick Hickman of Whammerdyne as well, for his sublime 2A3 and hybrid amplifier designs. We had a special synergy going in that room, Pat. I'm looking forward to repeating the magic in November, at the 2022 Capital Audiofest. Cheers, everyone.</p>",
           images: [
             {
               // Image item:
