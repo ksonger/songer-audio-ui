@@ -7,4 +7,11 @@ export const BlockQuotes = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin: 30px ${fluidScale("100px", "24px")};
   justify-content: center;
+
+  ${respond(
+    css`
+      margin: 30px 0;
+    `,
+    "700px"
+  )}
 `;

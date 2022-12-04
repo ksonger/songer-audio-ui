@@ -50,6 +50,7 @@ const Main = styled.main`
   width: 100%;
   max-width: var(--l-content-max);
   margin: 0 auto 40px auto;
+  overflow-x: hidden;
 `;
 
 const Article = styled.div`

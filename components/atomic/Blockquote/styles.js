@@ -7,6 +7,15 @@ export const BlockQuote = styled.div`
   flex-direction: column;
   color: var(--neutral90);
   border: 1px solid #9a9a9a;
+
+  ${respond(
+    css`
+      border: 0;
+      border-top: 1px solid #9a9a9a;
+      border-bottom: 1px solid #9a9a9a;
+    `,
+    "700px"
+  )}
   padding: 24px;
 `;
 
