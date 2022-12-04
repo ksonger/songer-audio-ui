@@ -19,7 +19,7 @@ export function Gallery({
   const options = {
     galleryLayout: layout,
     minItemSize: minSize,
-    maxGroupSize: 2,
+    maxGroupSize: 3,
     hoveringBehaviour: hoverBehavior,
     clickToExpand: true,
     scrollDuration: 200,

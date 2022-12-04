@@ -8,8 +8,10 @@ const BLOCK_MAP = {
   newsPosts: Blocks.NewsPosts,
   product: Blocks.Product,
   pageGallery: Blocks.PageGallery,
+  listenForm: Blocks.ListenForm,
   banner: Blocks.Banner,
   newslink: Blocks.Newslink,
+  blockQuotes: Blocks.BlockQuotes,
   socials: Blocks.Socials,
 };
 

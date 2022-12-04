@@ -77,17 +77,17 @@ const Gallery = {
             focalPoint: [0, 0],
           },
         },
-        {
-          // Image item:
-          itemId: "8",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/arches_installed.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 1268,
-            focalPoint: [0, 0],
-          },
-        },
+        // {
+        //   // Image item:
+        //   itemId: "8",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/arches_installed.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 1268,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
         {
           // Image item:
           itemId: "9",
@@ -110,39 +110,39 @@ const Gallery = {
             focalPoint: [0, 0],
           },
         },
-        {
-          // Image item:
-          itemId: "11",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/cone_mold_printed.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 750,
-            focalPoint: [0, 0],
-          },
-        },
-        {
-          // Image item:
-          itemId: "12",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/cones_drying.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 710,
-            focalPoint: [0, 0],
-          },
-        },
-        {
-          // Image item:
-          itemId: "13",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/first_voice_coils.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 573,
-            focalPoint: [0, 0],
-          },
-        },
+        // {
+        //   // Image item:
+        //   itemId: "11",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/cone_mold_printed.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 750,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
+        // {
+        //   // Image item:
+        //   itemId: "12",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/cones_drying.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 710,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
+        // {
+        //   // Image item:
+        //   itemId: "13",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/first_voice_coils.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 573,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
         {
           // Image item:
           itemId: "14",
@@ -154,17 +154,17 @@ const Gallery = {
             focalPoint: [0, 0],
           },
         },
-        {
-          // Image item:
-          itemId: "15",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/new_cones_drying.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 750,
-            focalPoint: [0, 0],
-          },
-        },
+        // {
+        //   // Image item:
+        //   itemId: "15",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/new_cones_drying.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 750,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
         {
           // Image item:
           itemId: "16",
@@ -363,17 +363,17 @@ const Gallery = {
             focalPoint: [0, 0],
           },
         },
-        {
-          // Image item:
-          itemId: "36",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/routed_and_sanded.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 598,
-            focalPoint: [0, 0],
-          },
-        },
+        // {
+        //   // Image item:
+        //   itemId: "36",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/routed_and_sanded.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 598,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
         {
           // Image item:
           itemId: "37",
@@ -495,17 +495,17 @@ const Gallery = {
             focalPoint: [0, 0],
           },
         },
-        {
-          // Image item:
-          itemId: "48",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_single_shop.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 1333,
-            focalPoint: [0, 0],
-          },
-        },
+        // {
+        //   // Image item:
+        //   itemId: "48",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_single_shop.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 1333,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
         {
           // Image item:
           itemId: "49",
@@ -528,17 +528,17 @@ const Gallery = {
             focalPoint: [0, 0],
           },
         },
-        {
-          // Image item:
-          itemId: "52",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/solenoid.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 1070,
-            focalPoint: [0, 0],
-          },
-        },
+        // {
+        //   // Image item:
+        //   itemId: "52",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/solenoid.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 1070,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
         {
           // Image item:
           itemId: "53",
@@ -572,17 +572,17 @@ const Gallery = {
             focalPoint: [0, 0],
           },
         },
-        {
-          // Image item:
-          itemId: "56",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/wet_surrounds.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 916,
-            focalPoint: [0, 0],
-          },
-        },
+        // {
+        //   // Image item:
+        //   itemId: "56",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/wet_surrounds.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 916,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
         {
           // Image item:
           itemId: "57",
@@ -616,28 +616,28 @@ const Gallery = {
             focalPoint: [0, 0],
           },
         },
-        {
-          // Image item:
-          itemId: "60",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ply_prototype.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 1333,
-            focalPoint: [0, 0],
-          },
-        },
-        {
-          // Image item:
-          itemId: "61",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/polishing_motors.png",
-          metaData: {
-            type: "image",
-            width: 1000,
-            height: 725,
-            focalPoint: [0, 0],
-          },
-        },
+        // {
+        //   // Image item:
+        //   itemId: "60",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/ply_prototype.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 1333,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
+        // {
+        //   // Image item:
+        //   itemId: "61",
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/polishing_motors.png",
+        //   metaData: {
+        //     type: "image",
+        //     width: 1000,
+        //     height: 725,
+        //     focalPoint: [0, 0],
+        //   },
+        // },
         {
           // Image item:
           itemId: "62",
@@ -667,7 +667,7 @@ const Gallery = {
           metaData: {
             type: "image",
             width: 1500,
-            height: 2000,
+            height: 1289,
             focalPoint: [0, 0],
           },
         },
@@ -730,6 +730,28 @@ const Gallery = {
           // Image item:
           itemId: "70",
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2_prod/s2_type_d.png",
+          metaData: {
+            type: "image",
+            width: 2000,
+            height: 1500,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "71",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/v4_steel_polished_1.jpeg",
+          metaData: {
+            type: "image",
+            width: 2000,
+            height: 1500,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "72",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/v4_steel_polished_2.jpeg",
           metaData: {
             type: "image",
             width: 2000,

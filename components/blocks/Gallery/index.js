@@ -37,7 +37,7 @@ const PageGallery = ({ images }) => {
       <Styled.BlockMain id="gallery_page">
         {images.length > 0 && hasData && (
           <Gallery
-            layout={0}
+            layout={1}
             scrollingEl={galleryScroll}
             containerObj={containerObj}
             gallery={shuffle(images)}

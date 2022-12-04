@@ -3,7 +3,7 @@ const Home = {
     {
       blockType: "banner",
       message: `<p>
-        Join us at the <a href="https://capitalaudiofest.com" target="_blank">2022 Capital AudioFest!</a>
+        We Invite You To <a href="https://www.songeraudio.com/listen" target="_self">Experience Songer Audio</a>
         </p>`,
     },
     {
@@ -13,7 +13,37 @@ const Home = {
         </p>`,
     },
     {
+      blockType: "blockQuotes",
+      quotes: [
+        {
+          quotation:
+            "There was a seductive and powerful musicality that exuded real presence and an organic harmonic structure that appealed to me enormously...my emotional connection with the music here was one of the most potent moments at PAF 2022 for me.",
+          attribution: "- Dr. David Robinson, Positive Feedback",
+          link: "https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/",
+        },
+        {
+          quotation:
+            "The Songer Audio S1 driven by the Whammerdyne DGA-Ultra delivered what I thought was possibly the best sound of the show.  These speakers sound so effortless, coherent, natural, and dynamic.  They extend to 20Khz and down to 29hz (-6dB), so they’re easily a ‘full-range’ speaker...",
+          attribution: "- CAH, Audio Resurgence",
+          link: "https://www.audioresurgence.com/2022/11/songer-audio-whammerdyne-at-capital-audiofest-2022.html",
+        },
+        {
+          quotation:
+            "Ella Fitzgerald's \"When Your Alone\" and Kraftwerk's Tour de France had surprising depth, girth, and sensuality. I longed to hear this capable rig playing vinyl, but no turntable manufacturer had yet teamed up with Ken Songer. What are you waiting for?",
+          attribution: "- Ken Micallef, Stereophile",
+          link: "https://www.stereophile.com/content/songer-audiowhammerdyne-audio",
+        },
+        {
+          quotation:
+            "The soundstage is huge - wide, deep and so lifelike its uncanny.  It's as if the musicians are right in the room, all properly placed, as if you were at the recording event.",
+          attribution: "- Patrick Hickman, Whammerdyne",
+          link: "https://www.whammerdyne.com",
+        },
+      ],
+    },
+    {
       blockType: "mission",
+      style: "home",
       heading: `The medium is engineering. The result is art.`,
       description: `Songer Audio field coil loudspeakers and drivers are functional works of art, of uncompromising craftsmanship. Each piece is 100% designed, made and assembled by hand. Our products express a philosophy of simplicity, excellence, and a relentless dedication to provide the purest possible experience of music.`,
     },

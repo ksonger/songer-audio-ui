@@ -18,8 +18,8 @@ const News = {
               url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1_show_1.jpg",
               metaData: {
                 type: "image",
-                width: 1536,
-                height: 2048,
+                width: 2000,
+                height: 1269,
                 focalPoint: [0, 0],
               },
             },
@@ -29,8 +29,8 @@ const News = {
               url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1_show_2.jpg",
               metaData: {
                 type: "image",
-                width: 1536,
-                height: 2048,
+                width: 2000,
+                height: 1273,
                 focalPoint: [0, 0],
               },
             },
@@ -40,8 +40,8 @@ const News = {
               url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/show_s2_1.jpg",
               metaData: {
                 type: "image",
-                width: 1536,
-                height: 2048,
+                width: 2000,
+                height: 1286,
                 focalPoint: [0, 0],
               },
             },
@@ -51,8 +51,8 @@ const News = {
               url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/show_s2_2.png",
               metaData: {
                 type: "image",
-                width: 1536,
-                height: 2048,
+                width: 2000,
+                height: 1262,
                 focalPoint: [0, 0],
               },
             },

@@ -3,6 +3,7 @@ import Products from "@/constants/pages/Products";
 import Gallery from "@/constants/pages/Gallery";
 import Technology from "@/constants/pages/Technology";
 import News from "@/constants/pages/News";
+import Listen from "@/constants/pages/Listen";
 import About from "@/constants/pages/About";
 
 const Pages = {
@@ -11,6 +12,7 @@ const Pages = {
   ...Gallery,
   ...Technology,
   ...News,
+  ...Listen,
   ...About,
 };
 

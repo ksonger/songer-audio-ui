@@ -15,7 +15,6 @@ export const BlockMain = styled.div`
   width: 100%;
   max-width: var(--l-content-max);
   margin: 0 auto;
-  padding: ${fluidScale("40px", "20px")} 0;
   align-content: center;
 `;
 
@@ -24,10 +23,21 @@ export const Heading = styled.span`
   text-align: center;
   font-weight: bold;
   width: 100%;
-  text-transform: uppercase;
+  ${(p) =>
+    p.$missionType === "home"
+      ? css`
+          text-transform: uppercase;
+          color: var(--neutral60);
+        `
+      : css`
+          text-transform: uppercase;
+          color: #777;
+          font-style: normal;
+        `}
+
   padding: 30px;
   letter-spacing: 2px;
-  color: var(--neutral60);
+
   ${respond(
     css`
       font-size: 18px;
@@ -38,15 +48,33 @@ export const Heading = styled.span`
 
 export const Description = styled.p`
   text-align: center;
-  color: var(--neutral40);
-  font-style: italic;
-  font-size: ${fluidScale("20px", "13px")};
   line-height: 24px;
   letter-spacing: 1px;
+  a {
+    white-space: nowrap;
+    color: var(--button-background-color);
+    cursor: pointer;
+  }
   ${respond(
     css`
       font-size: 16px;
     `,
     "700px"
   )}
+
+  ${(p) =>
+    p.$missionType === "home"
+      ? css`
+          color: var(--neutral40);
+          font-style: italic;
+          font-size: ${fluidScale("20px", "13px")};
+          margin: 0 auto 30px auto;
+        `
+      : css`
+          color: var(--neutral50);
+          font-style: italic;
+          font-size: ${fluidScale("18px", "17px")};
+          max-width: 800px;
+          margin: 60px auto 30px auto;
+        `}
 `;

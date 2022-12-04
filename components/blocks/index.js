@@ -4,6 +4,8 @@ export { default as ScrollSections } from "./ScrollSections";
 export { default as NewsPosts } from "./NewsPosts";
 export { default as Product } from "./Product";
 export { default as PageGallery } from "./Gallery";
+export { default as ListenForm } from "./ListenForm";
 export { default as Banner } from "./Banner";
 export { default as Newslink } from "./NewsLink";
+export { default as BlockQuotes } from "./BlockQuotes";
 export { default as Socials } from "../global/Footer/Social";
