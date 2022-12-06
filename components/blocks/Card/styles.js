@@ -61,7 +61,12 @@ export const CardImage = styled.div`
     return lSetAspectRatio(p.$image.width, p.$image.height);
   }}
 
-  ${respond(css``, "700px")}
+  ${respond(
+    css`
+      margin: 40px 0;
+    `,
+    "700px"
+  )}
 `;
 
 export const CardContent = styled.div`
