@@ -52,7 +52,7 @@ export default `
     --button-padding: 4px;
     
     --header-text-color: rgba(255,255,255,0.6);
-    --header-menu-text-color: rgba(255,255,255,0.6);
+    --header-menu-text-color: rgba(255,255,255,0.9);
     --header-menu-text-color-active: #e6cc8e;
     --header-logo-color: #e6cc8e;
     
@@ -97,7 +97,7 @@ export default `
     --l-container-full: 100vw;
     --l-content-max: 1800px;
     --l-content-padding: ${fluidScale("120px", "20px")};
-    --l-header-height-standard: 270px;
+    --l-header-height-standard: 160px;
     --l-header-height-compact: 84px;
   }
 `;

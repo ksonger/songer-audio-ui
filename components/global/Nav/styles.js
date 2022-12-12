@@ -5,6 +5,10 @@ import NavMenuButton from "@/global/Nav/NavMenuButton";
 export const NavButton = styled(NavMenuButton)`
   display: none;
 
+  svg {
+    fill: #fff;
+  }
+
   .closeMenu {
     position: fixed;
     top: 27px;
@@ -21,7 +25,7 @@ export const Nav = styled.div`
   span {
     font-family: var(--font-face-headers-compact);
     letter-spacing: 2px;
-    font-size: ${fluidScale("16px", "12px")};
+    font-size: ${fluidScale("13px", "11px")};
     color: var(--header-menu-text-color);
     font-weight: var(--font-weight-regular);
 
@@ -111,7 +115,7 @@ export const Nav = styled.div`
 
   display: grid;
   grid-auto-flow: column;
-  gap: ${fluidScale("60px", "10px")};
+  gap: ${fluidScale("80px", "10px")};
   place-items: center;
   place-content: center;
 

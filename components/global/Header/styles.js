@@ -36,7 +36,7 @@ export const HeaderContent = styled.header`
 
 export const Background = styled.div`
   z-index: 0;
-  opacity: 0.3;
+  opacity: 0.25;
 
   & span {
     transition: height 200ms;
@@ -48,10 +48,10 @@ export const Background = styled.div`
 
 export const LogoNav = styled.div`
   display: grid;
-  gap: 3em;
   width: 100%;
+  height: inherit;
   grid-auto-flow: row;
-  grid-template-rows: auto auto;
+  grid-template-rows: 1fr 40px;
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -73,9 +73,11 @@ export const Logo = styled.div`
   grid-auto-flow: row;
   grid-template-rows: auto;
   justify-self: center;
+  align-items: center;
   cursor: pointer;
   svg {
     margin-left: 6px;
+    fill: #e6cc8e;
   }
   ${respond(
     css`
@@ -88,8 +90,9 @@ export const Logo = styled.div`
 `;
 
 export const LogoIcon = styled.div`
-  width: 200px;
-  height: 100px;
+  width: 120px;
+  height: 60px;
+  justify-self: center;
   ${respond(
     `
     width: 100px;
@@ -100,8 +103,8 @@ export const LogoIcon = styled.div`
 
 export const LogoSpan = styled.span`
   color: rgba(255, 255, 255, 0.6);
-  letter-spacing: ${fluidScale("5px", "1px")};
-  font-size: 22px;
+  letter-spacing: ${fluidScale("4px", "1px")};
+  font-size: 18px;
   ${respond(`font-size: 14px;`)}
 `;
 
@@ -109,7 +112,7 @@ export const Shadow = styled.div`
   width: 100%;
   position: absolute;
   height: 50px;
-  top: 220px;
+  top: 110px;
   left: 0;
   z-index: 0;
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);

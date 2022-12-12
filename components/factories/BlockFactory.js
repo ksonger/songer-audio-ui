@@ -12,6 +12,7 @@ const BLOCK_MAP = {
   banner: Blocks.Banner,
   newslink: Blocks.Newslink,
   blockQuotes: Blocks.BlockQuotes,
+  slideShow: Blocks.Slideshow,
   socials: Blocks.Socials,
 };
 
