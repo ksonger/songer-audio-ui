@@ -46,7 +46,7 @@ const Slideshow = ({ slides = fadeImages }) => {
   if (!slides) return null;
 
   return (
-    <div>
+    <Styled.SlideshowContainer>
       <Fade duration={7000} {...properties}>
         {slides.map((slide, index) => (
           <Styled.EachSlide key={index} $tAlign={slide.textAlign}>
@@ -58,7 +58,7 @@ const Slideshow = ({ slides = fadeImages }) => {
           </Styled.EachSlide>
         ))}
       </Fade>
-    </div>
+    </Styled.SlideshowContainer>
   );
 };
 

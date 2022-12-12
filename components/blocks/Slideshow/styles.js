@@ -1,6 +1,12 @@
 import styled, { css } from "styled-components";
 import { fluidScale, respond } from "@/styles/mixins";
 
+export const SlideshowContainer = styled.div`
+  svg {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+`;
+
 export const EachSlide = styled.div`
   background: #000;
 `;
