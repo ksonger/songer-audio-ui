@@ -130,7 +130,7 @@ const Products = {
           value: `Dual 5-way Cardas binding posts, 3-pin Cardas XLR power`,
         },
       ],
-      price: `$37,000 (pair, with power supplies)`,
+      price: `$49,000 (pair, with power supplies)`,
       galleryId: "s2",
       anchorName: "a_s2",
       gallery: [

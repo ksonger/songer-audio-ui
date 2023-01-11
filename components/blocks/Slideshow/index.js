@@ -47,7 +47,7 @@ const Slideshow = ({ slides = fadeImages }) => {
 
   return (
     <Styled.SlideshowContainer>
-      <Fade duration={7000} {...properties}>
+      <Fade duration={8000} {...properties}>
         {slides.map((slide, index) => (
           <Styled.EachSlide key={index} $tAlign={slide.textAlign}>
             <Styled.Background $background={slide.url} />

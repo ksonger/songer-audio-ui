@@ -70,7 +70,7 @@ const ListenForm = ({
         familyName: values.family_name,
         emailAddress: values.email,
         phoneNumber: values.phone,
-        requests: values.request,
+        requests: values.requests,
         dateTime1: values.date_time_1,
         dateTime2: values.date_time_2,
         comments: "LISTENING SESSION",

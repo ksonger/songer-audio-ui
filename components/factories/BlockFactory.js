@@ -11,6 +11,7 @@ const BLOCK_MAP = {
   listenForm: Blocks.ListenForm,
   banner: Blocks.Banner,
   newslink: Blocks.Newslink,
+  awardBlade: Blocks.AwardBlade,
   blockQuotes: Blocks.BlockQuotes,
   slideShow: Blocks.Slideshow,
   socials: Blocks.Socials,

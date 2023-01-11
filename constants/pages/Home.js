@@ -50,10 +50,22 @@ const Home = {
       ],
     },
     {
-      blockType: "newslink",
-      message: `<p>
-        Winner of Positive Feedback's <a href="https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/" target="_blank"> 2022 Pacific Audiofest Oasis! Award</a>
+      blockType: "awardBlade",
+      awards: [
+        {
+          message: `<p>Positive Feedback<br/>PAF 2022 Oasis! Award Winner</p>
         </p>`,
+          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pf_logo.png",
+          link: "https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/",
+          layout: "left",
+        },
+        {
+          message: `<p>Enjoy the Music<br/>Best of CAF 2022 Award Winner</p>`,
+          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_caf_2022_sepia.png",
+          link: "https://www.enjoythemusic.com/Capital_Audiofest_2022/Becker/3rd_Floor_Atrium_Best_Rooms/page5.htm",
+          layout: "right",
+        },
+      ],
     },
     {
       blockType: "mission",
