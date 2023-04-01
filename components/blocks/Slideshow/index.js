@@ -49,13 +49,20 @@ const Slideshow = ({ slides = fadeImages }) => {
     <Styled.SlideshowContainer>
       <Fade duration={8000} {...properties}>
         {slides.map((slide, index) => (
-          <Styled.EachSlide key={index} $tAlign={slide.textAlign}>
-            <Styled.Background $background={slide.url} />
-            <Styled.Span $tAlign={slide.textAlign}>
-              <quote $tAlign={slide.textAlign}>{slide.caption}</quote>
-              <attribution>{slide.attribution}</attribution>
-            </Styled.Span>
-          </Styled.EachSlide>
+          <a
+            key={index}
+            href={slide.link}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Styled.EachSlide $tAlign={slide.textAlign}>
+              <Styled.Background $background={slide.url} />
+              <Styled.Span $tAlign={slide.textAlign}>
+                <quote $tAlign={slide.textAlign}>{slide.caption}</quote>
+                <attribution>{slide.attribution}</attribution>
+              </Styled.Span>
+            </Styled.EachSlide>
+          </a>
         ))}
       </Fade>
     </Styled.SlideshowContainer>

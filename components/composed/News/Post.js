@@ -98,7 +98,7 @@ const Post = ({ id, newsPost, navHandler }) => {
         )}
         <Styled.PostVideos className="videos">
           {videos &&
-            videos.length &&
+            videos.length > 0 &&
             videos.map((vid, i) => {
               return (
                 <div key={i}>

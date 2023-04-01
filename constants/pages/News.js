@@ -4,6 +4,20 @@ const News = {
       blockType: "newsPosts",
       items: [
         {
+          id: "8",
+          slug: "enjoythemusic_s1_review",
+          title: "Songer Audio S1 Review in Enjoy the Music",
+          summary:
+            "I am so proud today to share Enjoy the Music's wonderful review of the S1 loudspeaker, which was published this morning as a part of the April issue.",
+          content:
+            "<p>I am so proud today to share Enjoy the Music's wonderful review of the S1 loudspeaker, which was published this morning as a part of the April issue.</p><p><a href='https://www.enjoythemusic.com/superioraudio/equipment/0423/Songer_Audio_S1_Field_Coil_Point_Source_Loudspeaker_Review.htm' target='_blank'>Songer Audio S1 Field Coil Point-Source Loudspeaker Review</a></p><p>This is such a fulfilling milestone for me personally, in what has been an amazing debut year. My deep gratitude to Bob Grossman for all of his time and effort, and such a sincere and thoughtfully written article. Likewise, many thanks to Steven R. Rochlin and Enjoy the Music for all of the wonderful coverage and recognition they've given us. It's a truly indescribable feeling to see one's own work in a publication that you've read and appreciated so much, for decades. Cheers, all.</p>",
+          images: [],
+          videos: [],
+          date: "2023-04-01T10:16:12.339Z",
+          createdAt: "2023-04-01T10:16:12.339Z",
+          updatedAt: "2023-04-01T10:16:12.339Z",
+        },
+        {
           id: "7",
           slug: "captial_audiofest",
           title: "Songer Audio @ 2022 Capital Audiofest",

@@ -3,7 +3,7 @@ const Home = {
     {
       blockType: "banner",
       message: `<p>
-        We Invite You To <a href="https://www.songeraudio.com/listen" target="_self">Experience Songer Audio</a>
+        Join us at <a href="https://www.theshownow.com" target="_blank">T.H.E. Show</a> in Costa Mesa, June 9th - 11th
         </p>`,
     },
     {
@@ -11,6 +11,14 @@ const Home = {
       slides: [
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
+          caption:
+            "Time after time I looked and listened to the Songers and shook my head with disbelief that a single driver could play so loudly and clearly with incredibly fast dramatic dynamics and transients. This has been a truly magnificent experience and they have my highest recommendation.",
+          attribution: "- Bob Grossman, Enjoy the Music",
+          link: "https://www.enjoythemusic.com/superioraudio/equipment/0423/Songer_Audio_S1_Field_Coil_Point_Source_Loudspeaker_Review.htm",
+          textAlign: "left",
+        },
+        {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
           caption:
             "There was a seductive and powerful musicality that exuded real presence and an organic harmonic structure that appealed to me enormously...my emotional connection with the music here was one of the most potent moments at PAF 2022 for me.",
           attribution: "- Dr. David Robinson, Positive Feedback",
@@ -50,11 +58,14 @@ const Home = {
       ],
     },
     {
+      blockType: "newsLink",
+      message: `<p>Read our <a href="https://www.enjoythemusic.com/superioraudio/equipment/0423/Songer_Audio_S1_Field_Coil_Point_Source_Loudspeaker_Review.htm" target="_blank">S1 Loudspeaker Review</a> in Enjoy the Music</p>`,
+    },
+    {
       blockType: "awardBlade",
       awards: [
         {
-          message: `<p>Positive Feedback<br/>PAF 2022 Oasis! Award Winner</p>
-        </p>`,
+          message: `<p>Positive Feedback<br/>PAF 2022 Oasis! Award Winner</p>`,
           logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pf_logo.png",
           link: "https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/",
           layout: "left",

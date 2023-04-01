@@ -9,6 +9,7 @@ export const SlideshowContainer = styled.div`
 
 export const EachSlide = styled.div`
   background: #000;
+  cursor: pointer;
 `;
 
 export const Background = styled.div`

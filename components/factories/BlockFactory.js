@@ -10,7 +10,7 @@ const BLOCK_MAP = {
   pageGallery: Blocks.PageGallery,
   listenForm: Blocks.ListenForm,
   banner: Blocks.Banner,
-  newslink: Blocks.Newslink,
+  newsLink: Blocks.Newslink,
   awardBlade: Blocks.AwardBlade,
   blockQuotes: Blocks.BlockQuotes,
   slideShow: Blocks.Slideshow,

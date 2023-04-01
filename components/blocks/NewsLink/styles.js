@@ -12,7 +12,7 @@ export const Newslink = styled.div`
 export const Message = styled.div`
   flex-grow: 1;
   text-align: center;
-  font-size: ${fluidScale("20px", "18px")};
+  font-size: ${fluidScale("19px", "17px")};
 
   font-style: italic;
   letter-spacing: 0.5px;
