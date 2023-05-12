@@ -23,7 +23,7 @@ const About = {
                   Designing and building cabinets for commercial drivers was satisfying, but I often wondered if I couldn't take my work further to design and build a complete, world-class loudspeaker by hand.  My search for the answer to that question is an ongoing and rewarding journey, marked with success and challenge, and always full of discovery.
                 </p>
                 <p className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
-                  In March of 2018 I finally left the software industry to devote myself entirely to loudspeaker design, my true passion.
+                  In May of 2018 I finally left the software industry to devote myself entirely to loudspeaker design, my true passion.
                 </p>`,
     },
   ],

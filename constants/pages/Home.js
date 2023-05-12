@@ -3,7 +3,7 @@ const Home = {
     {
       blockType: "banner",
       message: `<p>
-        Join us at <a href="https://www.theshownow.com" target="_blank">T.H.E. Show</a> in Costa Mesa, June 9th - 11th
+        Join us at <a href="https://www.theshownow.com" target="_blank">T.H.E. Show</a> June 9-11 and <a href="https://www.pacificaudiofest.com" target="_blank">Pacific Audio Fest</a> June 23-25
         </p>`,
     },
     {
