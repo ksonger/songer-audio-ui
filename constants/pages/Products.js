@@ -10,7 +10,7 @@ const Products = {
       <p>
       The S1 loudspeaker is a solid hardwood, hand-crafted 140 liter bass reflex design.  Each pair is hand 
       constructed from 100% kiln-dried hardwoods, in a variety of standard options or in a hardwood of your choosing.  
-      It is well braced, internally lined and damped to eliminate unwanted cabinet resonances, and port tuned to 30Hz 
+      It is well braced, internally lined and damped to eliminate unwanted cabinet resonances, and port tuned to 24Hz 
       for full, accurate bass response. The cabinet is acoustically isolated from its base and the floor, with solid brass risers. 
       </p>
       <p>

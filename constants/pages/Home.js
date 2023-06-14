@@ -12,6 +12,14 @@ const Home = {
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
           caption:
+            "The sound was wonderful, the percussion totally clear, fast, sharp, and believable. Clarinet sounded warm at the bottom of its range, alive on top, and clear as can be. Even after hearing the hi-rez files of this piece countless times, I sat riveted by the sound.",
+          attribution: "- Jason Victor Serinus, Stereophile",
+          link: "https://www.stereophile.com/content/songer-audio-alexsound-technology-wows-serinus",
+          textAlign: "left",
+        },
+        {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_driver_front_sepia.png",
+          caption:
             "Time after time I looked and listened to the Songers and shook my head with disbelief that a single driver could play so loudly and clearly with incredibly fast dramatic dynamics and transients. This has been a truly magnificent experience and they have my highest recommendation.",
           attribution: "- Bob Grossman, Enjoy the Music",
           link: "https://www.enjoythemusic.com/superioraudio/equipment/0423/Songer_Audio_S1_Field_Coil_Point_Source_Loudspeaker_Review.htm",
