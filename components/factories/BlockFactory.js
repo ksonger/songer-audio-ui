@@ -14,6 +14,8 @@ const BLOCK_MAP = {
   awardBlade: Blocks.AwardBlade,
   blockQuotes: Blocks.BlockQuotes,
   slideShow: Blocks.Slideshow,
+  testimonial: Blocks.Testimonial,
+  testimonials: Blocks.Testimonials,
   socials: Blocks.Socials,
 };
 

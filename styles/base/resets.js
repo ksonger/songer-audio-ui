@@ -12,6 +12,11 @@ body {
     position: relative;
 }
 
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: .6;
+}
+
 #__next {
   position: absolute;
     top: 0;
@@ -154,5 +159,10 @@ input {
     @media all and (max-width:768px){
       display: none;
     }
+  }
+  
+  div.pro-gallery.thumbnails-gallery .thumbnailItem.pro-gallery-thumbnails.highlighted.gallery-item-container.highlight {
+    opacity: 1;
+    background-color: #000;
   }
 `;

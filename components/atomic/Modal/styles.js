@@ -70,7 +70,8 @@ export const DialogContent = styled.div`
   padding: ${(p) => {
     return p.$type === "gallery" ? "0;" : "30px;";
   }};
-  background: #fff;
+  background-color: rgba(30, 30, 30, 1);
+  border: 1px solid #555;
   border-radius: ${(p) => {
     return p.$type === "gallery" ? "0;" : "8px;";
   }};

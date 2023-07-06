@@ -23,18 +23,18 @@ export const BlockMain = styled.main`
     width: 100%;
     max-width: 1100px;
     padding: 10px 30px;
-    background: #eee;
+    background-color: rgba(63, 63, 63, 0.3);
     margin: 0 auto;
-    color: #666;
-    border-left: 1px solid #bbb;
-    border-right: 1px solid #bbb;
+    color: rgba(190, 190, 190, 0.8);
+    border-left: 1px solid rgba(230, 204, 142, 0.3);
+    border-right: 1px solid rgba(230, 204, 142, 0.3);
 
     &.first {
-      border-top: 1px solid #bbb;
+      border-top: 1px solid rgba(230, 204, 142, 0.3);
     }
 
     &.last {
-      border-bottom: 1px solid #bbb;
+      border-bottom: 1px solid rgba(230, 204, 142, 0.3);
     }
 
     &.section {
@@ -44,7 +44,7 @@ export const BlockMain = styled.main`
       padding: 30px;
       font-size: 18px;
       letter-spacing: 2px;
-      color: #333;
+      color: rgba(230, 204, 142, 0.5);
     }
 
     &.subsection {

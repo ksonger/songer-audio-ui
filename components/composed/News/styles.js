@@ -24,8 +24,8 @@ export const List = styled.li`
 `;
 
 export const ListItem = styled.ul`
-  border: 1px solid #bbb;
-  background: #eee;
+  border: 1px solid #555;
+  background: rgba(63, 63, 63, 0.3);
   padding: 24px;
   margin-bottom: 24px;
   width: 100%;
@@ -33,6 +33,7 @@ export const ListItem = styled.ul`
 
   > p {
     margin: 30px 0 12px 0;
+    color: rgba(190, 190, 190, 0.85);
   }
 `;
 
@@ -51,8 +52,8 @@ export const ListItemDate = styled.div`
 `;
 
 export const Post = styled.div`
-  border: 1px solid #bbb;
-  background: #eee;
+  border: 1px solid #555;
+  background: rgba(63, 63, 63, 0.3);
   padding: 30px;
   width: 100%;
   max-width: 920px;
@@ -72,7 +73,7 @@ export const PostHeader = styled.div`
 `;
 
 export const PostTitle = styled.div`
-  color: rgba(100, 100, 100, 1);
+  color: rgba(190, 190, 190, 0.8);
 `;
 
 export const PostDate = styled.div`

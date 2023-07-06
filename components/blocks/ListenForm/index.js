@@ -194,38 +194,41 @@ const ListenForm = ({
                       </option>
                     ))}
                   </Styled.Select>
+                  <Styled.Icon icon="caretDown" width={10} height={7.5} />
                   <Styled.Message>
                     <FormMessage {...form} name="time" />
                   </Styled.Message>
                 </Styled.FormElement>
               </FormRow>
-              <Styled.FormSubsection>Alternate</Styled.FormSubsection>
-              <FormRow>
-                <Styled.FormElement>
-                  <Styled.FormDate
-                    type="date"
-                    {...form}
-                    name="date_2"
-                    id="date_2"
-                  />
-                  <Styled.Message>
-                    <FormMessage {...form} name="date" />
-                  </Styled.Message>
-                </Styled.FormElement>
-                <Styled.FormElement>
-                  <Styled.Select id="time_2">
-                    $
-                    {times.map((time, i) => (
-                      <option key={i} value={time}>
-                        {time}
-                      </option>
-                    ))}
-                  </Styled.Select>
-                  <Styled.Message>
-                    <FormMessage {...form} name="time" />
-                  </Styled.Message>
-                </Styled.FormElement>
-              </FormRow>
+
+              {/*<Styled.FormSubsection>Alternate</Styled.FormSubsection>*/}
+              {/*<FormRow>*/}
+              {/*  <Styled.FormElement>*/}
+              {/*    <Styled.FormDate*/}
+              {/*      type="date"*/}
+              {/*      {...form}*/}
+              {/*      name="date_2"*/}
+              {/*      id="date_2"*/}
+              {/*    />*/}
+              {/*    <Styled.Icon icon="caretDown" width={10} height={7.5} />*/}
+              {/*    <Styled.Message>*/}
+              {/*      <FormMessage {...form} name="date" />*/}
+              {/*    </Styled.Message>*/}
+              {/*  </Styled.FormElement>*/}
+              {/*  <Styled.FormElement>*/}
+              {/*    <Styled.Select id="time_2">*/}
+              {/*      $*/}
+              {/*      {times.map((time, i) => (*/}
+              {/*        <option key={i} value={time}>*/}
+              {/*          {time}*/}
+              {/*        </option>*/}
+              {/*      ))}*/}
+              {/*    </Styled.Select>*/}
+              {/*    <Styled.Message>*/}
+              {/*      <FormMessage {...form} name="time" />*/}
+              {/*    </Styled.Message>*/}
+              {/*  </Styled.FormElement>*/}
+              {/*</FormRow>*/}
 
               <Styled.FormElement>
                 <Styled.Input

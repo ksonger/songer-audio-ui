@@ -25,6 +25,7 @@ export const BlockMain = styled.div`
   align-content: center;
   p {
     margin-bottom: 12px;
+    color: rgba(190, 190, 190, 0.7);
   }
 
   a {

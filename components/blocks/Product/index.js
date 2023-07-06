@@ -19,6 +19,7 @@ const Product = ({
   const [containerObj, setContainerObj] = useState();
   const [windowWidth, setWindowWidth] = useState();
   const [hasData, setHasData] = useState(false);
+  const [showPrice, setShowPrice] = useState(false);
   const { asPath } = useRouter();
 
   useOnResize(mobileBreakpoint, (isMobile) => {
@@ -74,7 +75,7 @@ const Product = ({
               ))}
             </Styled.Specs>
           </Styled.ProductSpecsImages>
-          <Styled.Price>{price}</Styled.Price>
+          {showPrice && <Styled.Price>{price}</Styled.Price>}
         </Styled.ProductMain>
       </Styled.ProductInner>
     </Styled.ProductWrapper>

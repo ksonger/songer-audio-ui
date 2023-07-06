@@ -10,6 +10,7 @@ export const AwardBlade = styled.div`
   text-align: center;
   cursor: pointer;
   width: 100%;
+  grid-gap: 2em;
   max-width: 1100px;
   ${respond(
     css`

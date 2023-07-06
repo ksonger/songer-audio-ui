@@ -3,7 +3,7 @@ const Home = {
     {
       blockType: "banner",
       message: `<p>
-        Join us at <a href="https://www.theshownow.com" target="_blank">T.H.E. Show</a> June 9-11 and <a href="https://www.pacificaudiofest.com" target="_blank">Pacific Audio Fest</a> June 23-25
+        We Invite You To <a href="https://www.songeraudio.com/listen" target="_self">Experience Songer Audio</a>
         </p>`,
     },
     {
@@ -33,12 +33,28 @@ const Home = {
           link: "https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/",
           textAlign: "right",
         },
+        // {
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
+        //   caption:
+        //     "I’ll go further and say the Songer speakers are the best full-range drivers I have ever heard, better than the Feastrex (which I have heard), and remarkably, free of the upper-mid roughness that usually plagues drivers with whizzer cones. I did not think that was possible.",
+        //   attribution: "- Lynn Olson",
+        //   link: "https://forum.audiogon.com/discussions/300b-lovers?page=7",
+        //   textAlign: "right",
+        // },
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/suspension_sepia.png",
           caption:
             "The music held up to my highest expectations. The woodwork was simply stunning and the architecture integrating the field coil driver in the upper open baffle with the enclosed woofer was very artfully accomplished. If you have the opportunity, this is a must-see and must-hear presentation, regardless of whether you can afford these pieces...",
           attribution: "- Rick Becker, Enjoy the Music",
           link: "https://enjoythemusic.com/Capital_Audiofest_2022/Becker/5th_Floor_B/page3.htm",
+          textAlign: "left",
+        },
+        {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
+          caption:
+            "But the sound was so seductive and alluring that I had to come back for a second listen. Both of these companies are also local to me in Portland, which means I’ll be banging on their door asking to hear more. For me, Songer and Whammerdyne were the greatest surprise at PAF 2023.",
+          attribution: "- Marc Phillips, Part-time Audiophile",
+          link: "https://parttimeaudiophile.com/2023/06/26/songer-and-whammerdyne-paf-2023/",
           textAlign: "left",
         },
         {
@@ -73,16 +89,22 @@ const Home = {
       blockType: "awardBlade",
       awards: [
         {
+          message: `<p>The Audiophile Junkie<br/>Best of T.H.E. Show 2023</p>`,
+          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/audiophile_junkie_hd_logo.png",
+          link: "https://www.youtube.com/watch?v=avdRE0TmDcI&t=1548s",
+          layout: "left",
+        },
+        {
+          message: `<p>Enjoy the Music<br/>Best of CAF 2022</p>`,
+          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_caf_2022_sepia.png",
+          link: "https://www.enjoythemusic.com/Capital_Audiofest_2022/Becker/3rd_Floor_Atrium_Best_Rooms/page5.htm",
+          layout: "right",
+        },
+        {
           message: `<p>Positive Feedback<br/>PAF 2022 Oasis! Award Winner</p>`,
           logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pf_logo.png",
           link: "https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/",
           layout: "left",
-        },
-        {
-          message: `<p>Enjoy the Music<br/>Best of CAF 2022 Award Winner</p>`,
-          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_caf_2022_sepia.png",
-          link: "https://www.enjoythemusic.com/Capital_Audiofest_2022/Becker/3rd_Floor_Atrium_Best_Rooms/page5.htm",
-          layout: "right",
         },
       ],
     },

@@ -31,7 +31,7 @@ export const Heading = styled.span`
         `
       : css`
           text-transform: uppercase;
-          color: #777;
+          color: rgba(200, 200, 200, 0.8);
           font-style: normal;
         `}
 
@@ -65,7 +65,7 @@ export const Description = styled.p`
   ${(p) =>
     p.$missionType === "home"
       ? css`
-          color: var(--neutral40);
+          color: rgba(200, 200, 200, 0.7);
           font-style: italic;
           font-size: ${fluidScale("20px", "13px")};
           margin: 0 auto 30px auto;

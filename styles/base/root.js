@@ -42,7 +42,7 @@ export default `
     --color-purple-dark: #7578A6;
     --color-purple-light: #abafcb;
 
-    --text-color: #444;
+    --text-color: #bbb;
     
     --button-color: #fff;
     --button-hover-color: #fff;
@@ -56,7 +56,7 @@ export default `
     --header-menu-text-color-active: #e6cc8e;
     --header-logo-color: #e6cc8e;
     
-    --footer-background: #444;
+    --footer-background: #222;
     --footer-logo-color: #e6cc8e;
     --footer-social-color: #888;
 

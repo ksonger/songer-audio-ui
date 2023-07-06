@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  background-color: rgba(230, 204, 142, 0.1);
+  background-color: rgb(4, 3, 2);
 `;
 const Main = styled.main`
   width: 100%;

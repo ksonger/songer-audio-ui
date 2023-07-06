@@ -4,6 +4,7 @@ import { respond, fluidScale } from "@/styles/mixins";
 export const Header = styled.div`
   width: 100%;
   transition: background-color 200ms;
+  border-bottom: 1px solid #444;
   background-color: #000;
   padding: 0 var(--l-content-padding);
   z-index: var(--z-index-header);

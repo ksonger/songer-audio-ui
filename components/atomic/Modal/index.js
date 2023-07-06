@@ -19,7 +19,7 @@ const Modal = ({
   ...props
 }) => {
   const dialog = useDialogState({ ...options });
-  const color = type === "gallery" ? "#e6cc8e" : "#333";
+  const color = type === "gallery" ? "#e6cc8e" : "#666";
 
   const doDismiss = () => {
     dialog.hide();

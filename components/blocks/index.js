@@ -10,4 +10,6 @@ export { default as Newslink } from "./NewsLink";
 export { default as AwardBlade } from "./AwardBlade";
 export { default as BlockQuotes } from "./BlockQuotes";
 export { default as Slideshow } from "./Slideshow";
+export { default as Testimonial } from "./Testimonial";
+export { default as Testimonials } from "./Testimonials";
 export { default as Socials } from "../global/Footer/Social";

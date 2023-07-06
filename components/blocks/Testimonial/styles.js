@@ -1,11 +1,15 @@
 import styled, { css } from "styled-components";
-import { respond } from "@/styles/mixins";
+import { fluidScale, respond } from "@/styles/mixins";
 
-export const BannerWrapper = styled.div``;
+export const TestimonialWrapper = styled.div`
+  width: 100%;
+  max-width: 900px;
+  margin: 24px auto;
+`;
 
-export const BannerMain = styled.div``;
+export const TestimonialMain = styled.div``;
 
-export const Banner = styled.div`
+export const Testimonial = styled.div`
   display: flex;
   flex-flow: row;
   padding: 14px 16px;
@@ -26,11 +30,17 @@ export const Subscribe = styled.div`
 export const Message = styled.div`
   flex-grow: 1;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
+  font-size: ${fluidScale("18px", "15px")};
   font-weight: bold;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.8);
+  line-height: ${fluidScale("25px", "20px")};
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 24px;
+
+  q {
+    quotes: initial;
+    font-style: italic;
+  }
 
   a {
     color: var(--button-background-color);

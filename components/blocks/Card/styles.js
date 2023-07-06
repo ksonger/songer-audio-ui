@@ -24,12 +24,12 @@ export const CardWrapper = styled.p`
 export const CardMain = styled.div`
   width: 100%;
   max-width: 1100px;
-  border: 1px solid #bbb;
+  border: 1px solid #555;
   margin: 30px auto;
   height: 100%;
   display: flex;
   flex-direction: ${(p) => getFlexDirection(p.$layout, p.$orientation)};
-  background-color: #eee;
+  background-color: rgba(63, 63, 63, 0.3);
   max-height: 650px;
 
   > * {
@@ -52,7 +52,8 @@ export const CardMain = styled.div`
 
 export const CardImage = styled.div`
   position: relative;
-  background-color: #444;
+  border: 1px solid #333;
+  background-color: rgba(30, 30, 30, 1);
   margin: 40px;
   flex-basis: ${(p) => {
     return 50 * (p.$image.width / p.$image.height) + "%";
@@ -80,10 +81,10 @@ export const CardContent = styled.div`
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 2px;
-    color: #333;
+    color: rgba(180, 180, 180, 0.9);
   }
   .__description {
-    color: rgba(40, 40, 40, 0.6);
+    color: rgba(180, 180, 180, 0.6);
   }
 
   margin-left: ${(p) => {

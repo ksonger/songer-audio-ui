@@ -1,22 +1,37 @@
 import styled, { css } from "styled-components";
 import { fluidScale, respond } from "@/styles/mixins";
 import Button from "@/components/atomic/Button";
+import IconFactory from "@/factories/IconFactory";
 import { unstable_FormInput as FormInput } from "reakit/Form";
 
 export const FormWrapper = styled.div`
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 30px auto;
   position: relative;
-  border: 1px solid #bbb;
+  border: 1px solid #555;
+  background-color: rgba(63, 63, 63, 0.3);
 
-  background-color: #eee;
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: 1px solid #444;
+    -webkit-text-fill-color: #aaa;
+    -webkit-box-shadow: 0 0 0px 1000px #111 inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
 `;
 
 export const Loader = styled.div`
   position: absolute;
   top: 40%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   z-index: 1001;
   justify-self: center;
@@ -63,7 +78,7 @@ export const FormSection = styled.div`
   width: 100%;
   text-align: center;
   font-style: italic;
-  color: #777;
+  color: rgba(255, 255, 255, 0.7);
   font-size: ${fluidScale("18px", "16px")};
   padding: 24px;
 `;
@@ -81,8 +96,9 @@ export const FormDate = styled.input`
   border-radius: 0.2rem;
   padding: 0.5em 0.75em;
   font-size: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  color: #4d4d4d;
+  border: 1px solid #444;
+  color: #aaa;
+  background-color: #111;
   margin: 0 !important;
   box-sizing: border-box;
   outline: none;
@@ -94,11 +110,24 @@ export const Select = styled.select`
   border-radius: 0.2rem;
   padding: 0.85em 0.75em;
   font-size: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  color: #4d4d4d;
+  border: 1px solid #444;
+  color: #aaa;
+  background-color: #111;
   margin: 0 !important;
   box-sizing: border-box;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+`;
+
+export const Icon = styled(IconFactory)`
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: 40px;
+  transform: translateY(-50%);
+  right: 20px;
+  pointer-events: none;
 `;
 
 export const Input = styled(FormInput)`
@@ -107,8 +136,9 @@ export const Input = styled(FormInput)`
   border-radius: 0.2rem;
   padding: 0.5em 0.75em;
   font-size: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  color: #4d4d4d;
+  border: 1px solid #444;
+  color: #aaa;
+  background-color: #111;
   margin: 0 !important;
   box-sizing: border-box;
   outline: none;
@@ -123,6 +153,7 @@ export const FormElement = styled.div`
   display: grid;
   grid-auto-flow: row;
   margin: 20px 0;
+  position: relative;
 
   input {
     padding: 10px;
