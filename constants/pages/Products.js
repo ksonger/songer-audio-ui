@@ -40,54 +40,54 @@ const Products = {
       anchorName: "a_s1",
       gallery: [
         {
-          itemId: "p1",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s1.png",
+          // Image item:
+          itemId: "p4",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1_product/s1_room.jpeg",
           metaData: {
             type: "image",
-            height: 1700,
-            width: 2000,
+            height: 1673,
+            width: 1673,
             focalPoint: [0, 0],
           },
         },
         {
           itemId: "p2",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/sa1_front_down.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1_product/s1_down_view.jpeg",
           metaData: {
             type: "image",
-            height: 2000,
-            width: 2208,
+            height: 1673,
+            width: 1673,
             focalPoint: [0, 0],
           },
         },
         {
           itemId: "p3",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s1_driver_close.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1_product/s1_driver_side.jpeg",
           metaData: {
             type: "image",
-            height: 2000,
-            width: 2442,
+            height: 1673,
+            width: 1381,
             focalPoint: [0, 0],
           },
         },
         {
-          // Image item:
-          itemId: "p4",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/S1_port.png",
+          itemId: "p1",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1_product/s1_top_half.jpeg",
           metaData: {
             type: "image",
-            height: 2000,
-            width: 2086,
+            height: 1673,
+            width: 1520,
             focalPoint: [0, 0],
           },
         },
         {
           // Image item:
           itemId: "p5",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/sa1_top_close.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1_product/s1_top.jpeg",
           metaData: {
             type: "image",
-            height: 1000,
-            width: 1109,
+            height: 1673,
+            width: 1481,
             focalPoint: [0, 0],
           },
         },
@@ -136,11 +136,11 @@ const Products = {
       gallery: [
         {
           itemId: "p10",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2/S2_banner_1.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_product/s2_top_half.jpeg",
           metaData: {
             type: "image",
-            height: 1700,
-            width: 2000,
+            height: 1673,
+            width: 1369,
             title: "sample-title",
             description: "sample-description",
             focalPoint: [0, 0],
@@ -152,11 +152,11 @@ const Products = {
         },
         {
           itemId: "p11",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2/driver_top.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_product/s2_back.jpeg",
           metaData: {
             type: "image",
-            height: 1737,
-            width: 2000,
+            height: 1629,
+            width: 1673,
             title: "sample-title",
             description: "sample-description",
             focalPoint: [0, 0],
@@ -184,25 +184,9 @@ const Products = {
           },
         },
         {
-          itemId: "p13",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2/s2_single_back.png",
-          metaData: {
-            type: "image",
-            height: 1700,
-            width: 2000,
-            title: "sample-title",
-            description: "sample-description",
-            focalPoint: [0, 0],
-            link: {
-              url: "http://example.com",
-              target: "_blank",
-            },
-          },
-        },
-        {
           // Image item:
           itemId: "p14",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2/s2_fc_back_close.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_product/s2_back_close.jpeg",
           metaData: {
             type: "image",
             height: 2000,
@@ -219,11 +203,11 @@ const Products = {
         {
           // Image item:
           itemId: "p15",
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s2/S2_banner_2.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_product/s2_pair.jpeg",
           metaData: {
             type: "image",
-            height: 1700,
-            width: 2000,
+            height: 1673,
+            width: 1462,
             title: "sample-title",
             description: "sample-description",
             focalPoint: [0, 0],

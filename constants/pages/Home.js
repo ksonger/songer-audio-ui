@@ -33,14 +33,14 @@ const Home = {
           link: "https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/",
           textAlign: "right",
         },
-        // {
-        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
-        //   caption:
-        //     "I’ll go further and say the Songer speakers are the best full-range drivers I have ever heard, better than the Feastrex (which I have heard), and remarkably, free of the upper-mid roughness that usually plagues drivers with whizzer cones. I did not think that was possible.",
-        //   attribution: "- Lynn Olson",
-        //   link: "https://forum.audiogon.com/discussions/300b-lovers?page=7",
-        //   textAlign: "right",
-        // },
+        {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
+          caption:
+            "I’ll go further and say the Songer speakers are the best full-range drivers I have ever heard, better than the Feastrex (which I have heard), and remarkably, free of the upper-mid roughness that usually plagues drivers with whizzer cones. I did not think that was possible.",
+          attribution: "- Lynn Olson",
+          link: "https://forum.audiogon.com/discussions/300b-lovers?page=7",
+          textAlign: "right",
+        },
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/suspension_sepia.png",
           caption:
@@ -52,7 +52,7 @@ const Home = {
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
           caption:
-            "But the sound was so seductive and alluring that I had to come back for a second listen. Both of these companies are also local to me in Portland, which means I’ll be banging on their door asking to hear more. For me, Songer and Whammerdyne were the greatest surprise at PAF 2023.",
+            "I’d call it the Most Beautiful Sound in Seattle. Maybe the Lushest. Maybe the Most Hypnotic. The Songer Audio and Whammerdyne room is the one that still haunts me two weeks after the end of the show. I can’t wait to here this combo again.",
           attribution: "- Marc Phillips, Part-time Audiophile",
           link: "https://parttimeaudiophile.com/2023/06/26/songer-and-whammerdyne-paf-2023/",
           textAlign: "left",
@@ -89,6 +89,12 @@ const Home = {
       blockType: "awardBlade",
       awards: [
         {
+          message: `<p>Part-Time Audiophile<br/>Best Sound in Seattle List<br/>PAF 2023</p>`,
+          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
+          link: "https://parttimeaudiophile.com/2023/07/07/best-sound-in-seattle-paf-2023/",
+          layout: "left",
+        },
+        {
           message: `<p>The Audiophile Junkie<br/>Best of T.H.E. Show 2023</p>`,
           logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/audiophile_junkie_hd_logo.png",
           link: "https://www.youtube.com/watch?v=avdRE0TmDcI&t=1548s",
@@ -101,7 +107,7 @@ const Home = {
           layout: "right",
         },
         {
-          message: `<p>Positive Feedback<br/>PAF 2022 Oasis! Award Winner</p>`,
+          message: `<p>Positive Feedback<br/>PAF 2022 Oasis! Award</p>`,
           logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pf_logo.png",
           link: "https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/",
           layout: "left",

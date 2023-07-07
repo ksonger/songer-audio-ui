@@ -41,7 +41,7 @@ const Listen = {
         {
           type: "default",
           message:
-            'Every audiophile can recall a moment where they had an audio epiphany. Maybe it was hearing your first sub-30hz bass note, or the texture and tone hearing your first tube amp, or the first system you heard that gave you goose bumps. Whatever it is we all can recall that system, that song, that experience that grabs us, inprints in us to what is possible, and becomes the "North Star" in our audio journey. If we\'re fortunate, some of us fulfill that journey only to somewhere have another audio epiphany, a new "North Star" and another journey. I love my current setup. I\'m already using single driver, crossover-less speakers with tube amplification but being able to spend a couple of hours listening to Songer Audio\'s S1 and S2 speakers driven by Whammerdyne amplification gave me a new "North Star." The sound I heard is everything I like in my system but taken to a higher level, a much higher level.',
+            "Based on my subjective evaluation of dozens of speakers/setups at a recent major audio show with hundreds of exhibitors, I have to say that the Songer field-coil speakers were in the top three. The clarity and full-range coverage of the demo setup incl. model S1 speakers were unbelievable and rivaled those of a setup spec'ed at almost $900k+. A result of 6+ years of R&D, the rep said. And it shows. Have started saving money now to get to the ~$37k MSRP (with the requisite PS)",
         },
         {
           type: "default",
@@ -51,12 +51,12 @@ const Listen = {
         {
           type: "default",
           message:
-            "Hearing the combination of Songer Audio loudspeakers and Whammerdyne amplification was a transformative experience.  When you hear a combination like this, it is hard to describe exactly what you are hearing, if only because it sounds so natural, so effortless, that the only way to describe it comes down to the typical audio cliches.  I'll try not to use any here, but merely say that the S2 open baffles, with Whammerdyne's amplification, is my favorite.  It has an effortless authority that presents music in a way that allows you to be in the recording space, providing detail that is not hyped or etched in any way, even with healthy volume levels and some borderline \"hot\" recordings.",
+            'Every audiophile can recall a moment where they had an audio epiphany. Maybe it was hearing your first sub-30hz bass note, or the texture and tone hearing your first tube amp, or the first system you heard that gave you goose bumps. Whatever it is we all can recall that system, that song, that experience that grabs us, inprints in us to what is possible, and becomes the "North Star" in our audio journey. If we\'re fortunate, some of us fulfill that journey only to somewhere have another audio epiphany, a new "North Star" and another journey. I love my current setup. I\'m already using single driver, crossover-less speakers with tube amplification but being able to spend a couple of hours listening to Songer Audio\'s S1 and S2 speakers driven by Whammerdyne amplification gave me a new "North Star." The sound I heard is everything I like in my system but taken to a higher level, a much higher level.',
         },
         {
           type: "default",
           message:
-            "Based on my subjective evaluation of dozens of speakers/setups at a recent major audio show with hundreds of exhibitors, I have to say that the Songer field-coil speakers were in the top three. The clarity and full-range coverage of the demo setup incl. model S1 speakers were unbelievable and rivaled those of a setup spec'ed at almost $900k+. A result of 6+ years of R&D, the rep said. And it shows. Have started saving money now to get to the ~$37k MSRP (with the requisite PS)",
+            "Hearing the combination of Songer Audio loudspeakers and Whammerdyne amplification was a transformative experience.  When you hear a combination like this, it is hard to describe exactly what you are hearing, if only because it sounds so natural, so effortless, that the only way to describe it comes down to the typical audio cliches.  I'll try not to use any here, but merely say that the S2 open baffles, with Whammerdyne's amplification, is my favorite.  It has an effortless authority that presents music in a way that allows you to be in the recording space, providing detail that is not hyped or etched in any way, even with healthy volume levels and some borderline \"hot\" recordings.",
         },
         {
           type: "default",

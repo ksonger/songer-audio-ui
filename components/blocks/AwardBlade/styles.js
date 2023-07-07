@@ -10,18 +10,30 @@ export const AwardBlade = styled.div`
   text-align: center;
   cursor: pointer;
   width: 100%;
-  grid-gap: 2em;
-  max-width: 1100px;
+  grid-gap: 4em;
+
   ${respond(
     css`
       grid-auto-flow: row;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2em;
+      max-width: 800px;
+    `,
+    "1200px"
+  )}
+
+  ${respond(
+    css`
+      grid-auto-flow: row;
+      grid-template-columns: 1fr;
     `,
     "700px"
   )}
 `;
 
 export const Image = styled.div`
-  width: 180px;
+  width: 200px;
+  height: 210px;
   margin: 0 auto;
   padding: 20px 12px;
 `;
@@ -32,6 +44,8 @@ export const Message = styled.div`
   color: rgb(42, 143, 161);
   font-style: italic;
   letter-spacing: 0.5px;
+  height: 75px;
+
   ${respond(
     css`
       margin-bottom: 40px;
