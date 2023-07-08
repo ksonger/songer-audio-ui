@@ -18,6 +18,14 @@ const Home = {
           textAlign: "left",
         },
         {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
+          caption:
+            "I’d call it the Most Beautiful Sound in Seattle. Maybe the Lushest. Maybe the Most Hypnotic. The Songer Audio and Whammerdyne room is the one that still haunts me two weeks after the end of the show. I can’t wait to here this combo again.",
+          attribution: "- Marc Phillips, Part-Time Audiophile",
+          link: "https://parttimeaudiophile.com/2023/06/26/songer-and-whammerdyne-paf-2023/",
+          textAlign: "left",
+        },
+        {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_driver_front_sepia.png",
           caption:
             "Time after time I looked and listened to the Songers and shook my head with disbelief that a single driver could play so loudly and clearly with incredibly fast dramatic dynamics and transients. This has been a truly magnificent experience and they have my highest recommendation.",
@@ -50,11 +58,11 @@ const Home = {
           textAlign: "left",
         },
         {
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
           caption:
-            "I’d call it the Most Beautiful Sound in Seattle. Maybe the Lushest. Maybe the Most Hypnotic. The Songer Audio and Whammerdyne room is the one that still haunts me two weeks after the end of the show. I can’t wait to here this combo again.",
-          attribution: "- Marc Phillips, Part-time Audiophile",
-          link: "https://parttimeaudiophile.com/2023/06/26/songer-and-whammerdyne-paf-2023/",
+            "The Songer Audio S1 driven by the Whammerdyne DGA-Ultra delivered what I thought was possibly the best sound of the show.  These speakers sound so effortless, coherent, natural, and dynamic.  They extend to 20Khz and down to 29hz (-6dB), so they’re easily a ‘full-range’ speaker...",
+          attribution: "- CAH, Audio Resurgence",
+          link: "https://www.audioresurgence.com/2022/11/songer-audio-whammerdyne-at-capital-audiofest-2022.html",
           textAlign: "left",
         },
         {
@@ -64,14 +72,6 @@ const Home = {
           attribution: "- Ken Micallef, Stereophile",
           link: "https://www.stereophile.com/content/songer-audiowhammerdyne-audio",
           textAlign: "right",
-        },
-        {
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
-          caption:
-            "The Songer Audio S1 driven by the Whammerdyne DGA-Ultra delivered what I thought was possibly the best sound of the show.  These speakers sound so effortless, coherent, natural, and dynamic.  They extend to 20Khz and down to 29hz (-6dB), so they’re easily a ‘full-range’ speaker...",
-          attribution: "- CAH, Audio Resurgence",
-          link: "https://www.audioresurgence.com/2022/11/songer-audio-whammerdyne-at-capital-audiofest-2022.html",
-          textAlign: "left",
         },
         // {
         //   quotation:

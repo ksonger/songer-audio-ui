@@ -95,7 +95,7 @@ export const ProductSpecsImages = styled.div`
 `;
 
 export const Specs = styled.div`
-  flex-basis: 50%;
+  flex-basis: 40%;
   display: grid;
   grid-auto-flow: row;
   border-top: 1px solid #666;
@@ -112,7 +112,7 @@ export const Specs = styled.div`
 `;
 
 export const Images = styled.div`
-  flex-basis: 50%;
+  flex-basis: 60%;
   ${respond(
     css`
       flex-basis: 100%;
