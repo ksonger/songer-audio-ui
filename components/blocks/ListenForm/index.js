@@ -30,7 +30,6 @@ const ListenForm = ({
       email: "",
       phone: "",
       date_time_1: "",
-      date_time_2: "",
       requests: "",
       comments: "",
     },
@@ -56,9 +55,6 @@ const ListenForm = ({
       values.date_time_1 = `${document.getElementById("date_1").value} ${
         document.getElementById("time_1").value
       }`;
-      values.date_time_2 = `${document.getElementById("date_2").value} ${
-        document.getElementById("time_2").value
-      }`;
     },
     onSubmit: (values) => {
       if (typeof window !== "undefined") {
@@ -72,7 +68,6 @@ const ListenForm = ({
         phoneNumber: values.phone,
         requests: values.requests,
         dateTime1: values.date_time_1,
-        dateTime2: values.date_time_2,
         comments: "LISTENING SESSION",
       };
       const reset = () => {
