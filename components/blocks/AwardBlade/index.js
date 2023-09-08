@@ -8,7 +8,7 @@ const AwardBlade = ({ awards }) => {
     <Styled.AwardBlade>
       {awards.map(function (award, i) {
         return (
-          <div key={i}>
+          <Styled.Award key={i}>
             <a target="_blank" href={award.link} rel="noreferrer">
               <Styled.Image>
                 <img src={award.logo} />
@@ -17,7 +17,7 @@ const AwardBlade = ({ awards }) => {
                 dangerouslySetInnerHTML={{ __html: award.message }}
               ></Styled.Message>
             </a>
-          </div>
+          </Styled.Award>
         );
       })}
     </Styled.AwardBlade>

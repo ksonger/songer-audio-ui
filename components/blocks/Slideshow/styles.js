@@ -68,13 +68,6 @@ export const Span = styled.span`
     &::after {
       content: "”";
     }
-
-    ${(p) => {
-      switch (p.$tAlign) {
-        case "right":
-          return css``;
-      }
-    }}
   }
 
   attribution {

@@ -55,10 +55,10 @@ const Slideshow = ({ slides = fadeImages }) => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Styled.EachSlide $tAlign={slide.textAlign}>
+            <Styled.EachSlide>
               <Styled.Background $background={slide.url} />
-              <Styled.Span $tAlign={slide.textAlign}>
-                <quote $tAlign={slide.textAlign}>{slide.caption}</quote>
+              <Styled.Span>
+                <quote>{slide.caption}</quote>
                 <attribution>{slide.attribution}</attribution>
               </Styled.Span>
             </Styled.EachSlide>

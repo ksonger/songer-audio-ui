@@ -2,40 +2,28 @@ import styled, { css } from "styled-components";
 import { fluidScale, respond } from "@/styles/mixins";
 
 export const AwardBlade = styled.div`
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2em;
   padding: 0 16px;
-  align-items: center;
   margin: 0 auto 40px auto;
   text-align: center;
   cursor: pointer;
-  width: 100%;
-  grid-gap: 4em;
+  align-items: center;
+  justify-content: center;
+`;
 
-  ${respond(
-    css`
-      grid-auto-flow: row;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 2em;
-      max-width: 800px;
-    `,
-    "1200px"
-  )}
-
-  ${respond(
-    css`
-      grid-auto-flow: row;
-      grid-template-columns: 1fr;
-    `,
-    "700px"
-  )}
+export const Award = styled.div`
+  width: 250px;
+  flex: 0 0 25em;
 `;
 
 export const Image = styled.div`
-  width: 200px;
-  height: 210px;
+  width: 220px;
+  height: 230px;
   margin: 0 auto;
   padding: 20px 12px;
+  justify-self: center;
 `;
 
 export const Message = styled.div`
@@ -45,6 +33,7 @@ export const Message = styled.div`
   font-style: italic;
   letter-spacing: 0.5px;
   height: 75px;
+  justify-self: center;
 
   ${respond(
     css`

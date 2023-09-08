@@ -89,7 +89,13 @@ const Home = {
       blockType: "awardBlade",
       awards: [
         {
-          message: `<p>Part-Time Audiophile<br/>Best Sound in Seattle List<br/>PAF 2023</p>`,
+          message: `<p>Enjoy the Music<br/>S1 Blue Note Award<br/>Best of 2023</p>`,
+          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_2023_etm.png",
+          link: "https://www.enjoythemusic.com/magazine/equipment/0923/",
+          layout: "left",
+        },
+        {
+          message: `<p>Part-Time Audiophile<br/>Best Sound in Seattle List PAF 2023</p>`,
           logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
           link: "https://parttimeaudiophile.com/2023/07/07/best-sound-in-seattle-paf-2023/",
           layout: "left",
@@ -102,7 +108,7 @@ const Home = {
         },
         {
           message: `<p>Enjoy the Music<br/>Best of CAF 2022</p>`,
-          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_caf_2022_sepia.png",
+          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_caf_2022.png",
           link: "https://www.enjoythemusic.com/Capital_Audiofest_2022/Becker/3rd_Floor_Atrium_Best_Rooms/page5.htm",
           layout: "right",
         },

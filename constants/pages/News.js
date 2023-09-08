@@ -5,6 +5,32 @@ const News = {
       items: [
         {
           id: "9",
+          slug: "2023_blue_note_s1",
+          title: "Enjoy the Music Best of 2023 for the S1",
+          summary:
+              "We were thrilled last week to have been selected by Enjoy the Musiccom for a prestigious Blue Note Award, for the S1, honoring it as one of...",
+          content:
+              "<p>We were thrilled last week to have been selected by Enjoy the Music for a prestigious Blue Note Award, for the S1, honoring it as one of the 16 best products of 2023.</p><p>What an achievement, and what an honor.  Our deep gratitude to Steven R. Rochlin and Robert Grossman for taking so much time and effort to recognize our hard work and passion.  Thank you gentlemen for your magnanimity, and playing such a big part in our debut year.</p><p><br/><a href='https://www.enjoythemusic.com/magazine/equipment/0923/'>Best Of 2023 Blue Note Equipment Awards</a>",
+          images: [
+            {
+              // Image item:
+              itemId: "d1",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/2023_blue_note.jpg",
+              metaData: {
+                type: "image",
+                width: 2056,
+                height: 1400,
+                focalPoint: [0, 0],
+              },
+            },
+          ],
+          videos: [],
+          date: "2023-09-08T13:16:12.339Z",
+          createdAt: "2023-09-08T13:16:12.339Z",
+          updatedAt: "2023-09-08T13:16:12.339Z",
+        },
+        {
+          id: "9",
           slug: "june_2023_shows",
           title: "That's a Wrap!",
           summary:
