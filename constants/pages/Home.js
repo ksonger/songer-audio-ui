@@ -12,13 +12,21 @@ const Home = {
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
           caption:
-            "The sound was wonderful, the percussion totally clear, fast, sharp, and believable. Clarinet sounded warm at the bottom of its range, alive on top, and clear as can be. Even after hearing the hi-rez files of this piece countless times, I sat riveted by the sound.",
+              "If there is a magic to the sound—and there is—it’s because of this speaker’s handmade, full-range transducer, and the way that it reproduces music with the speed, transparency, and impact of a live performance...audiophiles who want their vacuum-tube electronics to sing, simply must audition the Songer S1.",
+          attribution: "- Robert Ross, The Robb Report",
+          link: "https://robbreport.com/gear/audio/songer-audio-s1-loudspeaker-1234900385/",
+          textAlign: "left",
+        },
+        {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_driver_front_sepia.png",
+          caption:
+            "The sound was wonderful, the percussion totally clear, fast, sharp, and believable. Clarinet sounded warm at the bottom of its range, alive on top, and clear as can be. Even after hearing the hi-rez files of this piece countless times, I sat riveted by the sound.  This certified audiophile classic sounded so clear and musical that the man sitting next to me whispered \"Wow\" under his breath.",
           attribution: "- Jason Victor Serinus, Stereophile",
           link: "https://www.stereophile.com/content/songer-audio-alexsound-technology-wows-serinus",
           textAlign: "left",
         },
         {
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
           caption:
             "I’d call it the Most Beautiful Sound in Seattle. Maybe the Lushest. Maybe the Most Hypnotic. The Songer Audio and Whammerdyne room is the one that still haunts me two weeks after the end of the show. I can’t wait to here this combo again.",
           attribution: "- Marc Phillips, Part-Time Audiophile",
@@ -26,7 +34,7 @@ const Home = {
           textAlign: "left",
         },
         {
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_driver_front_sepia.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/suspension_sepia.png",
           caption:
             "Time after time I looked and listened to the Songers and shook my head with disbelief that a single driver could play so loudly and clearly with incredibly fast dramatic dynamics and transients. This has been a truly magnificent experience and they have my highest recommendation.",
           attribution: "- Bob Grossman, Enjoy the Music",
@@ -34,7 +42,7 @@ const Home = {
           textAlign: "left",
         },
         {
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
           caption:
             "There was a seductive and powerful musicality that exuded real presence and an organic harmonic structure that appealed to me enormously...my emotional connection with the music here was one of the most potent moments at PAF 2022 for me.",
           attribution: "- Dr. David Robinson, Positive Feedback",
@@ -42,7 +50,7 @@ const Home = {
           textAlign: "right",
         },
         {
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_driver_front_sepia.png",
           caption:
             "I’ll go further and say the Songer speakers are the best full-range drivers I have ever heard, better than the Feastrex (which I have heard), and remarkably, free of the upper-mid roughness that usually plagues drivers with whizzer cones. I did not think that was possible.",
           attribution: "- Lynn Olson",
@@ -83,7 +91,7 @@ const Home = {
     },
     {
       blockType: "newsLink",
-      message: `<p>Read our <a href="https://www.enjoythemusic.com/superioraudio/equipment/0423/Songer_Audio_S1_Field_Coil_Point_Source_Loudspeaker_Review.htm" target="_blank">S1 Loudspeaker Review</a> in Enjoy the Music</p>`,
+      message: `<p>Read our <a href="https://robbreport.com/gear/audio/songer-audio-s1-loudspeaker-1234900385/" target="_blank">S1 Loudspeaker Write-up</a> in The Robb Report</p>`,
     },
     {
       blockType: "awardBlade",
@@ -102,7 +110,7 @@ const Home = {
         },
         {
           message: `<p>The Audiophile Junkie<br/>Best of T.H.E. Show 2023</p>`,
-          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/audiophile_junkie_hd_logo.png",
+          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/audiophile_junkie_new_logo.png",
           link: "https://www.youtube.com/watch?v=avdRE0TmDcI&t=1548s",
           layout: "left",
         },
