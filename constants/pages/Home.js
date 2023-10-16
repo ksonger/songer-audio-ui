@@ -1,9 +1,15 @@
 const Home = {
   home: [
+    // {
+    //   blockType: "banner",
+    //   message: `<p>
+    //     We Invite You To <a href="https://www.songeraudio.com/listen" target="_self">Experience Songer Audio</a>
+    //     </p>`,
+    // },
     {
       blockType: "banner",
       message: `<p>
-        We Invite You To <a href="https://www.songeraudio.com/listen" target="_self">Experience Songer Audio</a>
+        Join us November 10th-12th at the <a href="https://capitalaudiofest.com" target="_blank">2023 Capital AudioFest!</a>
         </p>`,
     },
     {
@@ -76,7 +82,7 @@ const Home = {
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_driver_front_sepia.png",
           caption:
-            "Ella Fitzgerald's \"When Your Alone\" and Kraftwerk's Tour de France had surprising depth, girth, and sensuality. I longed to hear this capable rig playing vinyl, but no turntable manufacturer had yet teamed up with Ken Songer. What are you waiting for?",
+            "Ella Fitzgerald's \"When You're Alone\" and Kraftwerk's \"Tour de France\" had surprising depth, girth, and sensuality. I longed to hear this capable rig playing vinyl, but no turntable manufacturer had yet teamed up with Ken Songer. What are you waiting for?",
           attribution: "- Ken Micallef, Stereophile",
           link: "https://www.stereophile.com/content/songer-audiowhammerdyne-audio",
           textAlign: "right",

@@ -4,6 +4,53 @@ const News = {
       blockType: "newsPosts",
       items: [
         {
+          id: "10",
+          slug: "2023_CAF_runup",
+          title: "An Epic System, Next Month at 2023 Capital AudioFest",
+          summary:
+              "We're delighted to have two wonderful new partners and some of the finest brands in the world with us next month at the 2023 Capital AudioFest...",
+          content: "<p>We're delighted to have two wonderful new partners and some of the finest brands in the world with us next month at the <a href=\"https://capitalaudiofest.com\" target=\"_blank\">2023 Capital AudioFest</a>!  Courtesy of <a href=\"https://www.hearthis.us/\" target=\"_blank\">Hear This</a> and <a href=\"https://www.dsgdistro.com/\" target=\"_blank\">Destination Sound Group</a>, we will host the North American show debut of the LampizatOr Poseidon, the newest offering from what is unquestionably one of the most exciting brands in the world.  What's more, a Taiko Extreme Server will spin the tunes for us, while an achingly beautiful Trafomatic Rhapsody, an exquisite sounding 20wpc 300B amplifier, drives it all to perfection.</p><p>This is the most refined system we'll have ever paired our work with, and we couldn't be more proud to sit shoulder to shoulder with some of the finest examples in the art of sound reproduction anywhere on earth.</p><p>Come, see us in room 740 at the Twinbrook Hilton in Rockville, MD on November 10th - 12th.  We look forward to sharing this special experience with you.</p>",
+          images: [
+            {
+              // Image item:
+              itemId: "d1",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/poseidon.png",
+              metaData: {
+                type: "image",
+                width: 2000,
+                height: 1500,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d2",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/rhapsody.jpg",
+              metaData: {
+                type: "image",
+                width: 2000,
+                height: 1500,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d3",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/taiko.jpg",
+              metaData: {
+                type: "image",
+                width: 2000,
+                height: 1500,
+                focalPoint: [0, 0],
+              },
+            },
+          ],
+          videos: [],
+          date: "2023-09-08T13:16:12.339Z",
+          createdAt: "2023-09-08T13:16:12.339Z",
+          updatedAt: "2023-09-08T13:16:12.339Z",
+        },
+        {
           id: "9",
           slug: "2023_blue_note_s1",
           title: "Enjoy the Music Best of 2023 for the S1",
