@@ -83,6 +83,14 @@ export const GLOBAL_DATA = {
       role: "button",
       header: false,
     },
+    {
+      label: "RESERVE",
+      href: "/reserve",
+      theme: "purple",
+      headerDisplay: "compact",
+      role: "button",
+      header: false,
+    },
   ],
   ...Pages,
   siteInfo: {

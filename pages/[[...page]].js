@@ -32,6 +32,7 @@ export async function getStaticPaths() {
     { params: { page: ["news"] } },
     { params: { page: ["listen"] } },
     { params: { page: ["about"] } },
+    { params: { page: ["reserve"] } },
   ];
   return { paths, fallback: false };
 }

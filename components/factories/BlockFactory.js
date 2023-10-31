@@ -9,6 +9,7 @@ const BLOCK_MAP = {
   product: Blocks.Product,
   pageGallery: Blocks.PageGallery,
   listenForm: Blocks.ListenForm,
+  reservationForm: Blocks.ReservationForm,
   banner: Blocks.Banner,
   newsLink: Blocks.Newslink,
   awardBlade: Blocks.AwardBlade,
