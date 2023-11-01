@@ -41,6 +41,12 @@ const ReservationForm = ({
             requests: "",
         },
     };
+    const prices = {
+        "Select Model": "",
+        "S1": "$37,000",
+        "S2": "$49,000",
+        "Custom Project": "TBD"
+    }
     const required = ["given_name", "family_name", "email", "phone", "model"];
     const error_messages = {
         given_name: "Please provide a first name.",
@@ -247,7 +253,9 @@ const ReservationForm = ({
                             </Styled.FormSection>
                             <FormRow>
                                 <Styled.FormElement>
-                                    <Styled.Select id="model">
+                                    <Styled.Select id="model" onChange={() => {
+                                        document.getElementById("price").value = prices[document.getElementById("model").value]
+                                    }}>
                                         $
                                         {models.map((model, i) => (
                                             <option key={i} value={model}>
@@ -264,6 +272,7 @@ const ReservationForm = ({
                                     <Styled.Input
                                         {...form}
                                         name="price"
+                                        id="price"
                                         placeholder="Purchase Price"
                                     />
                                 </Styled.FormElement>
@@ -305,7 +314,7 @@ const ReservationForm = ({
                             </FormRow>
                             <Styled.FormActions>
                                 <FormSubmitButton {...form}>
-                                    <Button disabled={!checked}>Place Reservation</Button>
+                                    <Button disabled={!checked}>Submit</Button>
                                 </FormSubmitButton>
                             </Styled.FormActions>
                         </Form>
