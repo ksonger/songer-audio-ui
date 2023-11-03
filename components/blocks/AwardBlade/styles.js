@@ -14,15 +14,15 @@ export const AwardBlade = styled.div`
 `;
 
 export const Award = styled.div`
-  width: 250px;
-  flex: 0 0 25em;
+  width: 180px;
+  flex: 0 0 20em;
 `;
 
 export const Image = styled.div`
-  width: 220px;
-  height: 230px;
+  width: 154px;
+  height: 170px;
   margin: 0 auto;
-  padding: 20px 12px;
+  padding: 24px 12px;
   justify-self: center;
 `;
 
