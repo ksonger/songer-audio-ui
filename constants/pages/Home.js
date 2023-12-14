@@ -9,7 +9,7 @@ const Home = {
     {
       blockType: "banner",
       message: `<p>
-        Join us November 10th-12th at the <a href="https://capitalaudiofest.com" target="_blank">2023 Capital AudioFest!</a>
+        Join us March 15th-17th at the <a href="https://www.southwestaudiofest.com/" target="_blank">2024 Southwest AudioFest!</a>
         </p>`,
     },
     {
