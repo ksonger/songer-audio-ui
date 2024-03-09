@@ -26,7 +26,7 @@ export const Subscribe = styled.div`
 export const Message = styled.div`
   flex-grow: 1;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;

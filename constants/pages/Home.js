@@ -9,7 +9,7 @@ const Home = {
     {
       blockType: "banner",
       message: `<p>
-        Join us March 15th-17th at the <a href="https://www.southwestaudiofest.com/" target="_blank">2024 Southwest AudioFest!</a>
+        INTRODUCING THE <a href="https://www.songeraudio.com/technology" target="_self">NOVA FIELD COIL</a>, AND THE <a href="https://www.songeraudio.com/products" target="_self">S1x</a>
         </p>`,
     },
     {
@@ -17,6 +17,14 @@ const Home = {
       slides: [
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
+          caption:
+              "When I see those words above, “listening sessions,” I can’t help but smile. My listening sessions with the Songer Audio S2 field coil loudspeakers were as satisfying and rewarding as with any transducer I’ve heard, no matter the design and the tech behind it.  Highly, highly recommended.",
+          attribution: "- Marc Phillips, Part-Time Audiophile",
+          link: "https://parttimeaudiophile.com/2024/03/08/songer-audio-s2-loudspeakers-review/",
+          textAlign: "left",
+        },
+        {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
           caption:
               "If there is a magic to the sound—and there is—it’s because of this speaker’s handmade, full-range transducer, and the way that it reproduces music with the speed, transparency, and impact of a live performance...audiophiles who want their vacuum-tube electronics to sing, simply must audition the Songer S1.",
           attribution: "- Robert Ross, The Robb Report",
@@ -79,14 +87,14 @@ const Home = {
           link: "https://www.audioresurgence.com/2022/11/songer-audio-whammerdyne-at-capital-audiofest-2022.html",
           textAlign: "left",
         },
-        {
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_driver_front_sepia.png",
-          caption:
-            "Ella Fitzgerald's \"When You're Alone\" and Kraftwerk's \"Tour de France\" had surprising depth, girth, and sensuality. I longed to hear this capable rig playing vinyl, but no turntable manufacturer had yet teamed up with Ken Songer. What are you waiting for?",
-          attribution: "- Ken Micallef, Stereophile",
-          link: "https://www.stereophile.com/content/songer-audiowhammerdyne-audio",
-          textAlign: "right",
-        },
+        // {
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_driver_front_sepia.png",
+        //   caption:
+        //     "Ella Fitzgerald's \"When You're Alone\" and Kraftwerk's \"Tour de France\" had surprising depth, girth, and sensuality. I longed to hear this capable rig playing vinyl, but no turntable manufacturer had yet teamed up with Ken Songer. What are you waiting for?",
+        //   attribution: "- Ken Micallef, Stereophile",
+        //   link: "https://www.stereophile.com/content/songer-audiowhammerdyne-audio",
+        //   textAlign: "right",
+        // },
         // {
         //   quotation:
         //     "The soundstage is huge - wide, deep and so lifelike its uncanny.  It's as if the musicians are right in the room, all properly placed, as if you were at the recording event.",
@@ -97,11 +105,17 @@ const Home = {
     },
     {
       blockType: "newsLink",
-      message: `<p>Read our <a href="https://robbreport.com/gear/audio/songer-audio-s1-loudspeaker-1234900385/" target="_blank">S1 Loudspeaker Write-up</a> in The Robb Report</p>`,
+      message: `<p>Read Editor-in-Chief Marc Phillip's <a href="https://parttimeaudiophile.com/2024/03/08/songer-audio-s2-loudspeakers-review/" target="_blank">Review of the S2</a> in Part-Time Audiophile</p>`,
     },
     {
       blockType: "awardBlade",
       awards: [
+        {
+          message: `<p>Part-Time Audiophile<br/>Reviewer's Choice Award</p>`,
+          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/reviewers-choice-award.png",
+          link: "https://parttimeaudiophile.com/2024/03/08/songer-audio-s2-loudspeakers-review/",
+          layout: "left",
+        },
         {
           message: `<p>Enjoy the Music<br/>S1 Blue Note Award<br/>Best of 2023</p>`,
           logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_2023_etm.png",
@@ -145,22 +159,22 @@ const Home = {
       type: "default",
       orientation: "left",
       image: {
-        url: "products_driver_web_home.png",
-        width: 1000,
-        height: 1117,
+        url: "nova_driver.jpg",
+        width: 1673,
+        height: 1673,
         alt: "Onimaru Driver",
       },
       heading: `An Old and New Design`,
       description: `
         <p>
-        The product of years of research and development, the Songer Audio 10" V3 electromagnetic speaker 
+        The product of years of research and development, the Songer Audio 10" Nova electromagnetic speaker 
         is entirely hand made, by an individual craftsman from the finest materials.  It offers exceptionally 
         lifelike musical reproduction for a variety of design applications.
         </p>
         <p>
         Built upon field coil technology that is nearly 150 years old, it captures the best of the old and 
         combines it with modern refinement, innovative design, and meticulous construction. The result is an 
-        artistic expression, dedicated solely to connecting others as closely as possible to the beauty of music.
+        artistic expression, dedicated solely to connecting listeners as closely as possible to the beauty of music.
         </p>`,
       cta: {
         label: "Learn More",
@@ -181,18 +195,18 @@ const Home = {
       heading: `Phase Perfect, Full Range`,
       description: `
         <p>
-        Newly updated with our V3 field coil driver, the S1 loudspeaker delivers phase perfect, full-range 
-        sound +/- 3dB from 32Hz - 20kHz.  Constructed of all solid hardwoods and brass hardware, it's meant 
+        With your choice of the critically acclaimed V3 or the new Nova driver, the S1 and S1x loudspeakers deliver phase perfect, full-range 
+        sound +/- 3dB from 32Hz - 20kHz.  Constructed of all solid hardwoods and brass hardware, each pair is meant 
         to be as beautiful to look at as it is to listen to.
         </p>
         <p>
-        Its excellent performance is owed to its simplicity; internally it compensates for natural cabinet 
-        diffraction and nothing else. Tuned for deep, accurate bass, it is a showcase for the superb detail, 
-        clarity and imaging of our driver.
+        The excellent performance of the S1 and S1x is owed to simplicity; internally they compensate for natural cabinet 
+        diffraction and nothing else. Tuned for deep, accurate bass, each is a showcase for the superb detail, 
+        clarity and imaging of our drivers.
         </p>`,
       cta: {
         label: "Learn More",
-        uri: "/products#a_s1",
+        uri: "/products#a_s1x",
       },
     },
     {

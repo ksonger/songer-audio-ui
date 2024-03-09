@@ -2,7 +2,94 @@ const Products = {
   products: [
     {
       blockType: "product",
-      heading: `The S1 Loudspeaker`,
+      heading: `A NEW PERFORMANCE STANDARD: THE S1x`,
+      description: `<p>The S1x sets a new standard for single-driver point source performance.  Centered around our 
+        latest V4 Nova driver, every facet of our critically acclaimed S1 was revisited in the development of the S1x, with the
+        goal in mind of producing the finest single driver loudspeaker ever made.
+      </p>
+      <p>
+      Our Nova driver is unlike any other.  With a redesigned steel geometry milled from ultra-low carbon steel, the field coil 
+      pole piece is made from permendur, offering the highest saturation flux density of any commercially available metal.
+      </p>
+      <p>Deep cryogenic processing is a thee day treatment in which the Nova voice coil wire is submerged in liquid nitrogen for 
+      48 hours.  During this process, the wire metal is compressed, becomes more conductive, and its natural crystalline structure 
+      is restored.  The result is clarity, detail and accuracy elevated to new, utterly breathtaking levels.</p>
+      <p>
+      <p>A new solid copper phase plug further lowers the inductance of the Nova, while delivering better thermal 
+      performance to the field coil motor.
+      </p>
+      The solid hardwood cabinet lining and damping have likewise been improved, and all internal wiring upgraded. The bases of the 
+      the S1x are a new addition as well, comprised in the S1x of a high mass phenolic resin-based composite material.
+      </p>
+      <p>
+      Finally, the efficiency of the new S1x has increased further to 95dB 1w/1M.
+      </p>`,
+      specs: [
+        {
+          label: `System`,
+          value: `Point source full-range ported loudspeaker`,
+        },
+        { label: `Frequency Response`, value: `27Hz - 20kHz +/- 6dB` },
+        { label: `Efficiency`, value: `95 dB` },
+        { label: `Dimensions`, value: `(W x H x D) 15 x 47 x 20 in` },
+        { label: `Materials`, value: `Hardwood, brass, phenolic resin composite` },
+        { label: `Weight`, value: `140 lbs` },
+        {
+          label: `Connections`,
+          value: `5-way Cardas binding posts, 3-pin Cardas XLR power`,
+        },
+      ],
+      price: `$37,000 (pair, with power supplies)`,
+      galleryId: "s1x",
+      anchorName: "a_s1x",
+      gallery: [
+        {
+          itemId: "p1",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1x_pair_1.jpg",
+          metaData: {
+            type: "image",
+            height: 1673,
+            width: 1381,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          itemId: "p2",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/nova_driver_walnut.jpg",
+          metaData: {
+            type: "image",
+            height: 1673,
+            width: 1381,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          // Image item:
+          itemId: "p3",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1x_walnut_top.jpg",
+          metaData: {
+            type: "image",
+            height: 1673,
+            width: 1673,
+            focalPoint: [0, 0],
+          },
+        },
+        {
+          itemId: "p4",
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s1x_walnut_close.jpg",
+          metaData: {
+            type: "image",
+            height: 1673,
+            width: 1673,
+            focalPoint: [0, 0],
+          },
+        },
+      ],
+      measurements: [],
+    },
+    {
+      blockType: "product",
+      heading: `THE ORIGINAL S1 LOUDSPEAKER`,
       description: `<p>The S1 delivers absolutely everything, by adding almost nothing; its greatest strength is its 
       well-constructed simplicity.  It is a piece of fine furniture, designed to look as equally beautiful in your
       listening room as it sounds.
@@ -96,7 +183,7 @@ const Products = {
     },
     {
       blockType: "product",
-      heading: `The S2 Loudspeaker`,
+      heading: `THE S2 LOUDSPEAKER`,
       description: `<p>Like the S1, the construction quality and materials of the S2 are without compromise.  The front baffles are constructed 
       of 1.7 inch thick solid hardwood.  To further eliminate distortion and resonance, the field 
       coil driver is "magnet mounted" via the electromagnet housing to a 2.5 inch thick hardwood and glass-filled nylon support. 
@@ -222,7 +309,7 @@ const Products = {
     },
     {
       blockType: "product",
-      heading: `The PS1 Power Supply`,
+      heading: `THE PS1 POWER SUPPLY`,
       description: `<p>The PS1 is a very tightly regulated, very low impedance power supply. It is specifically 
       designed as a high noise rejection type, such that AC line noise and harmonic noise is not transferred to 
       the DC regulated output powering the field coil.  This unique feature damps any induced motor 

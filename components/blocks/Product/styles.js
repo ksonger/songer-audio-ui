@@ -68,6 +68,7 @@ export const ProductHeading = styled.h2`
   font-weight: bold;
   text-align: center;
   font-size: 18px;
+  text-transform: none;
 `;
 
 export const ProductDescription = styled.div`

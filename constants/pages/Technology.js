@@ -7,6 +7,20 @@ const Technology = {
         {
           heading: `Field Coils`,
           body: `
+          <p class="section first">The Nova Field Coil Driver</p>
+          
+          <p>
+          The Nova field coil is a driver without equal.
+          </p>
+          <p>
+          In this fourth major iteration, the voice coils have been cryogenically processed, a three day effort in which the wire is cooled in liquid nitrogen for a full 48 hours at -300°F. This compresses the metal, purifies it, and makes its crystalline structure uniform. The wire becomes more conductive, with less distortion introduced into the signals passing through it. Spanning a decade of development, it is among the most significant improvements we've ever made.
+</p>
+          <p>
+The internal geometry of the motor has been redesigned.  Its steel contains less than half the carbon content of its V3 predecessor, which allows for a higher saturation point. The pole piece is made from permendur in the magnetic gap.  Permendur is a cobalt iron magnetic alloy, offering the highest saturation flux density of any commercially available metal.  This significantly improves the strength and quality of our driver's magnetic field. While costly and difficult both to source and machine, permendur has improved the peak performance of our field coil magnet to 1.9 Tesla, or 19,000 Gauss. That strength and permeability confer immense control and accuracy of motion to the driver cones.
+</p>
+          <p>
+A new phase plug is milled from solid copper. The primary purpose of any phase plug is to guide sound and prevent cancellation, however in our application it is likewise used for thermal dissipation, and as a faraday ring. While typically found inside the magnetic gap of drivers, we have found the faraday ring to be effective above the gap as well, preserving gap width and flux density. In use, it lowers the measured inductance of the Nova, which improves treble performance and lowers distortion.
+      </p><div class="banner"></div>
           <p class="section first">Design Philosophy and Materials</p>
           
           <p>
@@ -23,7 +37,7 @@ const Technology = {
           <div class="banner"></div>
           <p class="subsection first">Field Coils</p>
           <p>
-          A powerful 1.7 Tesla electromagnetic motor is the central driving force behind our loudspeakers. It provides a constant, highly uniform gap density.  
+          In our V4 Nova driver, powerful 1.9 Tesla electromagnetic motor is the central driving force behind our loudspeakers. It provides a constant, highly uniform gap density.  
           It has a magnetic permeability, or stiffness, that is hundreds if not thousands of times higher than a permanent magnet.  That stiffness 
           translates into accuracy - much higher accuracy and lower distortion than permanent magnets are capable of. 
           <p>

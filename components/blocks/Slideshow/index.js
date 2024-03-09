@@ -47,7 +47,7 @@ const Slideshow = ({ slides = fadeImages }) => {
 
   return (
     <Styled.SlideshowContainer>
-      <Fade duration={11000} {...properties}>
+      <Fade duration={14000} {...properties}>
         {slides.map((slide, index) => (
           <a
             key={index}

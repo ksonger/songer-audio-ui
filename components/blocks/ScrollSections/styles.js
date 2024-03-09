@@ -63,24 +63,26 @@ export const BlockMain = styled.main`
     background-attachment: fixed;
     background-blend-mode: multiply;
     margin: 60px 0 60px calc(50% - 50vw);
-
     &:nth-of-type(1) {
+      --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/phase_plugs_sepia.jpg);
+    }
+    &:nth-of-type(2) {
       --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/cone_and_vc_sepia.png);
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(3) {
       --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/polished_motors_sepia.png);
     }
 
-    &:nth-of-type(3) {
+    &:nth-of-type(4) {
       --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/voice_coils_and_surrounds_sepia.png);
     }
 
-    &:nth-of-type(4) {
+    &:nth-of-type(5) {
       --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/suspension_sepia.png);
     }
 
-    &:nth-of-type(5) {
+    &:nth-of-type(6) {
       --img: url(https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/s1_port_sepia.png);
     }
   }
