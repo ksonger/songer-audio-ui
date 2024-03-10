@@ -5,21 +5,21 @@ const Products = {
       heading: `A NEW PERFORMANCE STANDARD: THE S1x`,
       description: `<p>The S1x sets a new standard for single-driver point source performance.  Centered around our 
         latest V4 Nova driver, every facet of our critically acclaimed S1 was revisited in the development of the S1x, with the
-        goal in mind of producing the finest single driver loudspeaker ever made.
+        goal of producing the finest single driver loudspeaker ever made.
       </p>
       <p>
       Our Nova driver is unlike any other.  With a redesigned steel geometry milled from ultra-low carbon steel, the field coil 
       pole piece is made from permendur, offering the highest saturation flux density of any commercially available metal.
       </p>
-      <p>Deep cryogenic processing is a thee day treatment in which the Nova voice coil wire is submerged in liquid nitrogen for 
-      48 hours.  During this process, the wire metal is compressed, becomes more conductive, and its natural crystalline structure 
+      <p>Deep cryogenic processing is a three day treatment in which the Nova voice coil wire is submerged in liquid nitrogen for 
+      48 hours at -300°F.  During this process, the wire metal is compressed, becomes more conductive, and its natural crystalline structure 
       is restored.  The result is clarity, detail and accuracy elevated to new, utterly breathtaking levels.</p>
       <p>
       <p>A new solid copper phase plug further lowers the inductance of the Nova, while delivering better thermal 
       performance to the field coil motor.
       </p>
       The solid hardwood cabinet lining and damping have likewise been improved, and all internal wiring upgraded. The bases of the 
-      the S1x are a new addition as well, comprised in the S1x of a high mass phenolic resin-based composite material.
+      S1x are a new addition as well, comprised in the S1x of a high mass phenolic resin-based composite material.
       </p>
       <p>
       Finally, the efficiency of the new S1x has increased further to 95dB 1w/1M.
