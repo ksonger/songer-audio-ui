@@ -16,19 +16,19 @@ const Home = {
       blockType: "slideShow",
       slides: [
         {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
+          caption:
+              "A tour de force of technology, craftsmanship, and unbelievably lifelike sound, this 47-inch-tall tower is a dream come true for lovers of low-power tube amps. Amazingly, it uses only one driver.  There is a magic to the sound because of this speaker’s handmade, full-range transducer and the way that it reproduces music with the speed, transparency, and impact of a real performance.",
+          attribution: "- Robert Ross, The Robb Report",
+          link: "https://robbreport.com/gear/audio/songer-audio-s1-loudspeaker-1234900385/",
+          textAlign: "left",
+        },
+        {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
           caption:
               "When I see those words above, “listening sessions,” I can’t help but smile. My listening sessions with the Songer Audio S2 field coil loudspeakers were as satisfying and rewarding as with any transducer I’ve heard, no matter the design and the tech behind it.  Highly, highly recommended.",
           attribution: "- Marc Phillips, Part-Time Audiophile",
           link: "https://parttimeaudiophile.com/2024/03/08/songer-audio-s2-loudspeakers-review/",
-          textAlign: "left",
-        },
-        {
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
-          caption:
-              "If there is a magic to the sound—and there is—it’s because of this speaker’s handmade, full-range transducer, and the way that it reproduces music with the speed, transparency, and impact of a live performance...audiophiles who want their vacuum-tube electronics to sing, simply must audition the Songer S1.",
-          attribution: "- Robert Ross, The Robb Report",
-          link: "https://robbreport.com/gear/audio/songer-audio-s1-loudspeaker-1234900385/",
           textAlign: "left",
         },
         {
@@ -110,6 +110,12 @@ const Home = {
     {
       blockType: "awardBlade",
       awards: [
+        {
+          message: `<p>The Robb Report<br/>2024 Best in Audio Award</p>`,
+          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/robb_report_2024.png",
+          link: "https://robbreport.com/gear/audio/lists/best-audio-products-2024-1235546070/best-loudspeakers-for-design-obsessives-songer-audio-s1/",
+          layout: "left",
+        },
         {
           message: `<p>Part-Time Audiophile<br/>Reviewer's Choice Award</p>`,
           logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/reviewers-choice-award.png",
