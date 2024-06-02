@@ -1,14 +1,14 @@
 import Link from "next/link"
 import PropTypes from "prop-types"
 
-function TopLevelLink({ role, label, href, subitems, context }) {
+function TopLevelLink({ onClick, role, label, href, subitems, context }) {
   const { footer, mobile, activeHref } = context
 
   const navClassName = (role) => {
     return footer && mobile ? "list-item-link" : `list-item-${role}`
   }
 
-  if (subitems?.length && !footer && !mobile) return null
+  if (subitems?.length && !footer) return null
 
   return (
     <span
@@ -17,6 +17,9 @@ function TopLevelLink({ role, label, href, subitems, context }) {
           ? `active ${label.toLowerCase()}`
           : label.toLowerCase()
       }`}
+      onClick={() => {
+        onClick();
+      }}
     >
       <Link href={href}>
         <a aria-current={href === activeHref ? "page" : null}>{label}</a>

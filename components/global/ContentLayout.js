@@ -1,16 +1,21 @@
 import React, { useEffect } from "react";
+import { useState } from "react"
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import Header from "@/global/Header";
 import Footer from "@/global/Footer/Footer";
+import Banner from "@/blocks/Banner";
 import { useRouter } from "next/router";
 import useGlobalContext from "@/hooks/useGlobalContext";
-import { getMainColor, respond } from "@/styles/mixins";
+import { getMainColor, respond, mobileBreakpoint } from "@/styles/mixins";
+import { useOnResize } from "@/hooks/listeners"
 import { getActiveNavItem } from "@/helpers";
+import BannerMessage from "@/constants/pages/banner";
 
 const ContentLayout = ({ children }) => {
   const { asPath } = useRouter();
   const { navItems } = useGlobalContext();
+  const [mobile, setMobile] = useState(false)
   const activeNavItem = getActiveNavItem(navItems, asPath);
   const activeHref = activeNavItem?.href;
   const mainColor = getMainColor(navItems, asPath);
@@ -21,6 +26,10 @@ const ContentLayout = ({ children }) => {
     }, 0);
   });
 
+  useOnResize(mobileBreakpoint, (isMobile) => {
+    setMobile(isMobile)
+  })
+
   return (
     <Wrapper
       style={{
@@ -29,7 +38,8 @@ const ContentLayout = ({ children }) => {
         "--color-primary-light": `var(--color-${mainColor}-light)`,
       }}
     >
-      <Header activeHref={activeHref} />
+      <Header activeHref={activeHref}  mobile={mobile} />
+      <Banner message={BannerMessage.message} />
       <Main>
         <Article>{children}</Article>
       </Main>
@@ -40,7 +50,6 @@ const ContentLayout = ({ children }) => {
 
 const Wrapper = styled.div`
   width: 100%;
-  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
@@ -51,6 +60,11 @@ const Main = styled.main`
   max-width: var(--l-content-max);
   margin: 0 auto 40px auto;
   overflow-x: hidden;
+  ${respond(
+      css`
+        grid-template-columns: 1fr;
+    `
+  )}
 `;
 
 const Article = styled.div`

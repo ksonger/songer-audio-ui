@@ -2,10 +2,14 @@ import styled, { css } from "styled-components";
 import { fluidScale, respond } from "@/styles/mixins";
 
 export const ProductWrapper = styled.p`
-  width: calc(100% - 80px);
-  margin: 0 auto;
-  padding: 15px;
+  &.active {
+    display: block;
+  }
+  &.inactive {
+    display: none;
+  }
 
+  margin: 0 40px;
   div.highlight {
     :before {
       background-color: rgba(255, 255, 255, 0.25) !important;
@@ -17,12 +21,12 @@ export const ProductWrapper = styled.p`
       margin: 40px 0;
       width: 100%;
     `,
-    "800px"
+    "1025px"
   )}
 `;
 
 export const ProductInner = styled.div`
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 1100px;
   margin: 40px auto;
 `;
@@ -45,10 +49,9 @@ export const ProductMain = styled.div`
   ${respond(
     css`
       padding: 30px 0 0 0;
-      border: none;
-      border-top: 1px solid #555;
+
     `,
-    "800px"
+    "1025px"
   )}
 `;
 
@@ -59,7 +62,7 @@ export const ProductContent = styled.div`
     css`
       padding: 0 30px;
     `,
-    "800px"
+    "1025px"
   )}
 `;
 
@@ -91,7 +94,7 @@ export const ProductSpecsImages = styled.div`
       padding: 0;
       gap: 24px;
     `,
-    "800px"
+    "1025px"
   )}
 `;
 
@@ -108,7 +111,7 @@ export const Specs = styled.div`
       flex-basis: 100%;
       border-left: none;
       border-right: none;
-    `
+    `, "1025px"
   )}
 `;
 
@@ -118,13 +121,14 @@ export const Images = styled.div`
     css`
       flex-basis: 100%;
       text-align: center;
-    `
+    `, "1025px"
   )}
 `;
 
 export const Price = styled.div`
   padding: 10px 24px;
-  color: #333;
+  color: #999;
+  text-align: right;
 `;
 
 export const SpecRow = styled.div`

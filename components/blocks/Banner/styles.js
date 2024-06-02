@@ -8,7 +8,7 @@ export const BannerMain = styled.div``;
 export const Banner = styled.div`
   display: flex;
   flex-flow: row;
-  padding: 14px 16px;
+  padding: 24px 16px;
   align-items: center;
   background: #000;
   border-bottom: 1px solid #444;

@@ -74,7 +74,7 @@ export const Description = styled.p`
           color: var(--neutral50);
           font-style: italic;
           font-size: ${fluidScale("18px", "17px")};
-          max-width: 800px;
+          max-width: 1100px;
           margin: 60px auto 30px auto;
         `}
 `;

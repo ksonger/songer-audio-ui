@@ -2,6 +2,7 @@ const Products = {
   products: [
     {
       blockType: "product",
+      id: "s1x",
       heading: `A NEW PERFORMANCE STANDARD: THE S1x`,
       description: `<p>The S1x sets a new standard for single-driver point source performance.  Centered around our 
         latest V4 Nova driver, every facet of our critically acclaimed S1 was revisited in the development of the S1x, with the
@@ -89,6 +90,7 @@ const Products = {
     },
     {
       blockType: "product",
+      id: "s1",
       heading: `THE ORIGINAL S1 LOUDSPEAKER`,
       description: `<p>The S1 delivers absolutely everything, by adding almost nothing; its greatest strength is its 
       well-constructed simplicity.  It is a piece of fine furniture, designed to look as equally beautiful in your
@@ -183,6 +185,7 @@ const Products = {
     },
     {
       blockType: "product",
+      id: "s2",
       heading: `THE S2 LOUDSPEAKER`,
       description: `<p>Like the S1, the construction quality and materials of the S2 are without compromise.  The front baffles are constructed 
       of 1.7 inch thick solid hardwood.  To further eliminate distortion and resonance, the field 

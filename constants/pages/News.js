@@ -5,6 +5,64 @@ const News = {
       items: [
         {
           id: "10",
+          slug: "2024_SHOW_runup",
+          title: "Songer Audio + Western Electric, next month at T.H.E. Show",
+          summary:
+              "We're looking forward to another wonderful event for Songer Audio, June 7th - 9th at The Show in sunny Costa Mesa, California!  Last year's system...",
+          content: "<p>We're looking forward to another wonderful event for Songer Audio, June 7th - 9th at The Show in sunny Costa Mesa, California!  Last year's system featured a spectacular Takatsuki TA-S01 amplifier, courtesy of our friends at Alex Sound Technology.  As many of you know, Takatsuki makes some of the finest 300B tubes in the world, and the pairing certainly didn't disappoint - those who experienced it know that it was nothing short of magic.</p><p>How can we top it this time?  Well, this year we are delighted to announce that we are partnering with legendary Western Electric, inventor of the 300B electron tube and the standard bearer by which all other 300B tubes in the world are judged.  A fellow Robb Report 2024 Best in Audio Award winner, their 91E amplifier is a perfect pairing for our newest offering, the no-limits version of our critically acclaimed single driver S1 loudspeaker, the S1x.</p><p>Complimented with a Statement streamer and Phoenix Net network switch from the team at Innuos, and yet another Robb Report 2024 Best In Audio Award winner in the Mola Mola Tambaqui, the system will be brought together by superbly musical cabling and interconnects from Atlas Cables.  It's going to be another rare listening experience.  We look forward to sharing it with you next month, at the Hilton Orange County Costa Mesa, in room 350.</p>",
+          images: [
+            {
+              // Image item:
+              itemId: "d1",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/we_glow.png",
+              metaData: {
+                type: "image",
+                width: 2000,
+                height: 1500,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d2",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/Western-Electric-91E-Integrated-Amplifier.png",
+              metaData: {
+                type: "image",
+                width: 2000,
+                height: 1500,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d3",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/innuos.png",
+              metaData: {
+                type: "image",
+                width: 2000,
+                height: 1500,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d3",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/Mola_Mola_studio.jpg",
+              metaData: {
+                type: "image",
+                width: 2000,
+                height: 1500,
+                focalPoint: [0, 0],
+              },
+            },
+          ],
+          videos: [],
+          date: "2024-05-23T13:10:20.339Z",
+          createdAt: "2024-05-23T13:10:20.339Z",
+          updatedAt: "2024-05-23T13:10:20.339Z",
+        },
+        {
+          id: "10",
           slug: "2023_CAF_runup",
           title: "An Epic System, Next Month at 2023 Capital AudioFest",
           summary:

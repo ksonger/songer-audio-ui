@@ -7,7 +7,7 @@ import { useOnResize } from "@/hooks/listeners";
 import useGlobalContext from "@/hooks/useGlobalContext";
 import * as Styled from "./styles";
 
-const Nav = ({ activeHref, className }) => {
+const Nav = ({ activeHref, className, mobile }) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [windowWidth, setWindowWidth] = useState();
   const footerNav = className === "footer";
@@ -28,12 +28,12 @@ const Nav = ({ activeHref, className }) => {
   /**
    * Close the mobile nav on click
    */
-  const handleClick = () => {
+  const handleClick = (toggle) => {
     setShowMobileNav(false);
   };
 
   return (
-    <nav className={className}>
+    <nav>
       <NavList
         activeHref={activeHref}
         className="mobile-menu"
@@ -41,6 +41,7 @@ const Nav = ({ activeHref, className }) => {
         aria-hidden={!showMobileNav && !footerNav}
         data-open={showMobileNav ? "true" : "false"}
         footer={footerNav}
+        mobile={mobile}
         navItems={navItems.filter((item) => item.header === true)}
       />
 

@@ -4,8 +4,10 @@ import { Gallery } from "@/components/atomic/Gallery";
 import { useOnResize } from "@/hooks/listeners";
 import { mobileBreakpoint } from "@/styles/mixins";
 import { useRouter } from "next/router";
+import { useRef } from "react";
 
 const Product = ({
+    id,
   heading,
   description,
   specs = [],
@@ -19,12 +21,17 @@ const Product = ({
   const [containerObj, setContainerObj] = useState();
   const [windowWidth, setWindowWidth] = useState();
   const [hasData, setHasData] = useState(false);
-  const [showPrice, setShowPrice] = useState(false);
+  const [showPrice, setShowPrice] = useState(true);
+  const [isActive, setIsActive] = useState(false)
+  const [mobile, setMobile] = useState(false)
   const { asPath } = useRouter();
+  const galleryElement = useRef();
+  const [galleryWidth, setGalleryWidth] = useState(600);
 
   useOnResize(mobileBreakpoint, (isMobile) => {
     const w = window.innerWidth;
     setWindowWidth(w);
+    setMobile(isMobile)
   });
 
   useEffect(() => {
@@ -32,18 +39,26 @@ const Product = ({
     setGalleryScroll(document.querySelector(`#${galleryId}`));
     setHasData(galleryScroll !== undefined);
     setContainerObj({
-      width: galleryScroll?.clientWidth,
+      width: galleryWidth,
       height: 600,
     });
+    setIsActive(asPath.split("/")[2] === id || mobile)
     setTimeout(() => {
       if (asPath.indexOf("#") !== -1) {
         const el = document.querySelector(`#${asPath.split("#")[1]}`);
         el.scrollIntoView();
       }
-    }, 0);
-  }, [windowWidth, hasData]);
+      setGalleryWidth(galleryElement.current.clientWidth)
+    }, 10);
+  }, [windowWidth, hasData, asPath, galleryWidth]);
+
   return (
-    <Styled.ProductWrapper id={anchorName}>
+    <Styled.ProductWrapper id={anchorName}
+                           className={`${
+                               isActive
+                                   ? `active`
+                                   : `inactive`
+                           }`}>
       <Styled.ProductInner>
         <Styled.ProductMain>
           <Styled.ProductContent>
@@ -55,7 +70,7 @@ const Product = ({
             />
           </Styled.ProductContent>
           <Styled.ProductSpecsImages>
-            <Styled.Images id={galleryId}>
+            <Styled.Images id={galleryId} ref={galleryElement}>
               {gallery.length > 0 && hasData && (
                 <Gallery
                   layout={3}

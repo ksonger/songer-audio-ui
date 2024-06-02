@@ -5,8 +5,7 @@ export const Header = styled.div`
   width: 100%;
   transition: background-color 200ms;
   border-bottom: 1px solid #444;
-  background-color: #000;
-  padding: 0 var(--l-content-padding);
+  background-color: #16120E;
   z-index: var(--z-index-header);
 `;
 
@@ -15,7 +14,7 @@ export const HeaderContent = styled.header`
   margin: 0 auto;
   z-index: var(--z-index-header);
   transition: background-color 200ms, height 200ms;
-  background-color: #000;
+  background-color: #16120E;
   gap: 2em;
   align-content: center;
   align-items: center;

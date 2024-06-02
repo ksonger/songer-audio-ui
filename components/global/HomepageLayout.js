@@ -37,6 +37,7 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   background-color: var(--background-cream);
+  overflow-x: hidden;
 
   > * {
     padding-left: var(--l-content-padding);

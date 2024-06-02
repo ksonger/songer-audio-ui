@@ -5,22 +5,25 @@ import { useRouter } from "next/router";
 const AwardBlade = ({ awards }) => {
   const router = useRouter();
   return (
-    <Styled.AwardBlade>
-      {awards.map(function (award, i) {
-        return (
-          <Styled.Award key={i}>
-            <a target="_blank" href={award.link} rel="noreferrer">
-              <Styled.Image>
-                <img src={award.logo} />
-              </Styled.Image>
-              <Styled.Message
-                dangerouslySetInnerHTML={{ __html: award.message }}
-              ></Styled.Message>
-            </a>
-          </Styled.Award>
-        );
-      })}
-    </Styled.AwardBlade>
+      <>
+        <Styled.AwardsHeader>Awards</Styled.AwardsHeader>
+        <Styled.AwardBlade>
+          {awards.map(function (award, i) {
+            return (
+                <Styled.Award key={i}>
+                  <a target="_blank" href={award.link} rel="noreferrer">
+                    <Styled.Image>
+                      <img src={award.logo} />
+                    </Styled.Image>
+                    <Styled.Message
+                        dangerouslySetInnerHTML={{ __html: award.message }}
+                    ></Styled.Message>
+                  </a>
+                </Styled.Award>
+            );
+          })}
+        </Styled.AwardBlade>
+      </>
   );
 };
 

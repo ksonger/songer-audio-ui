@@ -8,7 +8,7 @@ import { Gallery } from "@/components/atomic/Gallery";
 import { useOnResize } from "@/hooks/listeners";
 import { mobileBreakpoint } from "@/styles/mixins";
 
-const Post = ({ id, newsPost, navHandler }) => {
+const Post = ({ nav, id, newsPost, navHandler }) => {
   const renderProgress = () => {
     return (
       <div>
@@ -44,6 +44,7 @@ const Post = ({ id, newsPost, navHandler }) => {
       width: document.querySelector(`#post_${id}`).clientWidth - 60,
       height: window.innerHeight,
     });
+    document.getElementById("__next").scrollTop = 0;
     return function cleanup() {
       window.removeEventListener("resize", wInt);
     };
@@ -53,21 +54,22 @@ const Post = ({ id, newsPost, navHandler }) => {
     const { title, createdAt, content, images, videos } = newsPost;
     return (
       <Styled.Post id={`post_${id}`}>
-        <Styled.BackButton>
-          <Button
-            onClick={() => {
-              navHandler();
-            }}
-            type="primary"
-            shape="round"
-            icon="caretLeft"
-            iconAlign="left"
-            size="small"
-          >
-            Posts
-          </Button>
-        </Styled.BackButton>
-
+        { nav && (
+            <Styled.BackButton>
+              <Button
+                  onClick={() => {
+                    navHandler();
+                  }}
+                  type="primary"
+                  shape="round"
+                  icon="caretLeft"
+                  iconAlign="left"
+                  size="small"
+              >
+                Posts
+              </Button>
+            </Styled.BackButton>
+        )}
         <Styled.PostHeader>
           <Styled.PostTitle>{title}</Styled.PostTitle>
 

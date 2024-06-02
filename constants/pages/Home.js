@@ -6,12 +6,18 @@ const Home = {
     //     We Invite You To <a href="https://www.songeraudio.com/listen" target="_self">Experience Songer Audio</a>
     //     </p>`,
     // },
-    {
-      blockType: "banner",
-      message: `<p>
-        INTRODUCING THE <a href="https://www.songeraudio.com/technology" target="_self">NOVA FIELD COIL</a>, AND THE <a href="https://www.songeraudio.com/products" target="_self">S1x</a>
-        </p>`,
-    },
+    // {
+    //   blockType: "banner",
+    //   message: `<p>
+    //     INTRODUCING THE <a href="https://www.songeraudio.com/technology" target="_self">NOVA FIELD COIL</a>, AND THE <a href="https://www.songeraudio.com/products" target="_self">S1x</a>
+    //     </p>`,
+    // },
+    // {
+    //   blockType: "banner",
+    //   message: `<p>
+    //     JOIN US JUNE 7TH - 9TH AT <a href="https://www.songeraudio.com/news/index.html?post=2024_SHOW_runup" target="_self">2024 T.H.E. SHOW</a> IN COSTA MESA
+    //     </p>`,
+    // },
     {
       blockType: "slideShow",
       slides: [
@@ -103,57 +109,57 @@ const Home = {
         // },
       ],
     },
-    {
-      blockType: "newsLink",
-      message: `<p>Read Editor-in-Chief Marc Phillip's <a href="https://parttimeaudiophile.com/2024/03/08/songer-audio-s2-loudspeakers-review/" target="_blank">Review of the S2</a> in Part-Time Audiophile</p>`,
-    },
-    {
-      blockType: "awardBlade",
-      awards: [
-        {
-          message: `<p>The Robb Report<br/>2024 Best in Audio Award</p>`,
-          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/robb_report_2024.png",
-          link: "https://robbreport.com/gear/audio/lists/best-audio-products-2024-1235546070/best-loudspeakers-for-design-obsessives-songer-audio-s1/",
-          layout: "left",
-        },
-        {
-          message: `<p>Part-Time Audiophile<br/>Reviewer's Choice Award</p>`,
-          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/reviewers-choice-award.png",
-          link: "https://parttimeaudiophile.com/2024/03/08/songer-audio-s2-loudspeakers-review/",
-          layout: "left",
-        },
-        {
-          message: `<p>Enjoy the Music<br/>S1 Blue Note Award<br/>Best of 2023</p>`,
-          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_2023_etm.png",
-          link: "https://www.enjoythemusic.com/magazine/equipment/0923/",
-          layout: "left",
-        },
-        {
-          message: `<p>Part-Time Audiophile<br/>Best Sound in Seattle List PAF 2023</p>`,
-          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
-          link: "https://parttimeaudiophile.com/2023/07/07/best-sound-in-seattle-paf-2023/",
-          layout: "left",
-        },
-        {
-          message: `<p>The Audiophile Junkie<br/>Best of T.H.E. Show 2023</p>`,
-          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/audiophile_junkie_new_logo.png",
-          link: "https://www.youtube.com/watch?v=avdRE0TmDcI&t=1548s",
-          layout: "left",
-        },
-        {
-          message: `<p>Enjoy the Music<br/>Best of CAF 2022</p>`,
-          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_caf_2022.png",
-          link: "https://www.enjoythemusic.com/Capital_Audiofest_2022/Becker/3rd_Floor_Atrium_Best_Rooms/page5.htm",
-          layout: "right",
-        },
-        {
-          message: `<p>Positive Feedback<br/>PAF 2022 Oasis! Award</p>`,
-          logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pf_logo.png",
-          link: "https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/",
-          layout: "left",
-        },
-      ],
-    },
+    // {
+    //   blockType: "newsLink",
+    //   message: `<p>Read Editor-in-Chief Marc Phillip's <a href="https://parttimeaudiophile.com/2024/03/08/songer-audio-s2-loudspeakers-review/" target="_blank">Review of the S2</a> in Part-Time Audiophile</p>`,
+    // },
+    // {
+    //   blockType: "awardBlade",
+    //   awards: [
+    //     {
+    //       message: `<p>The Robb Report<br/>2024 Best in Audio Award</p>`,
+    //       logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/robb_report_2024.png",
+    //       link: "https://robbreport.com/gear/audio/lists/best-audio-products-2024-1235546070/best-loudspeakers-for-design-obsessives-songer-audio-s1/",
+    //       layout: "left",
+    //     },
+    //     {
+    //       message: `<p>Part-Time Audiophile<br/>Reviewer's Choice Award</p>`,
+    //       logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/reviewers-choice-award.png",
+    //       link: "https://parttimeaudiophile.com/2024/03/08/songer-audio-s2-loudspeakers-review/",
+    //       layout: "left",
+    //     },
+    //     {
+    //       message: `<p>Enjoy the Music<br/>S1 Blue Note Award<br/>Best of 2023</p>`,
+    //       logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_2023_etm.png",
+    //       link: "https://www.enjoythemusic.com/magazine/equipment/0923/",
+    //       layout: "left",
+    //     },
+    //     {
+    //       message: `<p>Part-Time Audiophile<br/>Best Sound in Seattle List PAF 2023</p>`,
+    //       logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
+    //       link: "https://parttimeaudiophile.com/2023/07/07/best-sound-in-seattle-paf-2023/",
+    //       layout: "left",
+    //     },
+    //     {
+    //       message: `<p>The Audiophile Junkie<br/>Best of T.H.E. Show 2023</p>`,
+    //       logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/audiophile_junkie_new_logo.png",
+    //       link: "https://www.youtube.com/watch?v=avdRE0TmDcI&t=1548s",
+    //       layout: "left",
+    //     },
+    //     {
+    //       message: `<p>Enjoy the Music<br/>Best of CAF 2022</p>`,
+    //       logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_caf_2022.png",
+    //       link: "https://www.enjoythemusic.com/Capital_Audiofest_2022/Becker/3rd_Floor_Atrium_Best_Rooms/page5.htm",
+    //       layout: "right",
+    //     },
+    //     {
+    //       message: `<p>Positive Feedback<br/>PAF 2022 Oasis! Award</p>`,
+    //       logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pf_logo.png",
+    //       link: "https://positive-feedback.com/audio-discourse/pacific-audio-fest-2022-4/",
+    //       layout: "left",
+    //     },
+    //   ],
+    // },
     {
       blockType: "mission",
       style: "home",
@@ -212,7 +218,7 @@ const Home = {
         </p>`,
       cta: {
         label: "Learn More",
-        uri: "/products#a_s1x",
+        uri: "/products/s1x",
       },
     },
     {
@@ -240,7 +246,7 @@ const Home = {
         </p>`,
       cta: {
         label: "Learn More",
-        uri: "/products#a_s2",
+        uri: "/products/s2",
       },
     },
     {
@@ -267,7 +273,7 @@ const Home = {
         </p>`,
       cta: {
         label: "Learn More",
-        uri: "/products#a_ps1",
+        uri: "/products/ps1",
       },
     },
   ],

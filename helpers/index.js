@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import joinURL from "url-join";
 import { GLOBAL_DATA } from "@/constants/globalData";
-// import regex from "@/constants/regex";
+import regex from "@/constants/regex";
 
 // data helpers
 export const usePathData = () => {
@@ -44,9 +44,21 @@ export const getPageFromPath = (path) => {
 };
 
 export const getPageData = (page) => {
+
+  const allNavItems = [];
+
+  GLOBAL_DATA.navItems.forEach((nav) => {
+    allNavItems.push(nav)
+    if(nav.subitems)  {
+      nav.subitems.forEach((sub) => {
+        allNavItems.push(sub)
+      })
+    }
+  })
+
   return (
-    GLOBAL_DATA.navItems.filter((item) => {
-      return page === item.label.toLowerCase();
+      allNavItems.filter((item) => {
+      return page === item.id.toLowerCase();
     })[0] || null
   );
 };
@@ -322,34 +334,37 @@ export const truncate = (text, limit) => {
   return text.replace(/[\s.]+$/g, "");
 };
 
-// /**
-//  * Custom form field validator
-//  * @param rule {*}
-//  * @param value {string}
-//  * @param cb {Function}
-//  */
-// export const validPhoneNumber = (rule, value, cb) => {
-//   if (String(value).match(regex.PHONE_REGEX || value.length === 0)) {
-//     cb();
-//   } else if (value.length > 0) {
-//     cb("Please provide a mobile phone number.");
-//   } else {
-//     cb("");
-//   }
-// };
-//
-// /**
-//  * Custom form field validator
-//  * @param rule {*}
-//  * @param value {string}
-//  * @param cb {Function}
-//  */
-// export const validEmail = (rule, value, cb) => {
-//   if (String(value).match(regex.EMAIL_REGEX)) {
-//     cb();
-//   } else if (value.length > 0) {
-//     cb("Please provide a valid email.");
-//   } else {
-//     cb("");
-//   }
-// };
+/**
+ * Custom form field validator
+ * @param rule {*}
+ * @param value {string}
+ * @param cb {Function}
+ */
+export const validPhoneNumber = (rule, value, cb) => {
+  if (String(value).match(regex.PHONE_REGEX || value.length === 0)) {
+    cb();
+  } else if (value.length > 0) {
+    cb("Please provide a mobile phone number.");
+  } else {
+    cb("");
+  }
+};
+
+/**
+ * Custom form field validator
+ * @param value {string}
+ * @param cb {Function}
+ */
+export const validEmail = (value, cb) => {
+  if(!cb) {
+    return String(value).match(regex.EMAIL_REGEX) !== null;
+  } else {
+    if (String(value).match(regex.EMAIL_REGEX)) {
+      cb();
+    } else if (value.length > 0) {
+      cb("Please provide a valid email.");
+    } else {
+      cb("");
+    }
+  }
+};

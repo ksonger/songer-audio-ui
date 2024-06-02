@@ -3,7 +3,7 @@ const Listen = {
     {
       style: "listen",
       blockType: "mission",
-      description: `Our loudspeakers are a <a href="/listen#testimonials">revelatory experience</a>.  We welcome you to schedule a private listening session, in our new listening room in <a target="_blank" href="http://maps.google.com/maps?q=Charbonneau,+Wilsonville,+OR+97070">Wilsonville, OR</a>.`,
+      description: `Our loudspeakers are a <a href="/listen#testimonials">revelatory experience</a>.  We welcome you to schedule a private listening session, in our new listening room in Portland, OR.`,
     },
     {
       blockType: "listenForm",

@@ -19,9 +19,9 @@ const PostList = ({ isLoading = true, newsPosts }) => {
     let slug;
     if (
       document.location.search &&
-      document.location.search.substr(1).split("=")[0] === "post"
+      document.location.search.substring(1).split("=")[0] === "post"
     ) {
-      slug = document.location.search.substr(1).split("=")[1];
+      slug = document.location.search.substring(1).split("=")[1];
       const selected = newsPosts.filter((post) => {
         return post.slug === slug;
       });
@@ -29,12 +29,6 @@ const PostList = ({ isLoading = true, newsPosts }) => {
         selectPost(selected[0].slug, selected[0].id);
       }
     }
-    // if (router.query.page[1] && view === "list") {
-    //   const selected = newsPosts.filter((post) => {
-    //     return post.slug === router.query.page[1];
-    //   });
-    //   selectPost(selected[0].slug, selected[0].id);
-    // }
   }, []);
 
   const selectPost = (slug, id) => {
@@ -55,12 +49,13 @@ const PostList = ({ isLoading = true, newsPosts }) => {
   return (
     <Styled.NewsWrapper>
       {view === "post" && slug && id && (
-        <Post id={id} navHandler={selectList} newsPost={post} />
+          <Post nav={true} id={id} navHandler={selectList} newsPost={post} />
       )}
       {view === "list" && (
         <div>
+          <Post nav={false} id={newsPosts[0].id} newsPost={newsPosts[0]} />
           {/* posts */}
-          {newsPosts.map(({ id, title, summary, createdAt, slug }, index) => (
+          {newsPosts.slice(1).map(({ id, title, summary, createdAt, slug }, index) => (
             <Styled.List key={index}>
               <Styled.ListItem key={index}>
                 <div

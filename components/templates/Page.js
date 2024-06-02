@@ -7,9 +7,9 @@ import React from "react";
 const PageTemplate = ({ content, hidePageTitle = false }) => {
   const global = useGlobalContext();
 
-  const blocks = global[content?.pageData?.label?.toLowerCase()] || [];
+  const blocks = global[content?.pageData?.id?.toLowerCase()] || [];
   const c = {
-    title: content.pageData.label.toLowerCase(),
+    title: "title",
     description: "page description",
     featuredImage: {},
   };

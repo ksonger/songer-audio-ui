@@ -3,7 +3,7 @@ import { fluidScale, respond } from "@/styles/mixins";
 
 export const TestimonialsWrapper = styled.div`
   width: 100%;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 `;
 

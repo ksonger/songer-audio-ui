@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { fluidScale, lSetAspectRatio, respond } from "@/styles/mixins";
+import Link from "next/link";
 
 const type = "default";
 
@@ -10,6 +11,9 @@ function getFlexDirection(layout, imagePosition) {
 
 export const CardWrapper = styled.p`
   padding: 0 40px;
+  opacity: ${(p) => {
+    return p.$current !== null && p.$current === false ? 0.5 : 1;
+  }};
   p {
     margin: ${fluidScale("40px", "20px")} 0;
   }
@@ -17,13 +21,13 @@ export const CardWrapper = styled.p`
     css`
       padding: 0;
     `,
-    "800px"
+    "767px"
   )}
 `;
 
 export const CardMain = styled.div`
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   border: 1px solid #555;
   margin: 30px auto;
   height: 100%;
@@ -46,7 +50,7 @@ export const CardMain = styled.div`
         flex-basis: 100%;
       }
     `,
-    "700px"
+    "767px"
   )}
 `;
 
@@ -56,7 +60,7 @@ export const CardImage = styled.div`
   background-color: rgba(30, 30, 30, 1);
   margin: 40px;
   flex-basis: ${(p) => {
-    return 50 * (p.$image.width / p.$image.height) + "%";
+    return 42 * (p.$image.width / p.$image.height) + "%";
   }};
   ${(p) => {
     return lSetAspectRatio(p.$image.width, p.$image.height);
@@ -64,9 +68,12 @@ export const CardImage = styled.div`
 
   ${respond(
     css`
-      margin: 40px 0;
+      margin: 40px 40px 0 40px;
+      flex-basis: ${(p) => {
+        return 50 * (p.$image.width / p.$image.height) + "%";
+      }};
     `,
-    "700px"
+    "767px"
   )}
 `;
 
@@ -79,7 +86,7 @@ export const CardContent = styled.div`
   .__heading {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: ${fluidScale("22px", "11px")};
     letter-spacing: 2px;
     color: rgba(180, 180, 180, 0.9);
   }
@@ -100,7 +107,7 @@ export const CardContent = styled.div`
       box-shadow: none;
       border: none;
     `,
-    "700px"
+    "767px"
   )}
 `;
 
@@ -110,18 +117,29 @@ export const CardHeading = styled.span`
   font-weight: bold;
 `;
 
+export const CardDate = styled.span`
+  text-transform: none;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: lighter;
+  color: var(--button-background-color);
+  display: flex;
+  margin-top: 6px;
+  
+`
+
 export const CardDescription = styled.span`
-  font-size: ${fluidScale("15px", "13px")};
+  font-size: ${fluidScale("17px", "10px")};
   font-style: italic;
   letter-spacing: 1px;
   ${respond(
     css`
       font-size: 16px;
     `,
-    "700px"
+    "767px"
   )}
 `;
 
-export const CTA = styled.div`
+export const CTA = styled(Link)`
   z-index: 100;
 `;

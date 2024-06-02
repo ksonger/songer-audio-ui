@@ -11,25 +11,21 @@ const Banner = ({ message }) => {
     <Styled.BannerWrapper>
       <Styled.BannerMain>
         <Styled.Banner>
-          <Styled.Subscribe>
-            {router.asPath === "/" && (
-              <Modal
-                disclosureContent={<Button>Subscribe</Button>}
-                content={
-                  <ModalForm title="Subscribe for Updates" type="subscribe" />
-                }
-              />
-            )}
-          </Styled.Subscribe>
+          {/*<Styled.Subscribe>*/}
+          {/*    <Modal*/}
+          {/*      disclosureContent={<Button>Subscribe</Button>}*/}
+          {/*      content={*/}
+          {/*        <ModalForm title="Subscribe for Updates" type="subscribe" />*/}
+          {/*      }*/}
+          {/*    />*/}
+          {/*</Styled.Subscribe>*/}
           <Styled.Message dangerouslySetInnerHTML={{ __html: message }} />
-          <Styled.Contact>
-            {router.asPath === "/" && (
-              <Modal
-                disclosureContent={<Button>Contact</Button>}
-                content={<ModalForm title="Contact Us" type="contact" />}
-              />
-            )}
-          </Styled.Contact>
+          {/*<Styled.Contact>*/}
+          {/*    <Modal*/}
+          {/*      disclosureContent={<Button>Contact</Button>}*/}
+          {/*      content={<ModalForm title="Contact Us" type="contact" />}*/}
+          {/*    />*/}
+          {/*</Styled.Contact>*/}
         </Styled.Banner>
       </Styled.BannerMain>
     </Styled.BannerWrapper>

@@ -11,8 +11,15 @@ export const AwardBlade = styled.div`
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  max-width: 1400px;
 `;
 
+export const AwardsHeader = styled.div`
+  text-transform: uppercase;
+  font-size: ${fluidScale("22px", "18px")};
+  text-align: center;
+  margin: 40px auto;
+`
 export const Award = styled.div`
   width: 180px;
   flex: 0 0 20em;

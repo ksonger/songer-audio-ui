@@ -2,6 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import PropTypes from "prop-types";
 import TopLevelLink from "./TopLevelLink";
+import ToggleWithSubmenu from "./ToggleWithSubmenu"
 import * as Styled from "./styles";
 
 const NavList = ({
@@ -25,11 +26,11 @@ const NavList = ({
       footer={footer}
       mobile={mobile}
       {...listProps}
-      onClick={() => onClick()}
     >
       {navItems.map((item, i) => (
         <Fragment key={i}>
-          <TopLevelLink context={context} {...item} />
+          <TopLevelLink onClick={onClick} context={context} {...item} />
+          <ToggleWithSubmenu onClick={onClick} context={context} {...item} />
         </Fragment>
       ))}
     </Styled.Nav>

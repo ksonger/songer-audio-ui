@@ -26,7 +26,7 @@ export const Nav = styled.div`
     font-family: var(--font-face-headers-compact);
     letter-spacing: 2px;
     font-size: ${fluidScale("13px", "11px")};
-    color: var(--header-menu-text-color);
+    //color: var(--header-menu-text-color);
     font-weight: var(--font-weight-regular);
 
     &:hover,

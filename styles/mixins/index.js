@@ -18,7 +18,7 @@ export const aHidden = () => {
 
 // Media queries maker
 // --------------------------------------------------------
-export const mobileBreakpoint = 60;
+export const mobileBreakpoint = 80;
 
 export const BREAKPOINTS = {
   130: "1440px",

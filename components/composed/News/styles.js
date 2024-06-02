@@ -27,7 +27,7 @@ export const ListItem = styled.ul`
   border: 1px solid #555;
   background: rgba(63, 63, 63, 0.3);
   padding: 24px;
-  margin-bottom: 24px;
+  margin: 24px 0;
   width: 100%;
   cursor: pointer;
 
@@ -56,7 +56,6 @@ export const Post = styled.div`
   background: rgba(63, 63, 63, 0.3);
   padding: 30px;
   width: 100%;
-  max-width: 920px;
 `;
 
 export const BackButton = styled.div`

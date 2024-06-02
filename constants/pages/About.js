@@ -7,9 +7,8 @@ const About = {
       image: {
         url: "ken.png",
         width: 1000,
-        height: 1673,
+        height: 1373,
         alt: "S2 Loudspeaker",
-        focalPoint: [0.5, 0],
       },
       heading: `About Songer Audio`,
       description: `

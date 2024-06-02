@@ -58,8 +58,8 @@ const Slideshow = ({ slides = fadeImages }) => {
             <Styled.EachSlide>
               <Styled.Background $background={slide.url} />
               <Styled.Span>
-                <quote>{slide.caption}</quote>
-                <attribution>{slide.attribution}</attribution>
+                <Styled.Quote>{slide.caption}</Styled.Quote>
+                <Styled.Attribution>{slide.attribution}</Styled.Attribution>
               </Styled.Span>
             </Styled.EachSlide>
           </a>

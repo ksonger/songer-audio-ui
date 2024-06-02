@@ -6,7 +6,7 @@ import { unstable_FormInput as FormInput } from "reakit/Form";
 
 export const FormWrapper = styled.div`
   width: 100%;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 30px auto;
   position: relative;
   border: 1px solid #555;
@@ -152,7 +152,7 @@ export const Input = styled(FormInput)`
 export const FormElement = styled.div`
   display: grid;
   grid-auto-flow: row;
-  margin: 20px 0;
+  margin: 20px 5px;
   position: relative;
 
   input {
