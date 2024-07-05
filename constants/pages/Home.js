@@ -48,7 +48,7 @@ const Home = {
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
           caption:
-            "I’d call it the Most Beautiful Sound in Seattle. Maybe the Lushest. Maybe the Most Hypnotic. The Songer Audio and Whammerdyne room is the one that still haunts me two weeks after the end of the show. I can’t wait to here this combo again.",
+            "I’d call it the Most Beautiful Sound in Seattle. Maybe the Lushest. Maybe the Most Hypnotic. The Songer Audio and Whammerdyne room is the one that still haunts me two weeks after the end of the show. I can’t wait to hear this combo again.",
           attribution: "- Marc Phillips, Part-Time Audiophile",
           link: "https://parttimeaudiophile.com/2023/06/26/songer-and-whammerdyne-paf-2023/",
           textAlign: "left",
