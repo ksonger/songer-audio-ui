@@ -17,7 +17,7 @@ export default function HtmlHead({
 
   return (
     <Head>
-      <title>{`Songer Audio`}</title>
+      <title>{`${title} | Songer Audio`}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content={description || siteInfo.description} />
       <meta name="og:url" content={url} />

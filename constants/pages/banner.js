@@ -1,4 +1,4 @@
 const BannerMessage = {
-    message: `<p>JOIN US JUNE 7TH - 9TH AT <a href="/news" target="_self">2024 T.H.E. SHOW</a> IN COSTA MESA</p>`
+    message: `<p>JOIN US APRIL 11TH - 13TH AT <a href="https://axpona.com/" target="_blank">2025 AXPONA</a> IN SCHAUMBURG</p>`
 }
 export default BannerMessage;

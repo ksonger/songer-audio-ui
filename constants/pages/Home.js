@@ -22,6 +22,14 @@ const Home = {
       blockType: "slideShow",
       slides: [
         {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_driver_front_sepia.png",
+          caption:
+              "This is the CAF room that all my audio-running buddies and even non-buddies told me about: Songer Audio. This system played music, just as I'd have it. Mitski's 'Bug Like An Angel' skittered on acoustic guitars and echoey vocals, the Songer system laid it out with a languorous gait, a vast vocal choir sprawling across the soundstage with a lavish, large scale, cinematic scope. Pinpoint accurate, animated, and utterly focused, the sound seized me and set me to rights.",
+          attribution: "- Ken Micallef, Stereophile",
+          link: "https://www.stereophile.com/content/songer-audio-lampizator-innuos-whammerdyne-kbl-sound",
+          textAlign: "left",
+        },
+        {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
           caption:
               "A tour de force of technology, craftsmanship, and unbelievably lifelike sound, this 47-inch-tall tower is a dream come true for lovers of low-power tube amps. Amazingly, it uses only one driver.  There is a magic to the sound because of this speaker’s handmade, full-range transducer and the way that it reproduces music with the speed, transparency, and impact of a real performance.",
@@ -32,7 +40,7 @@ const Home = {
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
           caption:
-              "When I see those words above, “listening sessions,” I can’t help but smile. My listening sessions with the Songer Audio S2 field coil loudspeakers were as satisfying and rewarding as with any transducer I’ve heard, no matter the design and the tech behind it.  Highly, highly recommended.",
+              "My listening sessions with the Songer Audio S2 field coil loudspeakers were as satisfying and rewarding as with any transducer I’ve heard, no matter the design and the tech behind it.  There’s always that part of me that constantly thinks about getting off the musical merry-go-round, and if I wasn’t a reviewer this is the way I would go. Highly, highly recommended.",
           attribution: "- Marc Phillips, Part-Time Audiophile",
           link: "https://parttimeaudiophile.com/2024/03/08/songer-audio-s2-loudspeakers-review/",
           textAlign: "left",
@@ -56,7 +64,7 @@ const Home = {
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/suspension_sepia.png",
           caption:
-            "Time after time I looked and listened to the Songers and shook my head with disbelief that a single driver could play so loudly and clearly with incredibly fast dramatic dynamics and transients. This has been a truly magnificent experience and they have my highest recommendation.",
+            "Time after time I looked and listened to the Songers and shook my head with disbelief that a single driver could play so loudly and clearly with incredibly fast dramatic dynamics and transients. They are a revelation and vital portrayal of the musical landscapes and performances on recordings.  This has been a truly magnificent experience and they have my highest recommendation.",
           attribution: "- Bob Grossman, Enjoy the Music",
           link: "https://www.enjoythemusic.com/superioraudio/equipment/0423/Songer_Audio_S1_Field_Coil_Point_Source_Loudspeaker_Review.htm",
           textAlign: "left",
@@ -89,7 +97,7 @@ const Home = {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
           caption:
             "The Songer Audio S1 driven by the Whammerdyne DGA-Ultra delivered what I thought was possibly the best sound of the show.  These speakers sound so effortless, coherent, natural, and dynamic.  They extend to 20Khz and down to 29hz (-6dB), so they’re easily a ‘full-range’ speaker...",
-          attribution: "- CAH, Audio Resurgence",
+          attribution: "- Carl Hruza, Audio Resurgence",
           link: "https://www.audioresurgence.com/2022/11/songer-audio-whammerdyne-at-capital-audiofest-2022.html",
           textAlign: "left",
         },

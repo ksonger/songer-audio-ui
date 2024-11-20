@@ -3,7 +3,7 @@ const Listen = {
     {
       style: "listen",
       blockType: "mission",
-      description: `Our loudspeakers are a <a href="/listen#testimonials">revelatory experience</a>.  We welcome you to schedule a private listening session, in our new listening room in Portland, OR.`,
+      description: `Our loudspeakers are a <a href="/listen/appointment/index.html#testimonials">revelatory experience</a>.  We welcome you to schedule a private listening session, in our new listening room in Portland, OR.`,
     },
     {
       blockType: "listenForm",

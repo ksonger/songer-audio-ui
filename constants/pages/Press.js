@@ -41,6 +41,18 @@ const Press = {
             awards:
                 [
                     {
+                        message: `<p>Part-Time Audiophile<br/>Best Sound in Seattle PAF 2024</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
+                        link: "https://pt.audio/2024/10/14/best-sound-of-seattle-2024-paf-2024/",
+                        layout: "left",
+                    },
+                    {
+                        message: `<p>The Audiophile Junkie<br/>Best of T.H.E. Show 2024</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/audiophile_junkie_new_logo.png",
+                        link: "https://www.youtube.com/watch?v=nV7_tISkCEs&t=39s",
+                        layout: "left",
+                    },
+                    {
                         message: `<p>The Robb Report<br/>2024 Best in Audio Award</p>`,
                         logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/robb_report_2024.png",
                         link: "https://robbreport.com/gear/audio/lists/best-audio-products-2024-1235546070/best-loudspeakers-for-design-obsessives-songer-audio-s1/",
@@ -59,7 +71,7 @@ const Press = {
                         layout: "left",
                     },
                     {
-                        message: `<p>Part-Time Audiophile<br/>Best Sound in Seattle List PAF 2023</p>`,
+                        message: `<p>Part-Time Audiophile<br/>Best Sound in Seattle PAF 2023</p>`,
                         logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
                         link: "https://parttimeaudiophile.com/2023/07/07/best-sound-in-seattle-paf-2023/",
                         layout: "left",
@@ -87,6 +99,12 @@ const Press = {
         {
             blockType: "pressLinks",
             links: [
+                {
+                    label: "Favorite Rooms of Steve McCormack and Rick Brown at The Home Entertainment Show 2024",
+                    url: "https://www.youtube.com/watch?v=sQXpJLqmGGo&t=160s",
+                    target: "_blank",
+                    source: "The Audiophile Junkie"
+                },
                 {
                     label: "Songer’s S1 Loudspeaker Uses Old-School Audio Tech to Deliver Lifelike Sound",
                     url: "https://robbreport.com/gear/audio/songer-audio-s1-loudspeaker-1234900385/",

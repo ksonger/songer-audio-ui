@@ -16,7 +16,7 @@ const About = {
                   Songer Audio is the product of my lifelong passion. It is the sum of thousands of hours of design and redesign, of refinement and production, and of an obsessive drive to perfect the joyful experience of music.
                 </p>
                 <p className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
-                  I started what has become Songer Audio designing and building cabinets, in my free time ten years ago.  I love the sound of full-range drivers, and spent countless evenings and weekends making enclosures for them.  My creations gradually started filling up our house and eventually, friends began suggesting that I try to sell them.
+                  I started what has become Songer Audio designing and building cabinets, in my free time twelve years ago.  I love the sound of full-range drivers, and spent countless evenings and weekends making enclosures for them.  My creations gradually started filling up our house and eventually, friends began suggesting that I try to sell them.
                 </p>
                 <p className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
                   Designing and building cabinets for commercial drivers was satisfying, but I often wondered if I couldn't take my work further to design and build a complete, world-class loudspeaker by hand.  My search for the answer to that question is an ongoing and rewarding journey, marked with success and challenge, and always full of discovery.

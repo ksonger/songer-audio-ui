@@ -10,6 +10,10 @@ export const usePathData = () => {
   const { asPath, pathname, query } = router;
   return { asPath, pathname, query };
 };
+export const getContentObject = (content) => {
+  const arr = content?.pages || content?.topics
+  return arr[0]
+}
 
 export const getResultsNumber = (hasNextPage, itemCount, perPage) => {
   if (hasNextPage === false) {

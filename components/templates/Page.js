@@ -9,8 +9,8 @@ const PageTemplate = ({ content, hidePageTitle = false }) => {
 
   const blocks = global[content?.pageData?.id?.toLowerCase()] || [];
   const c = {
-    title: "title",
-    description: "page description",
+    title: "Songer Audio",
+    description: "Songer Audio is a maker of finely crafted field coil drivers and loudspeakers, 100% hand-made in the USA.",
     featuredImage: {},
   };
 
