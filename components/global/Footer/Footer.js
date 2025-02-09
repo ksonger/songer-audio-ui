@@ -39,8 +39,7 @@ const Footer = () => {
         <Styled.ContactDescription>
           <Styled.Contact>
             <Styled.Address>
-              <p>2925 NE Glisan Street</p>
-              <p>Portland, OR 97232</p>
+              <p>Portland, OR</p>
               <p>503.709.3865</p>
             </Styled.Address>
             <Styled.ContactButton>
