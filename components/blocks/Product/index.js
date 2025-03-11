@@ -27,6 +27,7 @@ const Product = ({
   const { asPath } = useRouter();
   const galleryElement = useRef();
   const [galleryWidth, setGalleryWidth] = useState(600);
+  const router = useRouter();
 
   useOnResize(mobileBreakpoint, (isMobile) => {
     const w = window.innerWidth;
@@ -43,6 +44,9 @@ const Product = ({
       height: 600,
     });
     setIsActive(asPath.split("/")[2] === id || mobile)
+    if (asPath.indexOf("?") !== -1) {
+      router.replace(router.pathname, asPath.split("?")[0]);
+    }
     setTimeout(() => {
       if (asPath.indexOf("#") !== -1) {
         const el = document.querySelector(`#${asPath.split("#")[1]}`);

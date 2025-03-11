@@ -30,6 +30,8 @@ export async function getStaticPaths() {
     { params: { page: ["products", "s1"] } },
     { params: { page: ["products", "s1x"] } },
     { params: { page: ["products", "s2"] } },
+    { params: { page: ["products", "s2x"] } },
+    { params: { page: ["products", "a3"] } },
     { params: { page: ["products", "ps1"] } },
     { params: { page: ["gallery"] } },
     { params: { page: ["news"] } },

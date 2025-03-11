@@ -4,7 +4,7 @@ import { fluidScale } from "@/styles/mixins";
 export const Newslink = styled.div`
   display: flex;
   flex-flow: row;
-  padding: 24px 16px 0 16px;
+  padding: 50px 16px 0 16px;
   align-items: center;
   margin-bottom: 40px;
 `;
@@ -12,7 +12,7 @@ export const Newslink = styled.div`
 export const Message = styled.div`
   flex-grow: 1;
   text-align: center;
-  font-size: ${fluidScale("19px", "17px")};
+  font-size: ${fluidScale("24px", "19px")};
 
   font-style: italic;
   letter-spacing: 0.5px;

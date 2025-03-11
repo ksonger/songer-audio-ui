@@ -41,21 +41,45 @@ const Press = {
             awards:
                 [
                     {
-                        message: `<p>Part-Time Audiophile<br/>Best Sound in Seattle PAF 2024</p>`,
+                        message: `<p>Part-Time Audiophile<br/>2024 Product of the Year Nominee</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
+                        link: "https://pt.audio/2024/12/15/2024-product-of-the-year/",
+                        layout: "left",
+                    },
+                    {
+                        message: `<p>Part-Time Audiophile<br/>Best of CAF 2024 Nominee</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
+                        link: "https://pt.audio/2024/11/26/capital-audiofest-2024-best-sound-at-show-caf-2024/",
+                        layout: "left",
+                    },
+                    {
+                        message: `<p>Part-Time Audiophile<br/>Best of PAF 2024 Nominee</p>`,
                         logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
                         link: "https://pt.audio/2024/10/14/best-sound-of-seattle-2024-paf-2024/",
                         layout: "left",
                     },
                     {
-                        message: `<p>The Audiophile Junkie<br/>Best of T.H.E. Show 2024</p>`,
+                        message: `<p>The Audiophile Junkie<br/>Best of THE Show 2023 & 2024</p>`,
                         logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/audiophile_junkie_new_logo.png",
-                        link: "https://www.youtube.com/watch?v=nV7_tISkCEs&t=39s",
+                        link: "https://www.youtube.com/watch?v=nV7_tISkCEs&t=40s",
                         layout: "left",
                     },
                     {
-                        message: `<p>The Robb Report<br/>2024 Best in Audio Award</p>`,
-                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/robb_report_2024.png",
+                        message: `<p>Robb Report<br/>2024 Best of the Best Award, S2</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/wreath_award.png",
+                        link: "https://robbreport.com/best-of-the-best/gallery/2024-botb-gear-1235639068/botb_gear6-2/",
+                        layout: "left",
+                    },
+                    {
+                        message: `<p>Robb Report<br/>2024 Best in Audio</br>Award, S1</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/wreath_award.png",
                         link: "https://robbreport.com/gear/audio/lists/best-audio-products-2024-1235546070/best-loudspeakers-for-design-obsessives-songer-audio-s1/",
+                        layout: "left",
+                    },
+                    {
+                        message: `<p>Materialist<br/>2024 Top 100 Masterpieces</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/wreath_award.png",
+                        link: "https://materialist.media/",
                         layout: "left",
                     },
                     {
@@ -65,21 +89,15 @@ const Press = {
                         layout: "left",
                     },
                     {
-                        message: `<p>Enjoy the Music<br/>S1 Blue Note Award<br/>Best of 2023</p>`,
+                        message: `<p>Enjoy the Music<br/>Blue Note Award<br/>Best of 2023</p>`,
                         logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/best_of_2023_etm.png",
                         link: "https://www.enjoythemusic.com/magazine/equipment/0923/",
                         layout: "left",
                     },
                     {
-                        message: `<p>Part-Time Audiophile<br/>Best Sound in Seattle PAF 2023</p>`,
+                        message: `<p>Part-Time Audiophile<br/>Best of PAF 2023 Nominee</p>`,
                         logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
                         link: "https://parttimeaudiophile.com/2023/07/07/best-sound-in-seattle-paf-2023/",
-                        layout: "left",
-                    },
-                    {
-                        message: `<p>The Audiophile Junkie<br/>Best of T.H.E. Show 2023</p>`,
-                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/audiophile_junkie_new_logo.png",
-                        link: "https://www.youtube.com/watch?v=avdRE0TmDcI&t=1548s",
                         layout: "left",
                     },
                     {
@@ -99,6 +117,12 @@ const Press = {
         {
             blockType: "pressLinks",
             links: [
+                {
+                    label: "Songer Audio with LampizatOr, Innuos, Whammerdyne, KBL Sound",
+                    url: "https://www.stereophile.com/content/songer-audio-lampizator-innuos-whammerdyne-kbl-sound",
+                    target: "_blank",
+                    source: "Stereophile"
+                },
                 {
                     label: "Favorite Rooms of Steve McCormack and Rick Brown at The Home Entertainment Show 2024",
                     url: "https://www.youtube.com/watch?v=sQXpJLqmGGo&t=160s",

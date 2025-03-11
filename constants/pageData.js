@@ -3,6 +3,8 @@ import Products from "@/constants/pages/Products";
 import S1x from "@/constants/pages/s1x";
 import S1 from "@/constants/pages/s1";
 import S2 from "@/constants/pages/s2";
+import S2x from "@/constants/pages/s2x";
+import A3 from "@/constants/pages/a3";
 import PS1 from "@/constants/pages/ps1";
 import Gallery from "@/constants/pages/Gallery";
 import Technology from "@/constants/pages/Technology";
@@ -21,6 +23,8 @@ const Pages = {
   ...S1x,
   ...S1,
   ...S2,
+  ...S2x,
+  ...A3,
   ...PS1,
   ...Gallery,
   ...Technology,

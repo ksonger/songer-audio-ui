@@ -43,6 +43,11 @@ export const GLOBAL_DATA = {
       header: true,
       subitems: [
         {
+          label: "A3",
+          id: "a3",
+          href: "/products/a3",
+        },
+        {
           label: "S1",
           id: "s1",
           href: "/products/s1",
@@ -56,6 +61,11 @@ export const GLOBAL_DATA = {
           label: "S2",
           id: "s2",
           href: "/products/s2",
+        },
+        {
+          label: "S2x",
+          id: "s2x",
+          href: "/products/s2x",
         },
         {
           label: "PS1",

@@ -4,6 +4,8 @@ export const PATHS = {
   s1: "/products/s1",
   s1x: "/products/s1x",
   s2: "/products/s2",
+  s2x: "/products/s2x",
+  a3: "/products/a3",
   ps1: "/products/ps1",
   gallery: "/gallery",
   about: "/about",

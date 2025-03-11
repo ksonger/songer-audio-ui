@@ -117,10 +117,10 @@ const Home = {
         // },
       ],
     },
-    // {
-    //   blockType: "newsLink",
-    //   message: `<p>Read Editor-in-Chief Marc Phillip's <a href="https://parttimeaudiophile.com/2024/03/08/songer-audio-s2-loudspeakers-review/" target="_blank">Review of the S2</a> in Part-Time Audiophile</p>`,
-    // },
+    {
+      blockType: "newsLink",
+      message: `<p><a href="/products/a3" target="_self">Explore Songer Audio's exciting new 300B Single-Ended Triode Integrated Amplifier, the A3</a></p>`,
+    },
     // {
     //   blockType: "awardBlade",
     //   awards: [
@@ -172,7 +172,36 @@ const Home = {
       blockType: "mission",
       style: "home",
       heading: `The medium is engineering. The work is art.`,
-      description: `Songer Audio field coil loudspeakers and drivers are functional works of art, of uncompromising craftsmanship. Each piece is 100% designed, made and assembled by hand. Our products express a philosophy of simplicity, excellence, and a relentless dedication to provide the purest possible experience of music.`,
+      description: `Songer Audio field coil loudspeakers, amplifiers and drivers are functional works of art, of uncompromising craftsmanship. Each piece is 100% designed, made and assembled by hand. Our products express a philosophy of simplicity, excellence, and a relentless dedication to provide the purest possible experience of music.`,
+    },
+    {
+      blockType: "card",
+      type: "default",
+      orientation: "left",
+      image: {
+        url: "A3_home.jpg",
+        width: 1673,
+        height: 1673,
+        alt: "A3 Amplifier",
+      },
+      heading: `A Match Made in Heaven`,
+      description: `
+        <p>
+        The A3 is an uncompromising 300B Single-Ended Triode design, tailored to compliment the superlative performance of our 
+        loudspeakers. Drawing strong references from the design language of the speakers, the solid hardwood 
+        and brass detailed chassis are a perfect compliment to the cabinetry.
+        </p>
+        <p>
+        The C3M tube at the core of the gain stage possesses better drive capability and specifications than tubes typically 
+        paired with the 300B. Combined with a large Finemet-core interstage transformer, the A3 has an input sensitivity of 
+        1.6VRMS, allowing it to be connected directly to source components, and paired with an over-spec Finemet
+        output transformer it produces a very wide frequency response. Unique circuitry choices increase damping 
+        factor as well, allowing the A3 to exhibit excellent bass control in a single-ended design.
+        </p>`,
+      cta: {
+        label: "Learn More",
+        uri: "/products/a3",
+      },
     },
     {
       blockType: "card",
