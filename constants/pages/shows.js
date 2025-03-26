@@ -1,36 +1,36 @@
 const Shows = {
     shows: [
 
+        // {
+        //     blockType: "show",
+        //     current: true,
+        //     type: "default",
+        //     orientation: "left",
+        //     image: {
+        //         url: "swaf_small.png",
+        //         width: 585,
+        //         height: 519,
+        //         alt: "2025 Southwest Audiofest",
+        //     },
+        //     heading: `2025 Southwest AudioFest`,
+        //     date: "March 21st - 23rd",
+        //     description: "<p>For 2025, SWAF will have over 60 rooms, making it one of the largest high-end international audio shows in North America. Dozens of amazing audio showrooms, thousands of vinyl records, as well as seminars, music and more. Come on down and join the fun.</p>",
+        //     cta: {
+        //         label: "Attend",
+        //         uri: "https://www.southwestaudiofest.com/tickets-reservations",
+        //         target: "_blank"
+        //     },
+        // },
         {
             blockType: "show",
             current: true,
             type: "default",
             orientation: "left",
             image: {
-                url: "swaf_small.png",
-                width: 585,
-                height: 519,
-                alt: "2025 Southwest Audiofest",
-            },
-            heading: `2025 Southwest AudioFest`,
-            date: "March 21st - 23rd",
-            description: "<p>For 2025, SWAF will have over 60 rooms, making it one of the largest high-end international audio shows in North America. Dozens of amazing audio showrooms, thousands of vinyl records, as well as seminars, music and more. Come on down and join the fun.</p>",
-            cta: {
-                label: "Attend",
-                uri: "https://www.southwestaudiofest.com/tickets-reservations",
-                target: "_blank"
-            },
-        },
-        {
-            blockType: "show",
-            current: false,
-            type: "default",
-            orientation: "left",
-            image: {
                 url: "axpona.png",
                 width: 585,
                 height: 585,
-                alt: "T.H.E. Show",
+                alt: "AXPONA",
             },
             heading: `AXPONA 2025`,
             date: "April 11th - 13th",

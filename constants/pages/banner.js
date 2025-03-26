@@ -1,4 +1,4 @@
 const BannerMessage = {
-    message: `<p>JOIN US MARCH 21TH - 23TH AT <a href="https://www.southwestaudiofest.com/tickets-reservations" target="_blank">2025 SOUTHWEST AUDIOFEST</a> IN DALLAS</p>`
+    message: `<p>JOIN US APRIL 11th - 13th AT <a href="https://axpona.com/register/" target="_blank">AXPONA 2025</a> IN SHAUMBURG</p>`
 }
 export default BannerMessage;

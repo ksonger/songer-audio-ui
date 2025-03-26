@@ -29,14 +29,14 @@ const Home = {
           link: "https://www.stereophile.com/content/songer-audio-lampizator-innuos-whammerdyne-kbl-sound",
           textAlign: "left",
         },
-        {
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
-          caption:
-              "A tour de force of technology, craftsmanship, and unbelievably lifelike sound, this 47-inch-tall tower is a dream come true for lovers of low-power tube amps. Amazingly, it uses only one driver.  There is a magic to the sound because of this speaker’s handmade, full-range transducer and the way that it reproduces music with the speed, transparency, and impact of a real performance.",
-          attribution: "- Robert Ross, The Robb Report",
-          link: "https://robbreport.com/gear/audio/songer-audio-s1-loudspeaker-1234900385/",
-          textAlign: "left",
-        },
+        // {
+        //   url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
+        //   caption:
+        //       "If there is a magic to the sound—and there is—it’s because of this speaker’s handmade, full-range transducer, and the way that it reproduces music with the speed, transparency, and impact of a live performance. Those who appreciate natural recordings of acoustical music, and audiophiles who want their vacuum-tube electronics to sing, simply must audition the Songer S1.",
+        //   attribution: "- Robert Ross, The Robb Report",
+        //   link: "https://robbreport.com/gear/audio/songer-audio-s1-loudspeaker-1234900385/",
+        //   textAlign: "left",
+        // },
         {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
           caption:
