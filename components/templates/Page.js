@@ -7,10 +7,10 @@ import React from "react";
 const PageTemplate = ({ content, hidePageTitle = false }) => {
   const global = useGlobalContext();
 
-  const blocks = global[content?.pageData?.id?.toLowerCase()] || [];
+  const blocks = global[content?.pageData?.label?.toLowerCase()] || [];
   const c = {
-    title: "Songer Audio",
-    description: "Songer Audio is a maker of finely crafted field coil drivers and loudspeakers, 100% hand-made in the USA.",
+    title: content.pageData.label.toLowerCase(),
+    description: "Songer Audio is a maker of finely crafted field coil loudspeakers and amplifiers, 100% hand-made in the USA.",
     featuredImage: {},
   };
 

@@ -3,7 +3,7 @@ const S2x = {
         {
             blockType: "product",
             id: "s2x",
-            heading: `THE S2 LOUDSPEAKER`,
+            heading: `THE S2x LOUDSPEAKER`,
             description: `<p>
             Newly redesigned around our latest Nova Type D driver, the S2x  elevates the original S2 to new,  breathtaking levels of performance.  Every facet of the S2 design and Nova driver were revisited, with key performance gains in the drivers, cabinetry, wiring, and crossovers.
 </p><p>

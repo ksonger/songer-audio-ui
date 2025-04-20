@@ -41,6 +41,18 @@ const Press = {
             awards:
                 [
                     {
+                        message: `<p>Enjoy the Music<br/>Best Of SWAF 2025 Blue Note Award</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/swaf_2025_blue_note.png",
+                        link: "https://www.enjoythemusic.com/Southwest_Audio_Fest_2025/Schumann/Part2/page3.htm",
+                        layout: "right",
+                    },
+                    {
+                        message: `<p>Robb Report<br/>2025 Best in Audio</br>Award, S1x</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/wreath_award.png",
+                        link: "https://robbreport.com/gear/audio/lists/audio-awards-2025-1236375182/best-loudspeakers-for-design-obsessives-songer-audio-s1x/",
+                        layout: "left",
+                    },
+                    {
                         message: `<p>Part-Time Audiophile<br/>2024 Product of the Year Nominee</p>`,
                         logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
                         link: "https://pt.audio/2024/12/15/2024-product-of-the-year/",

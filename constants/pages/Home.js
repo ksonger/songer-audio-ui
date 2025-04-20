@@ -227,7 +227,7 @@ const Home = {
         </p>`,
       cta: {
         label: "Learn More",
-        uri: "/technology",
+        uri: "/about/technology",
       },
     },
     {
@@ -283,7 +283,7 @@ const Home = {
         </p>`,
       cta: {
         label: "Learn More",
-        uri: "/products/s2",
+        uri: "/products/s2x",
       },
     },
     {

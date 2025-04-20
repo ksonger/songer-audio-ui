@@ -5,7 +5,7 @@ const A3 = {
             id: "a3",
             heading: `THE SONGER AUDIO A3 INTEGRATED AMPLIFIER`,
             description: `<p>
-The A3 is a 300B Single-Ended Triode design, which produces an effortless synergy with the performance of our loudspeakers. Drawing strong references from the design language of the speakers, the solid hardwood and brass detailed chassis is a perfect compliment to our cabinetry. The hand-polished, quarter-inch thick brass top plate is not just a striking visual statement. Weighing in at 36 pounds, it likewise provides an incredibly high-mass foundation for vibration-sensitive vacuum tubes.
+The A3 is a 300B Single-Ended Triode design, which creates an effortless synergy with the performance of our loudspeakers. Drawing strong references from our design language, the solid hardwood and brass detailed chassis is a perfect compliment to our cabinetry. The hand-polished, quarter-inch thick brass top plate is not just a striking visual statement. Weighing in at 36 pounds, it likewise provides an incredibly high-mass foundation for vibration-sensitive vacuum tubes.
 </p><p>
 The C3M tube at the core of the gain stage was originally created as a “no compromise” design by the German Post, for telephony use. It possesses better drive capability and specifications than tubes typically paired with a 300B. Combined with a large Finemet-core interstage transformer, the A3 has an input sensitivity of 1.6VRMS, allowing it to be connected directly to source components. That large interstage and an over-spec Finemet output transformer produces a very wide frequency response. Unique circuitry choices increase damping factor as well, allowing the A3 to exhibit excellent bass control in a single-ended design.
 </p><p>
