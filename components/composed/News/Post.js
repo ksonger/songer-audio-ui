@@ -7,6 +7,7 @@ import * as Styled from "./styles";
 import { Gallery } from "@/components/atomic/Gallery";
 import { useOnResize } from "@/hooks/listeners";
 import { mobileBreakpoint } from "@/styles/mixins";
+import {useRouter} from "next/router";
 
 const Post = ({ nav, id, newsPost, navHandler }) => {
   const renderProgress = () => {
@@ -21,6 +22,7 @@ const Post = ({ nav, id, newsPost, navHandler }) => {
   const [containerObj, setContainerObj] = useState();
   const [hasData, setHasData] = useState(false);
   const [mobile, setMobile] = useState(false);
+  const router = useRouter();
   let wInt;
 
   const onResize = () => {
@@ -80,19 +82,14 @@ const Post = ({ nav, id, newsPost, navHandler }) => {
         <div>{content && ReactHtmlParser(content)}</div>
         {images && images.length > 0 && hasData && (
           <Styled.PostImages>
-            {!mobile && (
-              <Gallery
-                layout={1}
-                minSize={200}
-                containerObj={containerObj}
-                gallery={images}
-              />
-            )}
-            {mobile &&
-              images.map((image, i) => {
+
+            {images.map((image, i) => {
                 return (
                   <Styled.MobileImage key={i}>
-                    <img src={image.url} />
+                    <img src={image.url} onClick={() => {
+                      image.link? window.open(image.link) : null
+
+                    }}/>
                   </Styled.MobileImage>
                 );
               })}

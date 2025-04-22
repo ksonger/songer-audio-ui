@@ -85,7 +85,7 @@ export const GLOBAL_DATA = {
         {
           label: "Press & Awards",
           id: "press",
-          href: "news/press",
+          href: "/news/press",
         },
         {
           label: "Latest News",

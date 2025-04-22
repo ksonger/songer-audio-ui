@@ -21,6 +21,8 @@ export const List = styled.li`
   h2 {
     color: rgba(131, 184, 201, 0.85);
   }
+
+  
 `;
 
 export const ListItem = styled.ul`

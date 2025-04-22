@@ -7,9 +7,9 @@ import React from "react";
 const PageTemplate = ({ content, hidePageTitle = false }) => {
   const global = useGlobalContext();
 
-  const blocks = global[content?.pageData?.label?.toLowerCase()] || [];
+  const blocks = global[content?.pageData?.id?.toLowerCase()] || [];
   const c = {
-    title: content.pageData.label.toLowerCase(),
+    title: content.pageData.id.toLowerCase(),
     description: "Songer Audio is a maker of finely crafted field coil loudspeakers and amplifiers, 100% hand-made in the USA.",
     featuredImage: {},
   };

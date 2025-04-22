@@ -27,7 +27,7 @@ export const Message = styled.div`
   flex-grow: 1;
   text-align: center;
   text-transform: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.8);

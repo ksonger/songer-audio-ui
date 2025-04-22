@@ -4,6 +4,32 @@ const News = {
       blockType: "newsPosts",
       items: [
         {
+          id: "11",
+          slug: "wbf_pricing",
+          title: "Join What's Best Forum for Show Pricing",
+          summary:
+              "We’ve just returned from our first appearance at AXPONA this past weekend, and what a weekend it was!",
+          content: "<p>Well my friends,</p><p>We’ve just returned from our first appearance at AXPONA this past weekend, and what a weekend it was! Without a doubt, it was the best sound we’ve ever achieved, and we were thrilled to have a full room for most of the three days.</p><p>We’re always grateful to everyone who takes the time (and makes the investment) to come listen to us at shows. As a thank you, we’ve traditionally offered special show pricing to those who join us in person during these events.</p><p>But the truth is, the online community at What's Best Forum has been just as important to our journey as the shows themselves. The support we’ve received there over the past several years has meant the world to us, and it feels only right to extend that same spirit of gratitude to both new and existing WBF members.</p><p>So, from this point forward, members of the forum are invited to enjoy the same special pricing we offer at the shows.</p><p>Not a member?  Signing up is easy. <a href='https://www.whatsbestforum.com/register' target='_blank'>Click here</a> to create a free account, and start enjoying the same special pricing we offer at the shows:</p><p><ul><li><a>15% off</a> our loudspeakers</li><li><a>10% off</a> our new A3 amplifier (when purchased with a pair of speakers)</li></ul></p><p>To put that into numbers: our award-winning S1 loudspeakers are now available to WBF members for <a>$29,750, including power supplies and delivery</a>. And if you add the A3, the total for this exceptional two-channel system comes to <a>$56,300</a> - a combination we believe stands among the finest available anywhere in audio.</p>",
+          images: [
+            {
+              // Image item:
+              itemId: "d1",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/wbf.png",
+              link: "https://www.whatsbestforum.com/register",
+              metaData: {
+                type: "image",
+                width: 2000,
+                height: 685,
+                focalPoint: [0, 0],
+              },
+            },
+          ],
+          videos: [],
+          date: "2025-04-22T17:10:20.339Z",
+          createdAt: "2025-04-22T17:10:20.339Z",
+          updatedAt: "2025-04-22T17:10:20.339Z",
+        },
+        {
           id: "10",
           slug: "2024_SHOW_runup",
           title: "Songer Audio + Western Electric, next month at T.H.E. Show",
