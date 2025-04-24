@@ -22,6 +22,14 @@ const Home = {
       blockType: "slideShow",
       slides: [
         {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
+          caption:
+              "With the Songer Audio A3 integrated and the S1X loudspeakers, it’s difficult for me to think of something I’d rather own. This is the speaker brand that taught me the value of field coil technology, and it revealed my love for the 300B valve–something I hadn’t really thought about during my long time in this hobby. With this new integrated amplifier, however, the stakes have been raised.",
+          attribution: "- Marc Phillips, Part-Time Audiophile",
+          link: "https://pt.audio/2025/04/23/songer-audio-a3-integrated-amplifier-axpona-2025/",
+          textAlign: "left",
+        },
+        {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_driver_front_sepia.png",
           caption:
               "This is the CAF room that all my audio-running buddies and even non-buddies told me about: Songer Audio. This system played music, just as I'd have it. Mitski's 'Bug Like An Angel' skittered on acoustic guitars and echoey vocals, the Songer system laid it out with a languorous gait, a vast vocal choir sprawling across the soundstage with a lavish, large scale, cinematic scope. Pinpoint accurate, animated, and utterly focused, the sound seized me and set me to rights.",
@@ -51,14 +59,6 @@ const Home = {
             "The sound was wonderful, the percussion totally clear, fast, sharp, and believable. Clarinet sounded warm at the bottom of its range, alive on top, and clear as can be. Even after hearing the hi-rez files of this piece countless times, I sat riveted by the sound.  This certified audiophile classic sounded so clear and musical that the man sitting next to me whispered \"Wow\" under his breath.",
           attribution: "- Jason Victor Serinus, Stereophile",
           link: "https://www.stereophile.com/content/songer-audio-alexsound-technology-wows-serinus",
-          textAlign: "left",
-        },
-        {
-          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
-          caption:
-            "I’d call it the Most Beautiful Sound in Seattle. Maybe the Lushest. Maybe the Most Hypnotic. The Songer Audio and Whammerdyne room is the one that still haunts me two weeks after the end of the show. I can’t wait to hear this combo again.",
-          attribution: "- Marc Phillips, Part-Time Audiophile",
-          link: "https://parttimeaudiophile.com/2023/06/26/songer-and-whammerdyne-paf-2023/",
           textAlign: "left",
         },
         {
