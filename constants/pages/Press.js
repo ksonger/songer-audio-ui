@@ -41,6 +41,12 @@ const Press = {
             awards:
                 [
                     {
+                        message: `<p>Part-Time Audiophile<br/>Best of AXPONA 2025 Nominee</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
+                        link: "https://pt.audio/2025/05/02/best-sound-of-show-axpona-2025/",
+                        layout: "left",
+                    },
+                    {
                         message: `<p>Enjoy the Music<br/>Best Of SWAF 2025 Blue Note Award</p>`,
                         logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/swaf_2025_blue_note.png",
                         link: "https://www.enjoythemusic.com/Southwest_Audio_Fest_2025/Schumann/Part2/page3.htm",

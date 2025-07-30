@@ -9,6 +9,7 @@ import PS1 from "@/constants/pages/ps1";
 import Gallery from "@/constants/pages/Gallery";
 import Technology from "@/constants/pages/Technology";
 import News from "@/constants/pages/News";
+import Travel from "@/constants/pages/Travel";
 import Listen from "@/constants/pages/Listen";
 import Appointment from "@/constants/pages/appointment";
 import Reserve from "@/constants/pages/Reserve";
@@ -29,6 +30,7 @@ const Pages = {
   ...Gallery,
   ...Technology,
   ...News,
+  ...Travel,
   ...Listen,
   ...Appointment,
   ...Shows,

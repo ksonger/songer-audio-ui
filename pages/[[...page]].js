@@ -36,6 +36,7 @@ export async function getStaticPaths() {
     { params: { page: ["gallery"] } },
     { params: { page: ["news"] } },
     { params: { page: ["news", "press"] } },
+    { params: { page: ["listen", "travel"] } },
     { params: { page: ["listen", "appointment"] } },
     { params: { page: ["listen", "shows"] } },
     { params: { page: ["about"] } },

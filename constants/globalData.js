@@ -123,6 +123,11 @@ export const GLOBAL_DATA = {
       header: true,
       subitems: [
         {
+          label: "Travel Program",
+          id: "travel",
+          href: "/listen/travel",
+        },
+        {
           label: "Audio Shows",
           id: "shows",
           href: "/listen/shows",

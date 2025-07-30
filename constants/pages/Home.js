@@ -22,6 +22,14 @@ const Home = {
       blockType: "slideShow",
       slides: [
         {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
+          caption:
+              "If you’ve never heard a pair of single-driver speakers, the Songer S1X might be too much for you to take in. They might freak you out. They are that good. Even more so with Songer’s $30k A3 integrated amp, a 300B SET design. There’s so much more to tell you, but these are one of my top ten favorite audio experiences. Of all time. In over 50 years of listening. That good.",
+          attribution: "- Jeff Dorgay, TONE Audio",
+          link: "https://www.tonepublications.com/distilled/the-songer-s1-x-redefines-the-category/",
+          textAlign: "left",
+        },
+        {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
           caption:
               "With the Songer Audio A3 integrated and the S1X loudspeakers, it’s difficult for me to think of something I’d rather own. This is the speaker brand that taught me the value of field coil technology, and it revealed my love for the 300B valve–something I hadn’t really thought about during my long time in this hobby. With this new integrated amplifier, however, the stakes have been raised.",

@@ -14,6 +14,7 @@ export const PATHS = {
   press: "/news/press",
   listen: "/listen",
   shows: "/listen/shows",
+  travel: "/listen/travel",
   appointment: "/listen/appointment",
   contact: "/contact",
   reserve: "/reserve",

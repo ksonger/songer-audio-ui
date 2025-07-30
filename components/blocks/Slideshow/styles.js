@@ -33,7 +33,7 @@ export const Background = styled.div`
 `;
 
 export const Span = styled.span`
-  font-size: ${fluidScale("20px", "14px")};
+  font-size: ${fluidScale("20px", "13px")};
   color: #f1d9a9;
   display: grid;
   grid-auto-flow: row;
@@ -75,7 +75,7 @@ export const Quote = styled.div`
 
 export const Attribution = styled.div`
 
-  font-size: ${fluidScale("15px", "14px")};
+  font-size: ${fluidScale("15px", "13px")};
   margin-top: 30px;
   text-align: right;
   color: rgba(255, 255, 255, 0.6);
