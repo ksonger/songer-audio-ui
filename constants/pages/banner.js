@@ -1,4 +1,4 @@
 const BannerMessage = {
-    message: `<p>LEARN HOW TO <a href="/news" target="_self">SAVE 15% ON SONGER AUDIO PRODUCTS</a></p>`
+    message: `<p>DISCOVER THE <a href="/products/a3/index.html" target="_self">A3</a>, OUR EXTRAORDINARY NEW AMPLIFIER</p>`
 }
 export default BannerMessage;

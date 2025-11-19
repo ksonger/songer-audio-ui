@@ -25,7 +25,6 @@ const BLOCK_MAP = {
 };
 
 const BlockFactory = ({ type, data, blockMap = BLOCK_MAP }) => {
-  console.log(type);
   const Block = blockMap[type];
   if (!Block) return null;
   return <Block {...data} />;

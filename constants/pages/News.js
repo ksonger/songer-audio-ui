@@ -4,6 +4,78 @@ const News = {
       blockType: "newsPosts",
       items: [
         {
+          id: "12",
+          slug: "wbf_pricing",
+          title: "TONE Audio's full review of the S1x Field Coil Loudspeaker",
+          summary:
+              "As enthusiastic as I am about these speakers, I still don’t think I’m doing them justice. I could easily become a fanboy for the Songer speakers, but then you’d never believe me.",
+          content: "<p>Last month Editor-In-Chief of TONE Magazine, Jeff Dorgay, declared the S1x one of his top ten favorite listening experiences of <i>all time</i>, spanning his 50 years of critical listening in the industry.  Read his <a href='https://tonepublications2.com/project/the-songer-audio-s1x-speakers/' target='_blank'>full review here</a>.</p>",
+          images: [
+            {
+              // Image item:
+              itemId: "d3",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/gallery/tone_review.jpg",
+              metaData: {
+                type: "image",
+                width: 600,
+                height: 425,
+                focalPoint: [0, 0],
+              },
+            },
+          ],
+          videos: [],
+          date: "2025-11-18T17:10:20.339Z",
+          createdAt: "2025-11-18T17:10:20.339Z",
+          updatedAt: "2025-11-18T17:10:20.339Z",
+        },
+        {
+          id: "11",
+          slug: "wbf_pricing",
+          title: "East Coast Debut of the A3, @ CAF 2025 November 14th - 16th",
+          summary:
+              "For those of you who can make it, we're looking forward to seeing you next month in DC!",
+          content: "<p>For those of you who can make it, we're looking forward to seeing you next month in DC!  This will be the East Coast debut of our exquisite new SET 300B amplifier, the A3.  The synergy between it and our S1x is sublime - you definitely won't want to miss this. Rounding out the rest of our system will be digital source and streaming components from Lampizator and Innuos, along with an exciting new partner for us, Black Cat.  Black Cat makes exceptional handcrafted cables in Cumming, GA, and has generously furnished us with a full loom of the finest series they offer, Graceline 3. It's sure to be our best sounding system yet, and we invite you to experience it with us at the Hilton Rockville November 14th - 16th in room 740.</p>",
+          images: [
+            {
+              // Image item:
+              itemId: "d3",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/cropped-Cat2-No-Background.jpg",
+              metaData: {
+                type: "image",
+                width: 512,
+                height: 512,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d3",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/Innuos_Logo_Grey_RGB.jpg",
+              metaData: {
+                type: "image",
+                width: 2000,
+                height: 1500,
+                focalPoint: [0, 0],
+              },
+            },
+            {
+              // Image item:
+              itemId: "d3",
+              url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/LampizatOr_North_America_512.jpg",
+              metaData: {
+                type: "image",
+                width: 512,
+                height: 512,
+                focalPoint: [0, 0],
+              },
+            },
+          ],
+          videos: [],
+          date: "2025-11-10T17:10:20.339Z",
+          createdAt: "2025-11-10T17:10:20.339Z",
+          updatedAt: "2025-11-10T17:10:20.339Z",
+        },
+        {
           id: "11",
           slug: "wbf_pricing",
           title: "Join What's Best Forum for Show Pricing",

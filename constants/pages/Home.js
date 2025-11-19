@@ -127,7 +127,7 @@ const Home = {
     },
     {
       blockType: "newsLink",
-      message: `<p><a href="/products/a3" target="_self">Explore Songer Audio's exciting new 300B Single-Ended Triode Integrated Amplifier, the A3</a></p>`,
+      message: `<p><a href="https://tonepublications2.com/project/the-songer-audio-s1x-speakers/" target="_blank">Read TONE Audio's full review of the S1x Field Coil Loudspeaker</a></p>`,
     },
     // {
     //   blockType: "awardBlade",

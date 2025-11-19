@@ -4,6 +4,21 @@ const Press = {
             blockType: "reviewBlade",
             reviews: [
                 {
+                    heading: `Songer Audio S1x Field Coil Loudspeakers`,
+                    image: {
+                        url: "tone_review.jpg",
+                        width: 600,
+                        height: 425,
+                        alt: "Songer Audio S1x Review",
+                    },
+                    cta: {
+                        target: "_blank",
+                        label: "Read Full Review",
+                        uri: "https://tonepublications2.com/project/the-songer-audio-s1x-speakers/",
+                    },
+                    description: "<p>As enthusiastic as I am about these speakers, I still don’t think I’m doing them justice. I could easily become a fanboy for the Songer speakers, but then you’d never believe me. I honestly feel that even if you have zero interest in this kind of speaker, these are one of those “top ten speakers you should hear before you die” kind of speakers. The experience may make you rethink your sonic priorities.</p><p>The last track I play before boxing them back up is “It’s Raining,” from Boz Scaggs’ new album, Detour. And while it was sunny the day we loaded the speakers into Ken’s SUV, it rained all day the next day.</p>",
+                },
+                {
                     heading: `Songer Audio S2 Field Coil Loudspeakers`,
                     image: {
                         url: "songer13.jpg",
