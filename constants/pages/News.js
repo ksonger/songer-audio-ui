@@ -5,7 +5,7 @@ const News = {
       items: [
         {
           id: "12",
-          slug: "wbf_pricing",
+          slug: "tone_review",
           title: "TONE Audio's full review of the S1x Field Coil Loudspeaker",
           summary:
               "As enthusiastic as I am about these speakers, I still don’t think I’m doing them justice. I could easily become a fanboy for the Songer speakers, but then you’d never believe me.",
@@ -30,7 +30,7 @@ const News = {
         },
         {
           id: "11",
-          slug: "wbf_pricing",
+          slug: "caf_a3_debut",
           title: "East Coast Debut of the A3, @ CAF 2025 November 14th - 16th",
           summary:
               "For those of you who can make it, we're looking forward to seeing you next month in DC!",

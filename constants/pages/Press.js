@@ -56,6 +56,24 @@ const Press = {
             awards:
                 [
                     {
+                        message: `<p>Positive Feedback<br/>Best of Capital Audiofest 2025 Award</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pf_logo.png",
+                        link: "https://positive-feedback.com/show-reports/capital-audio-fest-2025/",
+                        layout: "left",
+                    },
+                    {
+                        message: `<p>Part-Time Audiophile<br/>Best of Capital Audiofest 2025 Nominee</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
+                        link: "https://pt.audio/2025/11/29/caf-2025s-best-sound-of-show-caf-2025/",
+                        layout: "left",
+                    },
+                    {
+                        message: `<p>Enjoy the Music<br/>Best Of CAF 2025 Honorable Mention Award</p>`,
+                        logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/wreath_award.png",
+                        link: "https://www.enjoythemusic.com/Capital_Audiofest_2025/Honorable_Mention_Capital_Audiofest_2025_Awards.htm",
+                        layout: "right",
+                    },
+                    {
                         message: `<p>Part-Time Audiophile<br/>Best of AXPONA 2025 Nominee</p>`,
                         logo: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/pta_logo.png",
                         link: "https://pt.audio/2025/05/02/best-sound-of-show-axpona-2025/",

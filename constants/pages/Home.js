@@ -30,6 +30,14 @@ const Home = {
           textAlign: "left",
         },
         {
+          url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/s2_typed_close_sepia.png",
+          caption:
+              "The speakers handled Judy Collins's \"Some Day Soon\" beautifully. The track gushed with romanticism, a feeling engendered by the speakers' wide-open, sweet-treble focus. Finally, I played another favorite, Tom Petty's \"It's Good to Be King.\" The sound immaculately clean. The large speakers disappeared from the room, leaving behind just the music and me.",
+          attribution: "- Ken Micallef, Stereophile",
+          link: "https://www.stereophile.com/content/songer-audio-refines-its-field-coil-formula-a3-set-amplifier-and-ps1-se",
+          textAlign: "left",
+        },
+        {
           url: "https://s3.us-west-2.amazonaws.com/songeraudio.com/media/motors_sepia.png",
           caption:
               "With the Songer Audio A3 integrated and the S1X loudspeakers, it’s difficult for me to think of something I’d rather own. This is the speaker brand that taught me the value of field coil technology, and it revealed my love for the 300B valve–something I hadn’t really thought about during my long time in this hobby. With this new integrated amplifier, however, the stakes have been raised.",

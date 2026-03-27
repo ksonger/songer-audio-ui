@@ -32,8 +32,8 @@ const Shows = {
                 height: 585,
                 alt: "AXPONA",
             },
-            heading: `AXPONA 2025`,
-            date: "April 11th - 13th",
+            heading: "AXPONA 2026",
+            date: "April 10th - 12th",
             description: "<p>Be part of North America’s largest audio expo.  Get up close and personal with thousands of the finest brands in audio.  From hi-fi to headphones, to LPs, turntables and accessories, you’ll find everything you need to upgrade your sound!  Hear your music like never before. Your audio system is personal, you can’t expect to discover the sound you’re searching for by shopping online.  At AXPONA  you can audition the latest in high-fidelity audio.  The world’s top brands will display their latest innovations, product launches and flagship systems.</p>",
             cta: {
                 label: "Attend",
@@ -52,12 +52,12 @@ const Shows = {
                 height: 360,
                 alt: "2025 Capital Audiofest",
             },
-            heading: `2025 Capital AudioFest`,
-            date: "November 8th - 10th",
+            heading: `2026 Capital AudioFest`,
+            date: "November 13h - 15th",
             description: "<p>CAF is recognized as a fun, friendly and family-oriented show, where you often see families strolling from room to room listening to music, auditioning gear and browsing the multiple bins of vinyl records, CDs and accessories in the Atrium Marketplace. In the evenings we have live music in the bar and special live performers in the Theater, and local distillers offering tastings. CAF is an experience that, once you try it you will feel as though you’re part of the family.</p>",
             cta: {
                 label: "Attend",
-                uri: "https://www.capitalaudiofest.com/event-details/capital-audiofest2024",
+                uri: "https://www.capitalaudiofest.com/event-details/capital-audiofest-2026",
                 target: "_blank"
             },
         },
